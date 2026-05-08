@@ -14,6 +14,7 @@ const pageMap = {
   actualizacion_precios:() => renderActualizacionPrecios,
   plantillas:           () => renderPlantillas,
   bodega:               () => renderBodega,
+  usuarios:             () => renderUsuarios,
 };
 
 let currentPage = 'dashboard';
@@ -62,6 +63,10 @@ function showApp(user) {
   document.getElementById('userName').textContent = user.nombre;
   document.getElementById('userRole').textContent = user.rol;
   document.getElementById('userAvatar').textContent = user.nombre[0].toUpperCase();
+  // Mostrar sección Administración solo para admin
+  document.querySelectorAll('.admin-only').forEach(el => {
+    el.style.display = user.rol === 'admin' ? '' : 'none';
+  });
   navigateTo('dashboard');
 }
 

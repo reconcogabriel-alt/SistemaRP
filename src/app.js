@@ -33,6 +33,7 @@ app.use('/api/especificaciones',        require('./routes/especificaciones'));
 app.use('/api/actualizacion-precios',  require('./routes/actualizacion_precios'));
 app.use('/api/plantillas',            require('./routes/plantillas'));
 app.use('/api/bodega',                require('./routes/bodega'));
+app.use('/api/usuarios',              require('./routes/usuarios'));
 
 // 404 explícito para /api/* no registradas
 app.use('/api', (req, res) => {

@@ -47,6 +47,9 @@ function runMigrations() {
   )`);
   // Columnas nuevas en tablas existentes
   try { db.run('ALTER TABLE presupuestos ADD COLUMN id_centro_costo INTEGER DEFAULT NULL'); } catch(e) {}
+  // Columna activo en usuarios (para activar/desactivar sin eliminar)
+  try { db.run("ALTER TABLE usuarios ADD COLUMN activo INTEGER DEFAULT 1"); } catch(e) {}
+  try { db.run("UPDATE usuarios SET activo = 1 WHERE activo IS NULL"); } catch(e) {}
   saveDb();
 }
 
