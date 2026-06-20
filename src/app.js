@@ -24,7 +24,6 @@ app.use(session({
 app.use('/api/auth',        require('./routes/auth'));
 app.use('/api/insumos',     require('./routes/insumos'));
 app.use('/api/actividades', require('./routes/actividades'));
-app.use('/api/proyectos',   require('./routes/proyectos'));
 app.use('/api/presupuestos',require('./routes/presupuestos'));
 app.use('/api/centros',      require('./routes/centros'));
 app.use('/api/reportes',    require('./routes/reportes'));
@@ -33,7 +32,16 @@ app.use('/api/especificaciones',        require('./routes/especificaciones'));
 app.use('/api/actualizacion-precios',  require('./routes/actualizacion_precios'));
 app.use('/api/plantillas',            require('./routes/plantillas'));
 app.use('/api/bodega',                require('./routes/bodega'));
-app.use('/api/usuarios',              require('./routes/usuarios'));
+app.use('/api/clientes',  require('./routes/clientes'));app.use('/api/usuarios',              require('./routes/usuarios'));
+app.use('/api/seguimiento',           require('./routes/seguimiento'));
+app.use('/api/licitacion',            require('./routes/importar_licitacion'));
+app.use('/api/documentacion',         require('./routes/documentacion'));
+app.use('/api/bitacora',              require('./routes/bitacora'));
+app.use('/api/configuracion',         require('./routes/configuracion'));
+app.use('/api/valuaciones',           require('./routes/valuaciones'));
+app.use('/api/planilla',              require('./routes/planilla'));
+app.use('/api/admin-financiero',      require('./routes/admin_financiero'));
+app.use('/api/generar-eett',          require('./routes/generar_eett'));
 
 // 404 explícito para /api/* no registradas
 app.use('/api', (req, res) => {

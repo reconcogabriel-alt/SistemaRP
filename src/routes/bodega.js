@@ -14,7 +14,7 @@ async function ensureTables() {
   db.run(`CREATE TABLE IF NOT EXISTS requisiciones (
     id_req       INTEGER PRIMARY KEY AUTOINCREMENT,
     numero       TEXT NOT NULL,
-    id_proyecto  INTEGER NOT NULL,
+    id_presupuesto  INTEGER NOT NULL,
     solicitante  TEXT,
     fecha_req    TEXT DEFAULT (date('now')),
     fecha_req_entrega TEXT,
@@ -22,7 +22,7 @@ async function ensureTables() {
                  CHECK(estado IN ('pendiente','aprobada','parcial','completa','anulada')),
     notas        TEXT,
     fecha_creacion TEXT DEFAULT (datetime('now')),
-    FOREIGN KEY (id_proyecto) REFERENCES proyectos(id_proyecto)
+    FOREIGN KEY (id_presupuesto) REFERENCES presupuestos(id_presupuesto)
   )`);
   db.run(`CREATE TABLE IF NOT EXISTS requisicion_items (
     id_item      INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -38,7 +38,7 @@ async function ensureTables() {
     id_mov       INTEGER PRIMARY KEY AUTOINCREMENT,
     tipo         TEXT NOT NULL CHECK(tipo IN ('entrada','salida','ajuste')),
     id_insumo    INTEGER NOT NULL,
-    id_proyecto  INTEGER,
+    id_presupuesto  INTEGER,
     id_req       INTEGER,
     cantidad     REAL NOT NULL,
     precio_unitario REAL DEFAULT 0,
@@ -49,7 +49,7 @@ async function ensureTables() {
     fecha_mov    TEXT DEFAULT (date('now')),
     fecha_creacion TEXT DEFAULT (datetime('now')),
     FOREIGN KEY (id_insumo) REFERENCES insumos(id_insumo),
-    FOREIGN KEY (id_proyecto) REFERENCES proyectos(id_proyecto),
+    FOREIGN KEY (id_presupuesto) REFERENCES presupuestos(id_presupuesto),
     FOREIGN KEY (id_req) REFERENCES requisiciones(id_req)
   )`);
   db.run(`CREATE TABLE IF NOT EXISTS bodega_stock (
@@ -92,26 +92,26 @@ router.get('/requisiciones', requireAuth, async (req, res) => {
   try {
     await ensureTables();
     const db = await getDb();
-    const { id_proyecto, estado } = req.query;
+    const { id_presupuesto, estado } = req.query;
     let where = '1=1';
     const params = [];
-    if (id_proyecto) { where += ' AND r.id_proyecto=?'; params.push(id_proyecto); }
+    if (id_presupuesto) { where += ' AND r.id_presupuesto=?'; params.push(id_presupuesto); }
     if (estado)      { where += ' AND r.estado=?';      params.push(estado); }
 
     const rr = db.exec(`
-      SELECT r.id_req, r.numero, r.id_proyecto, p.nombre as proyecto,
+      SELECT r.id_req, r.numero, r.id_presupuesto, p.nombre as presupuesto,
              r.solicitante, r.fecha_req, r.fecha_req_entrega, r.estado,
              r.notas, r.fecha_creacion,
              COUNT(ri.id_item) as num_items
       FROM requisiciones r
-      JOIN proyectos p ON r.id_proyecto = p.id_proyecto
+      JOIN presupuestos p ON r.id_presupuesto = p.id_presupuesto
       LEFT JOIN requisicion_items ri ON ri.id_req = r.id_req
       WHERE ${where}
       GROUP BY r.id_req
       ORDER BY r.fecha_creacion DESC`, params);
 
     const rows = rr.length ? rr[0].values.map(v => ({
-      id_req:v[0], numero:v[1], id_proyecto:v[2], proyecto:v[3],
+      id_req:v[0], numero:v[1], id_presupuesto:v[2], presupuesto:v[3],
       solicitante:v[4], fecha_req:v[5], fecha_req_entrega:v[6],
       estado:v[7], notas:v[8], fecha_creacion:v[9], num_items:v[10]
     })) : [];
@@ -125,16 +125,16 @@ router.get('/requisiciones/:id', requireAuth, async (req, res) => {
     await ensureTables();
     const db = await getDb();
     const rr = db.exec(`
-      SELECT r.id_req, r.numero, r.id_proyecto, p.nombre as proyecto,
+      SELECT r.id_req, r.numero, r.id_presupuesto, p.nombre as presupuesto,
              r.solicitante, r.fecha_req, r.fecha_req_entrega, r.estado, r.notas
       FROM requisiciones r
-      JOIN proyectos p ON r.id_proyecto = p.id_proyecto
+      JOIN presupuestos p ON r.id_presupuesto = p.id_presupuesto
       WHERE r.id_req=?`, [req.params.id]);
     if (!rr.length || !rr[0].values.length)
       return res.status(404).json({ error: 'Requisición no encontrada' });
     const v = rr[0].values[0];
     const req_data = {
-      id_req:v[0], numero:v[1], id_proyecto:v[2], proyecto:v[3],
+      id_req:v[0], numero:v[1], id_presupuesto:v[2], presupuesto:v[3],
       solicitante:v[4], fecha_req:v[5], fecha_req_entrega:v[6], estado:v[7], notas:v[8]
     };
 
@@ -160,14 +160,14 @@ router.post('/requisiciones', requireAuth, async (req, res) => {
   try {
     await ensureTables();
     const db = await getDb();
-    const { id_proyecto, solicitante, fecha_req_entrega, notas, items } = req.body;
-    if (!id_proyecto || !items?.length)
-      return res.status(400).json({ error: 'Se requiere id_proyecto e items' });
+    const { id_presupuesto, solicitante, fecha_req_entrega, notas, items } = req.body;
+    if (!id_presupuesto || !items?.length)
+      return res.status(400).json({ error: 'Se requiere id_presupuesto e items' });
 
     const numero = await nextNumReq(db);
-    db.run(`INSERT INTO requisiciones (numero, id_proyecto, solicitante, fecha_req_entrega, notas)
+    db.run(`INSERT INTO requisiciones (numero, id_presupuesto, solicitante, fecha_req_entrega, notas)
             VALUES (?,?,?,?,?)`,
-           [numero, id_proyecto, solicitante||'', fecha_req_entrega||null, notas||'']);
+           [numero, id_presupuesto, solicitante||'', fecha_req_entrega||null, notas||'']);
     const idReq = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
 
     for (const item of items) {
@@ -238,31 +238,31 @@ router.get('/movimientos', requireAuth, async (req, res) => {
   try {
     await ensureTables();
     const db = await getDb();
-    const { tipo, id_proyecto, desde, hasta, limit } = req.query;
+    const { tipo, id_presupuesto, desde, hasta, limit } = req.query;
     let where = '1=1';
     const params = [];
     if (tipo)       { where += ' AND m.tipo=?';           params.push(tipo); }
-    if (id_proyecto){ where += ' AND m.id_proyecto=?';    params.push(id_proyecto); }
+    if (id_presupuesto){ where += ' AND m.id_presupuesto=?';    params.push(id_presupuesto); }
     if (desde)      { where += ' AND m.fecha_mov>=?';     params.push(desde); }
     if (hasta)      { where += ' AND m.fecha_mov<=?';     params.push(hasta); }
 
     const lim = parseInt(limit) || 200;
     const r = db.exec(`
       SELECT m.id_mov, m.tipo, m.id_insumo, i.codigo, i.descripcion, i.unidad,
-             m.id_proyecto, p.nombre as proyecto,
+             m.id_presupuesto, p.nombre as presupuesto,
              m.id_req, r.numero as req_numero,
              m.cantidad, m.precio_unitario, m.total,
              m.referencia, m.proveedor, m.notas, m.fecha_mov, m.fecha_creacion
       FROM bodega_movimientos m
       JOIN insumos i ON m.id_insumo = i.id_insumo
-      LEFT JOIN proyectos p ON m.id_proyecto = p.id_proyecto
+      LEFT JOIN presupuestos p ON m.id_presupuesto = p.id_presupuesto
       LEFT JOIN requisiciones r ON m.id_req = r.id_req
       WHERE ${where}
       ORDER BY m.fecha_creacion DESC
       LIMIT ${lim}`, params);
     const rows = r.length ? r[0].values.map(v => ({
       id_mov:v[0], tipo:v[1], id_insumo:v[2], codigo:v[3], descripcion:v[4], unidad:v[5],
-      id_proyecto:v[6], proyecto:v[7],
+      id_presupuesto:v[6], presupuesto:v[7],
       id_req:v[8], req_numero:v[9],
       cantidad:v[10], precio_unitario:v[11], total:v[12],
       referencia:v[13], proveedor:v[14], notas:v[15],
@@ -277,7 +277,7 @@ router.post('/movimientos', requireAuth, async (req, res) => {
   try {
     await ensureTables();
     const db = await getDb();
-    const { tipo, id_insumo, id_proyecto, id_req, cantidad,
+    const { tipo, id_insumo, id_presupuesto, id_req, cantidad,
             precio_unitario, referencia, proveedor, notas, fecha_mov } = req.body;
 
     if (!tipo || !id_insumo || !cantidad)
@@ -287,19 +287,19 @@ router.post('/movimientos', requireAuth, async (req, res) => {
     const total = parseFloat(cantidad) * pu;
 
     db.run(`INSERT INTO bodega_movimientos
-            (tipo, id_insumo, id_proyecto, id_req, cantidad, precio_unitario, total,
+            (tipo, id_insumo, id_presupuesto, id_req, cantidad, precio_unitario, total,
              referencia, proveedor, notas, fecha_mov)
             VALUES (?,?,?,?,?,?,?,?,?,?,?)`,
-           [tipo, id_insumo, id_proyecto||null, id_req||null,
+           [tipo, id_insumo, id_presupuesto||null, id_req||null,
             parseFloat(cantidad), pu, total,
             referencia||'', proveedor||'', notas||'',
             fecha_mov || new Date().toISOString().split('T')[0]]);
+    const newId = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
 
     // Actualizar stock
     await actualizarStock(db, id_insumo, parseFloat(cantidad), tipo);
     saveDb();
 
-    const newId = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
     res.json({ ok: true, id_mov: newId, total });
   } catch(e) { res.status(500).json({ error: e.message }); }
 });
@@ -388,7 +388,7 @@ router.get('/reporte-excel', requireAuth, async (req, res) => {
     ws2.getRow(1).height = 24;
 
     const h2 = ws2.getRow(2);
-    ['Fecha','Tipo','Código','Descripción','Unidad','Cantidad','P.Unit (L)','Total (L)','Referencia','Proyecto','Notas'].forEach((h,i) => {
+    ['Fecha','Tipo','Código','Descripción','Unidad','Cantidad','P.Unit (L)','Total (L)','Referencia','Presupuesto','Notas'].forEach((h,i) => {
       h2.getCell(i+1).value = h;
       const bg = h==='Tipo'?C_ORANGE:C_BLUE;
       h2.getCell(i+1).fill = { type:'pattern', pattern:'solid', fgColor:{argb:bg} };
@@ -403,7 +403,7 @@ router.get('/reporte-excel', requireAuth, async (req, res) => {
              m.referencia, COALESCE(p.nombre,'—'), m.notas
       FROM bodega_movimientos m
       JOIN insumos i ON m.id_insumo=i.id_insumo
-      LEFT JOIN proyectos p ON m.id_proyecto=p.id_proyecto
+      LEFT JOIN presupuestos p ON m.id_presupuesto=p.id_presupuesto
       ORDER BY m.fecha_creacion DESC LIMIT 500`);
 
     if (movR.length) {
@@ -439,13 +439,13 @@ router.get('/requisiciones/:id/pdf-data', requireAuth, async (req, res) => {
     const db = await getDb();
     const rr = db.exec(`
       SELECT r.numero, r.solicitante, r.fecha_req, r.fecha_req_entrega,
-             r.estado, r.notas, p.nombre as proyecto, p.cliente
+             r.estado, r.notas, p.nombre as presupuesto, p.cliente
       FROM requisiciones r
-      JOIN proyectos p ON r.id_proyecto=p.id_proyecto
+      JOIN presupuestos p ON r.id_presupuesto=p.id_presupuesto
       WHERE r.id_req=?`, [req.params.id]);
     if (!rr.length || !rr[0].values.length)
       return res.status(404).json({ error: 'No encontrada' });
-    const [numero,solicit,fecha,fechaEnt,estado,notas,proyecto,cliente] = rr[0].values[0];
+    const [numero,solicit,fecha,fechaEnt,estado,notas,presupuesto,cliente] = rr[0].values[0];
 
     const ir = db.exec(`
       SELECT i.codigo, i.descripcion, i.unidad, ri.cantidad_req, ri.notas
@@ -457,7 +457,7 @@ router.get('/requisiciones/:id/pdf-data', requireAuth, async (req, res) => {
     })) : [];
 
     res.json({ numero, solicitante:solicit, fecha_req:fecha, fecha_entrega:fechaEnt,
-               estado, notas, proyecto, cliente, items });
+               estado, notas, presupuesto, cliente, items });
   } catch(e) { res.status(500).json({ error: e.message }); }
 });
 
@@ -468,13 +468,13 @@ router.get('/requisiciones/:id/excel', requireAuth, async (req, res) => {
     const db = await getDb();
     const rr = db.exec(`
       SELECT r.numero, r.solicitante, r.fecha_req, r.fecha_req_entrega,
-             r.estado, r.notas, p.nombre as proyecto, p.cliente, p.ubicacion
+             r.estado, r.notas, p.nombre as presupuesto, p.cliente, p.ubicacion
       FROM requisiciones r
-      JOIN proyectos p ON r.id_proyecto=p.id_proyecto
+      JOIN presupuestos p ON r.id_presupuesto=p.id_presupuesto
       WHERE r.id_req=?`, [req.params.id]);
     if (!rr.length || !rr[0].values.length)
       return res.status(404).json({ error: 'No encontrada' });
-    const [numero,solicit,fecha,fechaEnt,estado,notas,proyecto,cliente,ubi] = rr[0].values[0];
+    const [numero,solicit,fecha,fechaEnt,estado,notas,presupuesto,cliente,ubi] = rr[0].values[0];
 
     const ir = db.exec(`
       SELECT i.codigo, i.descripcion, i.unidad, ri.cantidad_req, ri.notas,
@@ -500,7 +500,7 @@ router.get('/requisiciones/:id/excel', requireAuth, async (req, res) => {
     ws.getRow(1).height=28;
 
     const info = [
-      [`Proyecto: ${proyecto}`, `Cliente: ${cliente||'—'}`, `Estado: ${estado.toUpperCase()}`],
+      [`Presupuesto: ${presupuesto}`, `Cliente: ${cliente||'—'}`, `Estado: ${estado.toUpperCase()}`],
       [`Solicitante: ${solicit||'—'}`, `Fecha: ${fecha}`, `Fecha req. entrega: ${fechaEnt||'—'}`]
     ];
     info.forEach(row => {

@@ -1,0 +1,5612 @@
+[
+ {
+  "codigo": "MI-F1604022",
+  "descripcion": "LAMINA HIERRO ANTIDERRAPANTE DE 1/8",
+  "unidad": "LAM",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1605098",
+  "descripcion": "PANELIT MACHIMBRE",
+  "unidad": "LAM",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1902030",
+  "descripcion": "LAMINA DE INSOLACION",
+  "unidad": "LAM",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F19050072",
+  "descripcion": "TABLA YESO MACHINBRE DE 4X8",
+  "unidad": "PLG",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1905011",
+  "descripcion": "ANGULO DE HIERRO DE 1 1/4\"X1 1/4\"X1/8\"X20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1906015",
+  "descripcion": "VARILLA LISA DE 1/2\" LEGITIMA",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1908006",
+  "descripcion": "CABLE DE ACERO DE 3/4\"",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1908007",
+  "descripcion": "CABLE DE ACERO DE 7/8\"",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1910001",
+  "descripcion": "BROCA DE 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2104001",
+  "descripcion": "COLCHA DE 1 X 1.94 Mts.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2104010",
+  "descripcion": "MALLA DE POLIPROPILENO NO TEJIDO 150MM/S",
+  "unidad": "ROLLO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2301898",
+  "descripcion": "SERPENTINA DE 50 CM DE DIAMTRO",
+  "unidad": "ROLLO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2305001",
+  "descripcion": "TORNILLO 3/4\" X 3/16\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F231010",
+  "descripcion": "DISCO DE PUNTO DIAMENATE PARA CONCRETO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F234089",
+  "descripcion": "BIODIGESTOR DE 1300 LITROS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2402006",
+  "descripcion": "MANIJA DE CIERRE PARA VENTANA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2404001",
+  "descripcion": "ALDABA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F24049454",
+  "descripcion": "PORTON METALICO LATERAL DE CEMENTERIO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2404989",
+  "descripcion": "PUERTA TERMOFORMADA DE METALICA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F25006",
+  "descripcion": "COLUMNA CANAL ANCHO DE ACERO W18X106",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F25007",
+  "descripcion": "COLUMNA DE ACERO W16X67",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F254956",
+  "descripcion": "SISTEMA BOMBEO SEGUN ESPECIFICACIONES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F254957",
+  "descripcion": "SISTEMA DE CLORACIONGAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601070",
+  "descripcion": "REDUCTOR PVC DE 8\" - 4\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601071",
+  "descripcion": "VALVULA DE CONTROL DE FLAJE HFD 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601072",
+  "descripcion": "COPLING DE 6, HFD",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601082",
+  "descripcion": "TUEBRIA DE HFD DE 6\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601083",
+  "descripcion": "REDUCTOR DE PVC 10-8, PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601084",
+  "descripcion": "REDUCTOR DE PVC DE 12-10 PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601085",
+  "descripcion": "CODO DE PVC 6X90° PRESIÓN",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601086",
+  "descripcion": "REDUCTOR PVC DE 12-10, PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601087",
+  "descripcion": "COPLIN DE 8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601088",
+  "descripcion": "COPLIN DE 10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601089",
+  "descripcion": "COPLIN DE 12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601090",
+  "descripcion": "CODO DE PVC DE 45, DE 8\" PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601092",
+  "descripcion": "CODO DE PVC DE 45, DE 10\" DE PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601093",
+  "descripcion": "CODO DE PVC DE 45, DE 12\" PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601094",
+  "descripcion": "CODO DE PVC DE 22.5 DE 8\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601095",
+  "descripcion": "CODO DE PVC DE 22.5 DE 10\" PRESION",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601096",
+  "descripcion": "CODO DE 22.5 DE PVC DE 12\" PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601097",
+  "descripcion": "TUBERIA DE HFD 82",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26010971",
+  "descripcion": "TUBERIA DE HFD DE 6\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601098",
+  "descripcion": "TUBERIA DE HFD DE 10\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601099",
+  "descripcion": "TUBERIA DE HFD DE 12\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2601963",
+  "descripcion": "MEDIDOR DE PLASTICO CLASE \"B\", VOLUMETRICO CM",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26020101",
+  "descripcion": "NIPLE DE HG 4\"X4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602014",
+  "descripcion": "NIPLE HG DE 1/2\" X 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602021",
+  "descripcion": "NIPLE HG DE 1\" X 20\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602022",
+  "descripcion": "NIPLE HG DE 1\" X 40\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602024",
+  "descripcion": "NIPLE HG DE 11/2\" X 20\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602025",
+  "descripcion": "NIPLE HG DE 11/2\" X 40\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602027",
+  "descripcion": "NIPLE HG DE 2\"X5\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602029",
+  "descripcion": "NIPLE HG DE 2\" X 40\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602032",
+  "descripcion": "NIPLE HG DE 6\" X 8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602034",
+  "descripcion": "NIPLE HG DE 10\" X 20\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602040",
+  "descripcion": "NIPLE HG 2\"X8\" LONG",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602042",
+  "descripcion": "NIPLE HG 3\" X 6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602043",
+  "descripcion": "NIPLE DE HG 1 1/2\"X1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602044",
+  "descripcion": "NIPLE DE HG 1 1/2\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602045",
+  "descripcion": "NIPLE DE HG 1 1/2\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602046",
+  "descripcion": "NIPLE DE HG 1 1/2\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602047",
+  "descripcion": "NIPLE DE HG 1 1/2\"X2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602048",
+  "descripcion": "NIPLE DE HG 1 1/2\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602049",
+  "descripcion": "NIPLE DE HG 1 1/2\"X4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602050",
+  "descripcion": "NIPLE DE HG 1 1/2\"X5\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602051",
+  "descripcion": "NIPLE DE HG 1 1/2\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602052",
+  "descripcion": "NIPLE DE HG 1 1/4\"X1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602053",
+  "descripcion": "NIPLE DE HG 1 1/4\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602054",
+  "descripcion": "NIPLE DE HG 1 1/4\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602055",
+  "descripcion": "NIPLE DE HG 1 1/4\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602056",
+  "descripcion": "NIPLE DE HG 1 1/4\"X2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602057",
+  "descripcion": "NIPLE DE HG 1 1/4\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602058",
+  "descripcion": "NIPLE DE HG 1 1/4\"X4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602059",
+  "descripcion": "NIPLE DE HG 1 1/4\"X6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602060",
+  "descripcion": "NIPLE DE HG 1 1/4\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602061",
+  "descripcion": "NIPLE DE HG 1\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602062",
+  "descripcion": "NIPLE DE HG 1\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602063",
+  "descripcion": "NIPLE DE HG 1\"X2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602064",
+  "descripcion": "NIPLE DE HG 1\"X3 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602065",
+  "descripcion": "NIPLE DE HG 1\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602066",
+  "descripcion": "NIPLE DE HG 1\"X4 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602067",
+  "descripcion": "NIPLE DE HG 1\"X4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602068",
+  "descripcion": "NIPLE DE HG 1\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602069",
+  "descripcion": "NIPLE DE HG 1/2\"X1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602070",
+  "descripcion": "NIPLE DE HG 1/2\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602071",
+  "descripcion": "NIPLE DE HG 1/2\"X11\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602072",
+  "descripcion": "NIPLE DE HG 1/2\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602073",
+  "descripcion": "NIPLE DE HG 1/2\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602074",
+  "descripcion": "NIPLE DE HG 1/2\"X6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602076",
+  "descripcion": "NIPLE DE HG 2 1/2\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602077",
+  "descripcion": "NIPLE DE HG 2 1/2\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602078",
+  "descripcion": "NIPLE DE HG 2 1/2\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602079",
+  "descripcion": "NIPLE DE HG 2 1/2\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602080",
+  "descripcion": "NIPLE DE HG 2 1/2\"X4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602081",
+  "descripcion": "NIPLE DE HG 2 1/2\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602082",
+  "descripcion": "NIPLE DE HG 2\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602083",
+  "descripcion": "NIPLE DE HG 2\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602084",
+  "descripcion": "NIPLE DE HG 2\"X2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602085",
+  "descripcion": "NIPLE DE HG 2\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602086",
+  "descripcion": "NIPLE DE HG 2\"X6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602087",
+  "descripcion": "NIPLE DE HG 3\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602088",
+  "descripcion": "NIPLE DE HG 3\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602089",
+  "descripcion": "NIPLE DE HG 3\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602090",
+  "descripcion": "NIPLE DE HG 3\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602091",
+  "descripcion": "NIPLE DE HG 3/4\"X1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602092",
+  "descripcion": "NIPLE DE HG 3/4\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602093",
+  "descripcion": "NIPLE DE HG 3/4\"X2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602094",
+  "descripcion": "NIPLE DE HG 3/4\"X2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26020945",
+  "descripcion": "NIPLE DE HG 3/4\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602095",
+  "descripcion": "NIPLE DE HG 3/4\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602096",
+  "descripcion": "NIPLE DE HG 3/4\"X6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602097",
+  "descripcion": "NIPLE DE HG 3/4\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602098",
+  "descripcion": "NIPLE DE HG 4\"X10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602099",
+  "descripcion": "NIPLE DE HG 4\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602100",
+  "descripcion": "NIPLE DE HG 4\"X3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602101",
+  "descripcion": "NIPLE DE HG 4\"X4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602102",
+  "descripcion": "NIPLE DE HG 4\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602103",
+  "descripcion": "NIPLE DE HG 1\"X20\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602104",
+  "descripcion": "NIPLE DE HG 1\"X1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602105",
+  "descripcion": "NIPLE DE HG 1\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602106",
+  "descripcion": "NIPLE DE HG 3/4\"X12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602107",
+  "descripcion": "TUBO DE HG 1\"X20' (RxR)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602108",
+  "descripcion": "TUBO PERFORADO HG 1\"X50CM (RxR)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602109",
+  "descripcion": "TUBO DE HG 1X2M LxR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602110",
+  "descripcion": "TUBO DE HG 2\"X3.0m LxR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26021180",
+  "descripcion": "PARAYOS ACOPLADOR ELECTRODO H20HN",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602178",
+  "descripcion": "CONTADOR DE DESCARGA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602181",
+  "descripcion": "BOMBILLO LED A19.9",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602182",
+  "descripcion": "LAMPARA FLUORESENTE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602183",
+  "descripcion": "LAMPARA REFLECTORA LED",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602184",
+  "descripcion": "LAMPARA DE PIE E27X1L",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602185",
+  "descripcion": "LAMPARA EXTERIOR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26021851",
+  "descripcion": "LAMPARA LED 2X4",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602186",
+  "descripcion": "GABINETE PLC, CONTROLADOR Y PROGR. LUCES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26021861",
+  "descripcion": "LAMPARA LED 2X2",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602188",
+  "descripcion": "PARED PREFRABRICDA DE DUROCK",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602189",
+  "descripcion": "SEPARADOR DE PVC PREFABRICADO",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602191",
+  "descripcion": "RODILLO PARA APLICAR EL SELLADOR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602192",
+  "descripcion": "SELLADOR TRANSPARENTE",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602193",
+  "descripcion": "ACIDO MURIATICO",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602194",
+  "descripcion": "COLOR REALEASE AGENT",
+  "unidad": "LIBRA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602195",
+  "descripcion": "ENDURECEDOR PIGNENTADO",
+  "unidad": "LIBRA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602196",
+  "descripcion": "MALLA ESPANDIDA DE 1/2\"",
+  "unidad": "PLIEGO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602197",
+  "descripcion": "TUBO ESTRUCTURAL DE 2X6",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26021974",
+  "descripcion": "MALLA DESPLEGABLE DE 1\" NO. 16",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602198",
+  "descripcion": "TUBO ESTRUCTURAL DE 2X4",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602199",
+  "descripcion": "TUBO ESTRUCTURAL DE 2 X 2 CHAPA DE 16",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F26022180",
+  "descripcion": "CABLE ACERADO DE 1/4",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2602999",
+  "descripcion": "GRAMA SINTETICA",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2605010",
+  "descripcion": "TUBO INDUSTRIAL 1\"X2\"X20' CH21",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2605099",
+  "descripcion": "HIERRO FORJADA PARA UN METRO LINEAL",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2609910",
+  "descripcion": "TUBO DE HG SCH-40 DE 6\" X 20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701006",
+  "descripcion": "VALVULA DE COMPUERTA DE BRONCE DE 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701011",
+  "descripcion": "VALVULA DE COMPUERTA DE BRONCE DE 8\" ý",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701012",
+  "descripcion": "VALVULA DE COMPUERTA DE 10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701013",
+  "descripcion": "VALVULA DE COMPUERTA 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701014",
+  "descripcion": "VALVULA COMPUERTA 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701015",
+  "descripcion": "VALVULA COMPUERTA 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701016",
+  "descripcion": "VALVULA COMPUERTA 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701017",
+  "descripcion": "VALVULA COMPUERTA 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701018",
+  "descripcion": "VALVULA COMPUERTA 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701019",
+  "descripcion": "VALVULA COMPUERTA 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701020",
+  "descripcion": "VALVULA COMPUERTA 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701021",
+  "descripcion": "VALVULA COMPUERTA 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2701099",
+  "descripcion": "MANOMETRO DE 100 PSI",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702006",
+  "descripcion": "VALVULA CHEQUE DE 2\" HG",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702007",
+  "descripcion": "VALVULA CHECK 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702008",
+  "descripcion": "VALVULA CHECK 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702009",
+  "descripcion": "VALVULA CHECK 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702010",
+  "descripcion": "VALVULA CHECK 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702011",
+  "descripcion": "VALVULA CHECK 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702012",
+  "descripcion": "VALVULA CHECK 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2702013",
+  "descripcion": "VALVULA CHECK 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703001",
+  "descripcion": "VALVULA DE AIRE 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703002",
+  "descripcion": "VALVULA DE AIRE 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703003",
+  "descripcion": "VALVULA DE AIRE 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703004",
+  "descripcion": "VALVULA DE AIRE 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703005",
+  "descripcion": "VALVULA DE AIRE 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703006",
+  "descripcion": "VALVULA DE AIRE 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703007",
+  "descripcion": "VALVULA DE AIRE 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703008",
+  "descripcion": "VALVULA DE AIRE 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2703009",
+  "descripcion": "VALVULA DE AIRE DE 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2704001",
+  "descripcion": "VALVULA FLOTADORA 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2705001",
+  "descripcion": "VALVULA DE TIERRA DE 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2803007",
+  "descripcion": "PINTURA ANTICORROSIVA EPOXICA",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2803008",
+  "descripcion": "CATALIZADOR P/ PINTURA CORROSIVA EPOXICA",
+  "unidad": "QTR",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2820611",
+  "descripcion": "TRANSFORMADOR ELECTRICO DE 25 KVA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F2820612",
+  "descripcion": "ACCESORIOS PARA LINEA PRIMARIA/ILUMINACIÒN",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3001003",
+  "descripcion": "TAPADERA P/INODORO PLASTICA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3005001",
+  "descripcion": "LAVAPLATOS DE ACERO INOXIDABLE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3101001",
+  "descripcion": "IMPERMEABILIZADOR (THOROSEAL)",
+  "unidad": "GLN",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3101004",
+  "descripcion": "SILICONE EN TUBO(300ml)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3101005",
+  "descripcion": "IMPERMIABILIZANTE SIKALATEX",
+  "unidad": "KG",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3201003",
+  "descripcion": "LAMP . FLUORESC. 2 X 20 W. CON DIFUSOR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F32030399",
+  "descripcion": "INTENCOMUNICADOR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3206001",
+  "descripcion": "CABLE ELECTRICO THW No.6 (ROLLO DE 100 M.)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3206008",
+  "descripcion": "CABLE ELECTRICO THWN #4/0 (ROLLO DE 100 M)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3206014",
+  "descripcion": "CABLE NM 2 X 14 SUMERGIBLE",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3206015",
+  "descripcion": "CABLE NM 3 X 10 SUMERGIBLE",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3207003",
+  "descripcion": "CONECTOR EMT DE 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F321026",
+  "descripcion": "VARILLA ROCADA DE 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3211004",
+  "descripcion": "RELAY TERMICO 7.5 HP 10-16",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3211005",
+  "descripcion": "CONTACTO MAGNETICO 7.5 HP 25/32 AMP",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3211009",
+  "descripcion": "PARARRAYO TRIFASICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3211010",
+  "descripcion": "VARILLA DE COBRE DE 1/2\" X 6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3211012",
+  "descripcion": "MONITOR DE FASE DE 230 V",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3211013",
+  "descripcion": "CONTROL ELECTRODO WARRICK",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3235003",
+  "descripcion": "CAJA METALICA DE 40 X 80 CM",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3252006",
+  "descripcion": "TOMACORRIENTE PARA PISO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3301006",
+  "descripcion": "ABRAZADERA LISA PVC 2\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3301007",
+  "descripcion": "ABRAZADERA LISA PVC 2\"X3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3301008",
+  "descripcion": "ABRAZADERA LISA PVC 3\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3301009",
+  "descripcion": "ABRAZADERA LISA PVC 3\"X3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3301010",
+  "descripcion": "ABRAZADERA LISA PVC 4\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3301011",
+  "descripcion": "ABRAZADERA LISA PVC 4\"X3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3301012",
+  "descripcion": "ABRAZADERA PVC 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302010",
+  "descripcion": "ADAPTADOR MACHO PVC DE 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302011",
+  "descripcion": "ADAPTADOR HEMBRA PVC DE 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302012",
+  "descripcion": "ADAPTADOR HEMBRA PVC DE 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302013",
+  "descripcion": "ADAPTADOR MACHO HG DE 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302014",
+  "descripcion": "ADAPTADOR HEMBRA PVC 1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302015",
+  "descripcion": "ADAPTADOR HEMBRA PVC 2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302016",
+  "descripcion": "ADAPTADOR HEMBRA A.P . 3\" PVC",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302017",
+  "descripcion": "ADAPTADOR HEMBRA PVC 3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302018",
+  "descripcion": "ADAPTADOR HEMBRA A.P . 4\" PVC",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302019",
+  "descripcion": "ADAPTADOR HEMBRA A.P .(LxR) 1 1/2\" PVC",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302020",
+  "descripcion": "ADAPTADOR MACHO PVC 1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302021",
+  "descripcion": "ADAPTADOR MACHO PVC 1/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302022",
+  "descripcion": "ADAPTADOR MACHO PVC 2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3302024",
+  "descripcion": "ADAPTADOR HEMBRA HG 1\" A.P. (LxR)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303009",
+  "descripcion": "UNION UNIVERSAL DE HG DE 8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303010",
+  "descripcion": "UNION UNIVERSAL HG DE 10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303011",
+  "descripcion": "UNION DE REPARACION PVC 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303012",
+  "descripcion": "UNION DE REPARACION PVC 3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303013",
+  "descripcion": "UNION LISA PVC 1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303014",
+  "descripcion": "UNION LISA PVC 1\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303015",
+  "descripcion": "UNION LISA PVC 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303016",
+  "descripcion": "UNION LISA PVC 2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303017",
+  "descripcion": "UNION LISA PVC 2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303018",
+  "descripcion": "UNION LISA PVC 3\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303019",
+  "descripcion": "UNION LISA PVC 3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303020",
+  "descripcion": "UNION LISA PVC 4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303021",
+  "descripcion": "UNION ROSCADA HG 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303022",
+  "descripcion": "UNION ROSCADA HG 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303023",
+  "descripcion": "UNION ROSCADA HG 3/8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303024",
+  "descripcion": "UNION UNIVERSAL HG DE 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303025",
+  "descripcion": "UNION LISA PVC 1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303026",
+  "descripcion": "UNION ROSCADA HG 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303030",
+  "descripcion": "UNIÒN UNIVERSAL DE HG 6",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303031",
+  "descripcion": "CODO DE HG DE 4\"X45ª",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303033",
+  "descripcion": "CODO DE HG DE 6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303034",
+  "descripcion": "CODO DE HG 8X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3303099",
+  "descripcion": "MATERIAL ACUSTICO R-11, CON MECANISMOS DE FIJACIÓN",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3304002",
+  "descripcion": "YEE DE PVC 2\"X2\"X4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3304011",
+  "descripcion": "CAMISA DE HG DE 10\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305002",
+  "descripcion": "CAMISA HG 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305003",
+  "descripcion": "CAMISA HG 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305004",
+  "descripcion": "CAMISA HG 3/8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305005",
+  "descripcion": "CAMISA PVC 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305006",
+  "descripcion": "CAMISA PVC 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305007",
+  "descripcion": "CAMISA PVC 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305008",
+  "descripcion": "CAMISA PVC 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305009",
+  "descripcion": "CAMISA PVC 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305010",
+  "descripcion": "CAMISA PVC 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305011",
+  "descripcion": "CAMISA PVC 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305012",
+  "descripcion": "CAMISA PVC 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3305013",
+  "descripcion": "CAMISA PVC 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306001",
+  "descripcion": "CRUZ DE HG DE 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306005",
+  "descripcion": "CRUZ LISA PVC 1 1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306006",
+  "descripcion": "CRUZ LISA PVC 1 1/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306007",
+  "descripcion": "CRUZ LISA PVC 1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306008",
+  "descripcion": "CRUZ LISA PVC 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306009",
+  "descripcion": "CRUZ LISA PVC 2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306010",
+  "descripcion": "CRUZ LISA PVC 3\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306011",
+  "descripcion": "CRUZ LISA PVC 3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3306012",
+  "descripcion": "CRUZ LISA PVC 4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309012",
+  "descripcion": "CODO DE PVC DE 1 1/2\" X 90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309013",
+  "descripcion": "CODO DE PVC DE 1\" X 45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309014",
+  "descripcion": "CODO DE PVC DE 1 1/2\" X 45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309016",
+  "descripcion": "CODO DE HG DE 1\" X 90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309017",
+  "descripcion": "CODO DE HG DE 1\" X 45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309018",
+  "descripcion": "CODO DE HG DE 1 1/2\" X 90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309019",
+  "descripcion": "CODO DE HG DE 1 1/2\" X 45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309020",
+  "descripcion": "CODO DE HG DE 2\" X 45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309021",
+  "descripcion": "CODO DE HG DE 3\" X 90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309022",
+  "descripcion": "CODO HG DE 4\"X90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309024",
+  "descripcion": "CODO CON ROSCA HG 1 1/4\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309025",
+  "descripcion": "CODO CON ROSCA HG 1/2\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309026",
+  "descripcion": "CODO CON ROSCA HG 2 1/2\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309027",
+  "descripcion": "CODO CON ROSCA HG 3\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309028",
+  "descripcion": "CODO CON ROSCA HG 3/4\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309029",
+  "descripcion": "CODO CON ROSCA HG 4\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309030",
+  "descripcion": "CODO CON ROSCA PVC 1 1/4\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309031",
+  "descripcion": "CODO CON ROSCA PVC 1/2\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309032",
+  "descripcion": "CODO CON ROSCA PVC 2 1/2\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309033",
+  "descripcion": "CODO CON ROSCA PVC 2\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309034",
+  "descripcion": "CODO CON ROSCA PVC 3/4\"X45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309035",
+  "descripcion": "CODO CON ROSCA HG 1 1/4\"X90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309036",
+  "descripcion": "CODO CON ROSCA HG 1/4\"X90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309037",
+  "descripcion": "CODO CON ROSCA HG 3/4\"x90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309038",
+  "descripcion": "CODO CON ROSCA HG 3/4\"X90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309039",
+  "descripcion": "CODO CON ROSCA HG 3/8\"X90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309040",
+  "descripcion": "CODO CON ROSCA PVC 1 1/4\"x90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309041",
+  "descripcion": "CODO CON ROSCA PVC 1/4\"x90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309042",
+  "descripcion": "CODO CON ROSCA PVC 2 1/2\"x90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309043",
+  "descripcion": "CODO CON ROSCA PVC 3\"X90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309044",
+  "descripcion": "CODO CON ROSCA PVC 3/4\"x90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309045",
+  "descripcion": "CODO CON ROSCA PVC 3/8\"x90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309046",
+  "descripcion": "CODO LISO PVC 1 1/2\"x45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309047",
+  "descripcion": "CODO LISO PVC 1 1/4\"x45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309048",
+  "descripcion": "CODO LISO PVC 1\"X45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309050",
+  "descripcion": "CODO LISO PVC 2 1/2\"X45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309051",
+  "descripcion": "CODO LISO PVC 2\"X45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309052",
+  "descripcion": "CODO LISO PVC 3\"x45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309053",
+  "descripcion": "CODO LISO PVC 3/4\"x45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309054",
+  "descripcion": "CODO LISO PVC 4\"x45 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309055",
+  "descripcion": "CODO LISO PVC 1 1/2\"x90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309056",
+  "descripcion": "CODO LISO PVC 1 1/4\"x90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309057",
+  "descripcion": "CODO LISO PVC 1\"x90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309058",
+  "descripcion": "CODO LISO PVC 1/2\"x90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309059",
+  "descripcion": "CODO LISO PVC 2 1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309060",
+  "descripcion": "CODO LISO PVC 2\"X90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309061",
+  "descripcion": "CODO LISO PVC 3\"X90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309062",
+  "descripcion": "CODO LISO PVC 3/4\"x90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309063",
+  "descripcion": "CODO LISO PVC 4\"x90 A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3309099",
+  "descripcion": "CODO DE HG DE 2\"X 90",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F330926",
+  "descripcion": "TEE DE 6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311001",
+  "descripcion": "TAPON DE ALUMINIO PARA PILA DE 2\" ý",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311009",
+  "descripcion": "TAPON COPA PVC DE 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311010",
+  "descripcion": "TAPON HEMBRA DE PVC 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311011",
+  "descripcion": "TAPON MACHO DE HG 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311012",
+  "descripcion": "TAPON COPA HG 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311013",
+  "descripcion": "TAPON COPA HG 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311014",
+  "descripcion": "TAPON COPA HG 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311015",
+  "descripcion": "TAPON COPA HG 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311017",
+  "descripcion": "TAPON COPA HG 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311018",
+  "descripcion": "TAPON COPA HG 3/8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311019",
+  "descripcion": "TAPON COPA DE 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311020",
+  "descripcion": "TAPON HEMBRA HG 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311021",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311022",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311023",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311024",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311025",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 3\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311026",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311027",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311028",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 6\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311029",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311030",
+  "descripcion": "TAPON MACHO HG 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311031",
+  "descripcion": "TAPON MACHO HG 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311032",
+  "descripcion": "TAPON HEMBRA CON ROSCA PVC 1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311033",
+  "descripcion": "TAPON MACHO HG 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311034",
+  "descripcion": "TAPON MACHO HG 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311035",
+  "descripcion": "TAPON MACHO HG 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311036",
+  "descripcion": "TAPON MACHO HG 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311037",
+  "descripcion": "TAPON MACHO HG 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311038",
+  "descripcion": "TAPON HEMBRA LISO PVC 2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311039",
+  "descripcion": "TAPON HEMBRA LISO PVC 6\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311040",
+  "descripcion": "TAPON HEMBRA LISO PVC 1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311041",
+  "descripcion": "TAPON HEMBRA LISO PVC 1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311042",
+  "descripcion": "TAPON HEMBRA LISO PVC 1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311043",
+  "descripcion": "TAPON HEMBRA LISO PVC 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311044",
+  "descripcion": "TAPON HEMBRA HG 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311045",
+  "descripcion": "TAPON HEMBRA HG 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311046",
+  "descripcion": "TAPON HEMBRA LISO PVC 2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311047",
+  "descripcion": "TAPON HEMBRA LISO PVC 3\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311048",
+  "descripcion": "TAPON HEMBRA LISO PVC 3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311049",
+  "descripcion": "TAPON HEMBRA LISO PVC 4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311050",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 1 1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311051",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 1 1/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311052",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311053",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311054",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 2 1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311055",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311056",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 3\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311057",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311058",
+  "descripcion": "TAPON MACHO CON ROSCA PVC 4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311059",
+  "descripcion": "TAPON HEMBRA HG 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311060",
+  "descripcion": "TAPON HEMBRA HG 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311061",
+  "descripcion": "TAPON HEMBRA HG 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311062",
+  "descripcion": "TAPON HEMBRA HG 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311063",
+  "descripcion": "TAPON HEMBRA HG 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311064",
+  "descripcion": "TAPON MACHO HG 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311068",
+  "descripcion": "TAPON MACHO INSERCION PVC 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311069",
+  "descripcion": "TAPON MACHO INSERCION PVC 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311070",
+  "descripcion": "TAPON MACHO INSERCION PVC 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311071",
+  "descripcion": "TAPON MACHO LISO PVC 1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311072",
+  "descripcion": "TAPON MACHO LISO PVC 1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311073",
+  "descripcion": "TAPON MACHO LISO PVC 1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311074",
+  "descripcion": "TAPON MACHO LISO PVC 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311075",
+  "descripcion": "TAPON MACHO LISO PVC 2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311076",
+  "descripcion": "TAPON MACHO LISO PVC 2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311077",
+  "descripcion": "TAPON MACHO LISO PVC 3\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311078",
+  "descripcion": "TAPON MACHO LISO PVC 3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311079",
+  "descripcion": "TAPON MACHO LISO PVC 4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311089",
+  "descripcion": "TAPON MACHO HG 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311090",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311091",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311092",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311093",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311094",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311095",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 2 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311096",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311097",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311098",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311099",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 3/8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3311100",
+  "descripcion": "TAPON SOLIDO ROSCADO HG 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312003",
+  "descripcion": "TEE HG DE 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312005",
+  "descripcion": "TEE PVC DE 2\" DE PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312008",
+  "descripcion": "TEE LISA PVC DE 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312009",
+  "descripcion": "TEE HG DE 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312010",
+  "descripcion": "TEE HG DE 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312011",
+  "descripcion": "TEE CON ROSCA HG 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312041",
+  "descripcion": "TEE LISA PVC 1 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312043",
+  "descripcion": "TEE LISA PVC 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312044",
+  "descripcion": "TEE LISA PVC 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312045",
+  "descripcion": "TEE LISA DE PVC 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312046",
+  "descripcion": "TEE LISA PVC 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312061",
+  "descripcion": "TEE REDUCTORA LISA PVC 1 1/2\"X1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312066",
+  "descripcion": "TEE REDUCTORA LISA PVC 1\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312076",
+  "descripcion": "VALVULA DE HFD DE 10\" DE FLAJE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312077",
+  "descripcion": "TEE REDUCTORA LISA PVC 2\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312078",
+  "descripcion": "TUBERIA DE PVC DE 6\" RD 26",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312079",
+  "descripcion": "CODO LISO DE PVC DE 6 X 90° DE PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312080",
+  "descripcion": "VALVULA DE HFD DE 8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312082",
+  "descripcion": "TEE REDUCTORA LISA PVC 3\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312084",
+  "descripcion": "VALVULA DE HFD DE 12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312089",
+  "descripcion": "CODO PVC DE 90 DE 8, PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312090",
+  "descripcion": "VALVULA DE HFD DE 6 DE FLAJE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312093",
+  "descripcion": "REDUCTOR DE PVC DE 6\"-4\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312094",
+  "descripcion": "REDUCTOR DE PVC DE 8\"-6\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312095",
+  "descripcion": "REDUCTOR DE PVC DE 10\"-8\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312096",
+  "descripcion": "REDUCTOR DE PVC DE 12\"-10\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312097",
+  "descripcion": "TEE DE PVC DE 8\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312098",
+  "descripcion": "TEE DE PVC DE 10\", PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3312099",
+  "descripcion": "TEE DE PVC 12, PRESION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314003",
+  "descripcion": "REDUCTOR PVC DE 1 1/2\" A 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314004",
+  "descripcion": "REDUCTOR PVC DE 2\" A 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314005",
+  "descripcion": "REDUCTOR PVC DE 2\" A 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314007",
+  "descripcion": "REDUCTOR HG DE 1 1/2\" A 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314008",
+  "descripcion": "REDUCTOR HG DE 1 1/2\" A 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314009",
+  "descripcion": "REDUCTOR HG DE 1\" A 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314010",
+  "descripcion": "REDUCTOR HG DE 2\" A 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314011",
+  "descripcion": "REDUCTOR HG DE 3\" A 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314012",
+  "descripcion": "REDUCTOR CON ROSCA HG 1 1/2\"X1 1/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314013",
+  "descripcion": "REDUCTOR CON ROSCA HG 1 1/2\"X3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314015",
+  "descripcion": "REDUCTOR CON ROSCA HG 1 1/4\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314016",
+  "descripcion": "REDUCTOR CON ROSCA HG 1 1/4\"X1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314017",
+  "descripcion": "REDUCTOR CON ROSCA HG 1 1/4\"X3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314018",
+  "descripcion": "REDUCTOR CON ROSCA HG 1\"X1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314019",
+  "descripcion": "REDUCTOR CON ROSCA HG 1\"X3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314020",
+  "descripcion": "REDUCTOR CON ROSCA HG 1\"X3/8\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314021",
+  "descripcion": "REDUCTOR CON ROSCA HG 1/2\"X1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314022",
+  "descripcion": "REDUCTOR CON ROSCA HG 1/2\"X3/8\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314023",
+  "descripcion": "REDUCTOR CON ROSCA HG 2 1/2\"X1 1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314024",
+  "descripcion": "REDUCTOR CON ROSCA HG 2 1/2\"X1 1/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314025",
+  "descripcion": "REDUCTOR CON ROSCA HG 2 1/2\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314026",
+  "descripcion": "REDUCTOR CON ROSCA HG 2 1/2\"X2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314027",
+  "descripcion": "REDUCTOR CON ROSCA HG 2\"X1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314028",
+  "descripcion": "REDUCTOR CON ROSCA HG 2\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314029",
+  "descripcion": "REDUCTOR CON ROSCA HG 2\"X1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314030",
+  "descripcion": "REDUCTOR CON ROSCA HG 2\"X3/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314032",
+  "descripcion": "REDUCTOR CON ROSCA HG 3\"X1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314033",
+  "descripcion": "REDUCTOR CON ROSCA HG 3\"X1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314034",
+  "descripcion": "REDUCTOR CON ROSCA HG 3\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314035",
+  "descripcion": "REDUCTOR CON ROSCA HG 3\"X2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314036",
+  "descripcion": "REDUCTOR CON ROSCA HG 3\"X2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314037",
+  "descripcion": "REDUCTOR CON ROSCA HG 3/4\"X1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314038",
+  "descripcion": "REDUCTOR CON ROSCA HG 3/4\"X1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314039",
+  "descripcion": "REDUCTOR CON ROSCA HG 3/4\"X3/8\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314040",
+  "descripcion": "REDUCTOR CON ROSCA HG 3/8\"X1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314041",
+  "descripcion": "REDUCTOR CON ROSCA HG 4\"X1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314042",
+  "descripcion": "REDUCTOR CON ROSCA HG 4\"X2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314044",
+  "descripcion": "REDUCTOR CON ROSCA HG 4\"X3\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314045",
+  "descripcion": "REDUCTOR LISO PVC 1 1/2\"X1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314046",
+  "descripcion": "REDUCTOR LISO PVC 1 1/2\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314047",
+  "descripcion": "REDUCTOR LISO PVC 1 1/2\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314048",
+  "descripcion": "REDUCTOR LISO PVC 1 1/2\"X3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314049",
+  "descripcion": "REDUCTOR LISO PVC 1 1/4\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314050",
+  "descripcion": "REDUCTOR LISO PVC 1 1/4\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314051",
+  "descripcion": "REDUCTOR LISO PVC 1 1/4\"X3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314052",
+  "descripcion": "REDUCTOR LISO PVC 1\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314053",
+  "descripcion": "REDUCTOR LISO PVC 1\"X3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314054",
+  "descripcion": "REDUCTOR LISO PVC 2 1/2\"X2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314055",
+  "descripcion": "REDUCTOR LISO PVC 2\"X1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314056",
+  "descripcion": "REDUCTOR LISO PVC 2\"X1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314057",
+  "descripcion": "REDUCTOR LISO PVC 2\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314058",
+  "descripcion": "REDUCTOR LISO PVC 2\"X1/2\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314059",
+  "descripcion": "REDUCTOR LISO PVC 2\"X3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314060",
+  "descripcion": "REDUCTOR LISO PVC 3\"X1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314061",
+  "descripcion": "REDUCTOR LISO PVC 3\"X1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314062",
+  "descripcion": "REDUCTOR LISO PVC 3\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314063",
+  "descripcion": "REDUCTOR LISO PVC 3\"X2 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314064",
+  "descripcion": "REDUCTOR LISO PVC 3\"X2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314065",
+  "descripcion": "REDUCTOR LISO PVC 3\"X3/4\" A.P .",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314066",
+  "descripcion": "REDUCTOR LISO PVC 3/4\"X1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314068",
+  "descripcion": "REDUCTOR LISO PVC 4\"X1 1/2\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314069",
+  "descripcion": "REDUCTOR LISO PVC 4\"X1 1/4\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314070",
+  "descripcion": "REDUCTOR LISO PVC 4\"X1\" A.P.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3314099",
+  "descripcion": "YEE PVC DE 8\" X 8\" X 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3316003",
+  "descripcion": "SIFON TRAMPA DE PVC DE 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3316004",
+  "descripcion": "SIFON DWV PVC 1 1/2\"X38MM",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3316005",
+  "descripcion": "SIFON DWV PVC 2\"X50MM",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3316006A",
+  "descripcion": "BARRAS DE SUJECION CROMADAS O NIQUEL",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317007A",
+  "descripcion": "TRAMPA DE 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317008",
+  "descripcion": "PASCON DE BRONCE DE 2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317009",
+  "descripcion": "SELLADOR DE ROSCA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317010",
+  "descripcion": "FLOTADOR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317011",
+  "descripcion": "VALVULA DE TANQUE PARA S.S.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317012",
+  "descripcion": "TUBO DE ABASTO METALICO FLEXIBLE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317013",
+  "descripcion": "TUBO DE ABASTO PLASTICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317014",
+  "descripcion": "VALVULA DE CIERRE DE PARED",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317015",
+  "descripcion": "VALVULA DE CIERRE DE PISO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317018",
+  "descripcion": "SAPO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317019",
+  "descripcion": "PERILLA O MANECILLA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317020",
+  "descripcion": "COLADERA DE PISO 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317021",
+  "descripcion": "JUNTA DRESSER DE 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317022",
+  "descripcion": "JUNTA DRESS DE 8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317024",
+  "descripcion": "JUNTA DRESS DE 6\" HFD",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317030",
+  "descripcion": "MACRO MEDIDOR ULTRASONICO PASO TOTAL",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317031",
+  "descripcion": "MACRO MEDIDOR ULTRASONICO PASO TOTAL 8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3317033",
+  "descripcion": "MACRO MEDIDOR ULTRASONICO PASO TOTAL 4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F337025",
+  "descripcion": "JUNTA DRESS DE 12 HFD",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3401001",
+  "descripcion": "BOMBA 7.5 HP SUMERGIBLE PARA POZO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3401002",
+  "descripcion": "BOMBA 3.0 HP SUMERGIBLE",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3402097",
+  "descripcion": "TANQUE DE ALMACENAMIENTO 750 LITROS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3402098",
+  "descripcion": "TANQUE DE ALMACENAMIENTO 1700 LITROS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F04004099",
+  "descripcion": "MATERIAL VEGETAL (TIERRA VEGA)",
+  "unidad": "M3",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F0408059",
+  "descripcion": "KIT COMPLETO PARA REPARACIO DE SS Y LAVAMANO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F042079",
+  "descripcion": "BLOQUE DE CONCRETO DE 12.5X20X40 CM.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F0601002",
+  "descripcion": "AGUA PARA CURADO",
+  "unidad": "M3",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F101099",
+  "descripcion": "SUM. E INS. ESTRUCTURA DE YESO, HOMBRE Y TORRO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F10307910",
+  "descripcion": "CONSTRUCCIÒN DE TANQUE DE 1500 M3",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F10308010",
+  "descripcion": "PERFORACIÒN Y ESTUDIO DE SUELO",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F10308110",
+  "descripcion": "CALCULO ESTRUCTURAL PARA TANQUE DE 1500M3",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F10308210",
+  "descripcion": "ESTUDIO TOPOGRAFICO / HIDRAULICO L/CONDUCCIÒN",
+  "unidad": "KM",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F10308310",
+  "descripcion": "REVISIÒN TOPOGRAFICO/HIDRAULICO L/DISTRIBUCIÒN",
+  "unidad": "KM",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F10308510",
+  "descripcion": "DISEÑO ESTRUCTURAL DE CORTINA 20 M DE ALTO",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1101004",
+  "descripcion": "ADOBE DE BARRO 25X35X10cm",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1130598",
+  "descripcion": "PUERTA METALICA 1X2,10M",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1130599",
+  "descripcion": "PUERTA DE MADERA DE COLOR CON VIDRIO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F11455505",
+  "descripcion": "POSTE DE CONCRETO 40 PIES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1201099",
+  "descripcion": "FACHALETA DE PIEDRA DE CANTERA",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1210939",
+  "descripcion": "VENTANA 0,5X1,0 MTS, INCLUYE BALCON DISEÑO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1210949",
+  "descripcion": "PUERTA DE METAL TIPO CORTINA DE 2X2",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1210959",
+  "descripcion": "CORTINA PARA MURO FRONTAL",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1210969",
+  "descripcion": "PARED DE VIDRIO TEMPLADO 2,5X2,1 MT",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1301001",
+  "descripcion": "CERAMICA PARA PISO DE 30 X 30 CMS",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1301002",
+  "descripcion": "MOLDURA PISO DE CERAMICA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1302001",
+  "descripcion": "AZULEJO DE 15 X 15 CMS.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1302002",
+  "descripcion": "AZULEJO DE 20 X 2O",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1405002",
+  "descripcion": "VIGUETA PRETENSADA (8J-25)",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1503001",
+  "descripcion": "LINOLEO PARA PISO",
+  "unidad": "YDA2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1603004",
+  "descripcion": "LAMINA ALUZINC ONDULADA CAL 26 DE 10'",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1603005",
+  "descripcion": "LAMINA ALUZINC TROQ 32\"x6¨ CAL 26 E-76",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1603095",
+  "descripcion": "PIEDRA DE CANTERA",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F160310",
+  "descripcion": "LAMINA ALUZINC INDUSTRIAL 10'X42\" CAL 26",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1604004",
+  "descripcion": "LAMINA ACANALADA DE ZINC DE 32\" X 5' CAL 28 A-99",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1605006",
+  "descripcion": "CINTA DE TAPAGOTERAS",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1605099",
+  "descripcion": "CANALETA DE 4X4 GALVANIZADA",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1606001",
+  "descripcion": "TEE DE ALUMINIO DE 12¨",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1606002",
+  "descripcion": "TEE DE ALUMINIO DE 4¨",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1606003",
+  "descripcion": "ANGULO DE ALUMINIO DE 12¨",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1702001",
+  "descripcion": "TABLAYESO 4\"X8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1702002",
+  "descripcion": "CANAL DE 10\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1702003",
+  "descripcion": "CINTA PARA JUNTA DE TABLAYESO",
+  "unidad": "ROLLO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1702005",
+  "descripcion": "PARAL DE 8\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1905001",
+  "descripcion": "ANGULO DE HIERRO DE 3/4\"X3/4\"X1/8\"X20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1905002",
+  "descripcion": "ANGULO DE HIERRO DE 1\"x1\"x1/8\"x20¨",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1905003",
+  "descripcion": "ANGULO DE HIERRO DE 1\"X1\"X1/4\"X20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1905004",
+  "descripcion": "ANGULO 11/2\" X11/2 X 3/16\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1905005",
+  "descripcion": "ANGULO DE HIERRO DE 11/2\"X11/2\"X1/4\"X20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1905006",
+  "descripcion": "ANGULO DE HIERRO DE 2X11/2\"X 1/4\" X20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1905007",
+  "descripcion": "ANGULO DE HIERRO DE 2\"X2\"X1/4\"X20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906001",
+  "descripcion": "PLATINA 1/2\" X 1/32\" X 20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906002",
+  "descripcion": "PLATINA DE 1/2\"X1/8\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906003",
+  "descripcion": "PLATINA DE 3/4\" x 1/8\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906004",
+  "descripcion": "PLATINA DE 1\"X1/8\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906005",
+  "descripcion": "PLATINA DE 1\" X 3/16\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906006",
+  "descripcion": "PLATINA DE 1\"X1/4\"X20'",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906007",
+  "descripcion": "PLATINA DE 11/2\" X 1/4\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906008",
+  "descripcion": "PLATINA DE 2 X 6 X 3/8",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906009",
+  "descripcion": "PLATINA DE 2\"X6\"X1/4\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1906010",
+  "descripcion": "PLATINA 2\" X 8\" X 1/2\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1908001",
+  "descripcion": "CABLE DE ACERO DE 1/2\"",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1908002",
+  "descripcion": "CABLE DE ACERO DE 1\"",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1908003",
+  "descripcion": "CABLE DE ACERO DE 1 1/8\"",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1908004",
+  "descripcion": "CABLE DE ACERO DE 1 1/2\"",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1909001",
+  "descripcion": "PLACA METALICA DE 6\"X8\"X1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F1909002",
+  "descripcion": "SOPORTES DE PLATINA PARA TORNILLO EN MESAS COMP",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2301006",
+  "descripcion": "CLAVOS DE 2\"A 7\"",
+  "unidad": "LIBRA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F230105A",
+  "descripcion": "ESTATUA DE SAN FRACISCO DE ASIS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F230105B",
+  "descripcion": "SUM E INST ESFERA METALICA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2302001",
+  "descripcion": "PERNO 1/4\" X 14\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2302002",
+  "descripcion": "PERNO DE 3/8\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2302003",
+  "descripcion": "PERNO 4 X 3/8",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2302004",
+  "descripcion": "PERNO 4\" X 1/2\" CON TUERCA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2302006",
+  "descripcion": "PERNO DE 11/2\" X 2\" CON TUERCA Y ARANDELA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2302007",
+  "descripcion": "PERNO METALICO DE 2 1/2\" X 12 mm",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2302008",
+  "descripcion": "PERNO METALICO DE 3\" X 12 mm",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305001",
+  "descripcion": "TORNILLO 3/4\" X 3/16\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305002",
+  "descripcion": "TORNILLO AUTORROSCANTE 11/4\" PARA TABLAYESO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305003",
+  "descripcion": "TORNILLO AUTORROSCANTE DE 7/16 PARA TABLAYESO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305004",
+  "descripcion": "TORNILLO AUTOTALADRANTE 1\" TIPO \"B\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305005",
+  "descripcion": "TORNILLO AUTOTALADRANTE 7/8\" TIPO \"A\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305006",
+  "descripcion": "TORNILLO DE 1/4\" X 21/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305007",
+  "descripcion": "TORNILLO GOLOSO 8 MM X 1 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305008",
+  "descripcion": "TORNILLO GOLOSO DE 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305009",
+  "descripcion": "TORNILLO GOLOSO DE 1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305010",
+  "descripcion": "TORNILLO PARA MADERA DE 1\" A 3\" X 10 MM.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305011",
+  "descripcion": "TORNILLO PARA MADERA DE 1\" A 3\" X 14 MM.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305012",
+  "descripcion": "TORNILLO PARA MADERA DE 2\" X 12 MM.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305013",
+  "descripcion": "TORNILLOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305014",
+  "descripcion": "TORNILLOS DE CABEZA PLANA DE 21/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305015",
+  "descripcion": "TORNILLO TIRAFONDO DE 51/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2305016",
+  "descripcion": "TORNILLO PHILL .C/R No.8 X 5/8\" PAN",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2306001",
+  "descripcion": "REMACHE 3/16\"X1/2",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2306002",
+  "descripcion": "REMACHE DE 1/8\" X 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2306003",
+  "descripcion": "REMACHE DE 3/16\" x 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2307001",
+  "descripcion": "GRAPA No. 51 DE 11/2\"",
+  "unidad": "CAJA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2308001",
+  "descripcion": "TACO FISHER No.8",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2309001",
+  "descripcion": "CANDADO MEDIANO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2310001",
+  "descripcion": "ESPICHES PARA TORNILLOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2311001",
+  "descripcion": "ARGOLLAS GALVANIZADAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F234088",
+  "descripcion": "TAPADERA DE BIODIGESTOR 1,50X1,50X0,45",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F24049453",
+  "descripcion": "CRUZ DE CONCRETRO DECORADA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F24049455",
+  "descripcion": "PORTON PRINCIPAL DE CEMNETERIO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2404977",
+  "descripcion": "PUERTA DE MARCO DE ALUMINIO Y VIDRIO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2404999",
+  "descripcion": "PUERTA PERMOFORMADA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F254959",
+  "descripcion": "CAPACITACION",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F254960",
+  "descripcion": "ACCIONES AMBIENTALES",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F254961",
+  "descripcion": "CONCIENTIZACION",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2601090",
+  "descripcion": "COPLIN DE 12\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2601096",
+  "descripcion": "TUBERIA DE PVC DE 8\" RD 26",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2601097",
+  "descripcion": "TUBERIA DE PVC 10\", RD 26",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2601098",
+  "descripcion": "TUBERIA DE 102 RD 26",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2601099",
+  "descripcion": "TUBERIA DE 12\" RD 26",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2602187",
+  "descripcion": "PIEDRA DECORATIVA",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2602190",
+  "descripcion": "ALQUILER DE MOLDES",
+  "unidad": "JDR",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2803019",
+  "descripcion": "PIZARRON PREFABRICADO DE 4X1.5",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2820610",
+  "descripcion": "POSTE DE CONCRETO DE 30 PIES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2901001",
+  "descripcion": "MADERA RUSTICA DE PINO PIE",
+  "unidad": "PT",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2903004",
+  "descripcion": "MADERA CEPILLADA CURADA DE 3\"X3\" PIE",
+  "unidad": "PT",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2904005",
+  "descripcion": "PLYWOOD DE PINO 8'X 4' X 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2907001",
+  "descripcion": "PRESERVATIVO PARA MADERA",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F2999001",
+  "descripcion": "ANTI SOL",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F3303998",
+  "descripcion": "TEE DE PVC DE 3\" - 1/2\" / 2\" - 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F3303999",
+  "descripcion": "CAJA DE REGISTRO DE CONCRETO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F3701002",
+  "descripcion": "TELA DE MANTA",
+  "unidad": "YARDA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001001",
+  "descripcion": "COMPARADOR DE CLORO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001002",
+  "descripcion": "HIPOCLORITO DE CALCIO (HTH)",
+  "unidad": "LIBRA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001003",
+  "descripcion": "HIPOCLORITO DE SODIO",
+  "unidad": "LIBRA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001030",
+  "descripcion": "CLASIFICACION DE SUELOS AASHTO Y UNIFICA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001031",
+  "descripcion": "CONTENIDO DE HUMEDAD",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001033",
+  "descripcion": "GRANULOMETRIA FINA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001034",
+  "descripcion": "GRANULOMETRIA GRAVA Y ARENA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001035",
+  "descripcion": "GRANULOMETRIA GRUESA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001036",
+  "descripcion": "LIMITE LIQUIDO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001037",
+  "descripcion": "LIMITE PLASTICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001038",
+  "descripcion": "PESO VOLUMETRICO DE SUELOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001040",
+  "descripcion": "PRUEBA DE DESGASTE Y SULFATOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001041",
+  "descripcion": "PRUEBA DE DISEÑO DE MEZCLAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4001043",
+  "descripcion": "RESISTENCIA A LA TENSION (ACERO)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4101002",
+  "descripcion": "SACO DE POLIETILENO DE 0.75 X 1.00 X 0.20",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4101004",
+  "descripcion": "JARRA Y VASOS PLASTICOS",
+  "unidad": "JUEGO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4203001",
+  "descripcion": "APOYOS DE NEOPRENO PARA PUENTES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4401001",
+  "descripcion": "VENTANA DE ALUMINIO Y CELOSIA DE VIDRIO",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4403002",
+  "descripcion": "VENTANA DE VIDRIO FIJO",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4403020",
+  "descripcion": "PUERTA DE DOBLE HOJA DE CAOBA 1.8X2.4",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4403021",
+  "descripcion": "PORTON DE HIERRO FORJADO DE 4.0X3.0",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4403022",
+  "descripcion": "VENTANA TIPO FRANCESA DE ALUMINIO Y VIDRIO",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4403023",
+  "descripcion": "VENTANA ABATIBLE DE ALUMINIO ANODIZADO COL. BRONCE",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4403024",
+  "descripcion": "VENTANA VITROBLOCK",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4403098",
+  "descripcion": "VENTANA DE VIDRIO FIJO Y ALUMINIO 0.60X1,5",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F440327",
+  "descripcion": "SUM/INST FUENTE PREFABRICADA BASE 2.8X2.8, H=2.8",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F440337",
+  "descripcion": "PLANTAS ORNAMENTALES 3",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F440338",
+  "descripcion": "PLANTAS ORNAMENTALES 2",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F440339",
+  "descripcion": "PLANTAS VARIAS PARA JARDIN",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F440340",
+  "descripcion": "JOINST DE 2X2X3/16 DOBLE",
+  "unidad": "ML",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404001",
+  "descripcion": "ESCRITORIO SECRETARIAL",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404002",
+  "descripcion": "SILLA SECRETARIAL",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404006",
+  "descripcion": "ANAQUEL PARA ARCHIVAR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404007",
+  "descripcion": "ANAQUEL PARA MEDICAMENTOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404008",
+  "descripcion": "ANAQUEL PARA BODEGA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404009",
+  "descripcion": "MESA MULTIUSO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404010",
+  "descripcion": "BANCAS PARA ESPERA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4404011",
+  "descripcion": "BASE PARA ROTAFOLIO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405001",
+  "descripcion": "BALCONES",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405009",
+  "descripcion": "PLATO DE 4 X 2 (SELLO SANITARIO)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405010",
+  "descripcion": "PLACA DE ALUMINIO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405020",
+  "descripcion": "ROTULO DE SERVICIOS SANITARIOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405021",
+  "descripcion": "ROTULO GRABADO EN MADERA DE 40X20 CMS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405022",
+  "descripcion": "ROTULO GRABADO EN MADERA 1.2X0.50 M",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405023",
+  "descripcion": "ESPEJOS CON MARCO DE ALUMINIO 2.3X0.6 M",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405097",
+  "descripcion": "DETECTOR DE HUMO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405098",
+  "descripcion": "SALIDA EMERGENCIA / RECORRIDO DE EVACUACIÒN",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4405099",
+  "descripcion": "TAPADERA METALICA CAJA 4\" O 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3403001",
+  "descripcion": "GENERADOR ELECT. 12KW MONOFASICO/TRIFASICO 230",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3501001",
+  "descripcion": "ELECTRODO DE ACERO INOXIDABLE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F353578",
+  "descripcion": "POZO SUMERGIBLE DE 75 GALONES/MIN",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3601001",
+  "descripcion": "ESCOBA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3601002",
+  "descripcion": "JABON PARA LAVAR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3601003",
+  "descripcion": "RECOGEDOR DE BASURA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3601004",
+  "descripcion": "BALDE METALICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3601005",
+  "descripcion": "BASURERO METALICO DE PEDAL CON TAPA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3601006",
+  "descripcion": "BALDES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3701003",
+  "descripcion": "TELA DE MANTA 36\"",
+  "unidad": "YARDA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3701004",
+  "descripcion": "TELA DE MANTA 60\"",
+  "unidad": "YARDA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3801001",
+  "descripcion": "PAPEL BOND",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3801002",
+  "descripcion": "PAPEL MANILA 36X24",
+  "unidad": "PLIEGO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3802001",
+  "descripcion": "MANUAL DE MANTENIMIENTO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3901002",
+  "descripcion": "LAZO DE 3/4\" DE NYLON",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4101003",
+  "descripcion": "RECIPIENTE PLASTICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4402004",
+  "descripcion": "PUERTA DE REPISA AEREAS 75X45X33 Cms.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4402005",
+  "descripcion": "PUERTA DE REPISA AEREAS 90X45X33 Cms.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4403099",
+  "descripcion": "VENTANA DE VIDRIO FIJO ALUMINIO 1,59X1,46X0,46",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440325",
+  "descripcion": "BOMBA DE 5-MSP DE 1/6 HP",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440326",
+  "descripcion": "BOQUILLA DE FUENTE FHK-1PW, KIT DE 3 UNIDADES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440328",
+  "descripcion": "LAMPARA PARA PARED DE INTERPERIE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440329",
+  "descripcion": "LAMPARA PARA INTERPERIE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440330",
+  "descripcion": "LAMPARA TIPO SPOT",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440331",
+  "descripcion": "LAMPARA SUMERGIBLE DE ACERO INOXIDABLE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440332",
+  "descripcion": "TOMA PARA CONEXIÓN DE TELEFONO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440333",
+  "descripcion": "TERMINAL DE DATOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440334",
+  "descripcion": "RAUTER PARA PARED",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440335",
+  "descripcion": "SWITCH PARA RED",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440337",
+  "descripcion": "MINI SPLIT 9000 BTU",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440338",
+  "descripcion": "MINI SLIPT 18000",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440338A",
+  "descripcion": "MINI SLIPT DE 12000 BTU",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440338B",
+  "descripcion": "MINI SLIPT 24,000 BTU",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440338C",
+  "descripcion": "MINI SLITP 60,000 BTU",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440339",
+  "descripcion": "LAMPARA INCANDESCENTE P/ ILUMINACIÓN FUENTE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440341",
+  "descripcion": "FAROLES DECORATIVOS P/INTERPERIE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440342",
+  "descripcion": "LAMINA ARQUITEJA",
+  "unidad": "PT",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F440395",
+  "descripcion": "PORCELANATO BLANCO",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4404003",
+  "descripcion": "SILLA DE ESPERA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4404004",
+  "descripcion": "ARCHIVADOR METALICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4404005",
+  "descripcion": "TARJETERO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4404012",
+  "descripcion": "SILLA SEMI EJECUTIVA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4404013",
+  "descripcion": "BANCO GIRATORIO CON RODOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405011",
+  "descripcion": "PAPELERA DE MESA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405013",
+  "descripcion": "CATRES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405014",
+  "descripcion": "TERMO GRANDE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405015",
+  "descripcion": "TERMO ESPECIAL PARA VACUNAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405016",
+  "descripcion": "ICE-PACKS PARA TERMO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405017",
+  "descripcion": "PORTA TECLADO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405018",
+  "descripcion": "SISTEMA MODULAR DE OFICINA DE REMODELACION",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405020",
+  "descripcion": "BIOMBO SEPARADOR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4405098",
+  "descripcion": "CABLE DE TV/INTERNET/TELEFONO",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406001",
+  "descripcion": "CAMILLA PARA EXAMEN GENERAL Y GINECOLOGICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406002",
+  "descripcion": "CAMILLA PARA EXAMEN GENERAL",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406003",
+  "descripcion": "GRADILLA METALICA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406004",
+  "descripcion": "GABINETE DE INSTRUMENTOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406005",
+  "descripcion": "MESA PEDIATRICA PARA EXAMEN CON INFANTOMETRO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406006",
+  "descripcion": "CAMILLA PARA EXAMEN PEDIATRICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406007",
+  "descripcion": "CARRO DE UTILERIA CON DOS ENTREPAÑOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406008",
+  "descripcion": "ATRIL",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406009",
+  "descripcion": "CAMILLA PARA TRANSPORTE DE PACIENTES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406010",
+  "descripcion": "BALDE DE ACERO SOBRE RODOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406011",
+  "descripcion": "MESA PARA COLOCAR BANDEJAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406012",
+  "descripcion": "BANDEJA CON TAPADERA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406013",
+  "descripcion": "PORTA PINZAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406014",
+  "descripcion": "PORTA TERMOMETROS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406015",
+  "descripcion": "RECIPIENTES PARA TORUNDAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406016",
+  "descripcion": "RECIPIENTE PARA GASAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406017",
+  "descripcion": "RECIPIENTES PARA HISOPOS/BAJALENGUAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406019",
+  "descripcion": "COPA DE YODO DE 6 ONZAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406020",
+  "descripcion": "PAILA DE 9 LITROS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406021",
+  "descripcion": "RIÑONERA DE 36 ONZAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406022",
+  "descripcion": "ASIENTO DE ACERO PARA MICCION/DEFECACION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406023",
+  "descripcion": "JARRA DE ACERO PARA MICCION",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406024",
+  "descripcion": "JARRA MEDIDORA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406025",
+  "descripcion": "LAMPARA CON CUELLO DE GANSO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4406026",
+  "descripcion": "FOCO DE MANO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407001",
+  "descripcion": "TIJERA PARA VENDAJE LISTER, 7 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407002",
+  "descripcion": "TIJERA DE LITTAUER",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407003",
+  "descripcion": "TIJERA DE METZEMBAUM CURVA DE 7\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407004",
+  "descripcion": "TIJERA DE MAYO RECTA 3 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407005",
+  "descripcion": "TIJERA QUIRURGICA AGUDA ROMA RECTA 6 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407006",
+  "descripcion": "TIJERA QUIRURGICA AGUDA ROMA CURVA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407007",
+  "descripcion": "TIJERA QUIRURGICA ROMA ROMA RECTA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407008",
+  "descripcion": "TIJERA QUIRURGICA ROMA ROMA CURVA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407009",
+  "descripcion": "PINZA HEMOSTATICA KELLY RECTA 6 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407010",
+  "descripcion": "PINZA HEMOSTATICA KELLY CURVA 6 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407011",
+  "descripcion": "PINZA FORESTER RANURADA RECTA 9 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407012",
+  "descripcion": "PINZA FORESTER RANURADA CURVA 9 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407013",
+  "descripcion": "PINZA FORESTER RANURADA CURVA 7 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407014",
+  "descripcion": "PINZA FORESTER RANURADA RECTA 7 1/2\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407015",
+  "descripcion": "PINZA DE DISECCION CON DIENTE 6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407016",
+  "descripcion": "PINZA DE DISECCION SIN DIENTES 6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407017",
+  "descripcion": "PINZA BABCOCK DE 7 3/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407018",
+  "descripcion": "PINZA ALLIS DE 7\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407019",
+  "descripcion": "PINZA ROCHESTER PEAN RECTA DE 7 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407020",
+  "descripcion": "PINZA ROCHESTER PEAN CURVA DE 7 1/4\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407021",
+  "descripcion": "PINZA BACKHAUS 3\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407022",
+  "descripcion": "LARINGOSCOPIO EN ESTUCHE, 4 HOJAS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407023",
+  "descripcion": "ESPECULO DE GRAVES PEQUEÑOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407024",
+  "descripcion": "ESPECULOS DE GRAVES MEDIANOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407025",
+  "descripcion": "ESPECULOS DE GRAVES GRANDES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407026",
+  "descripcion": "MARTILLO DE REFLEJOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407027",
+  "descripcion": "MANGO DE BISTURI",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407028",
+  "descripcion": "PORTA AGUJA DE MAYO DE HEGAR DE 6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407029",
+  "descripcion": "JUEGO DE SEPARADORES FARABEUF(PARES)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407030",
+  "descripcion": "TENACULUM DE DUPLAY (10\")",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407031",
+  "descripcion": "HISTEROMETRO DE SIMS(GRAD. EN CMS.)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4407032",
+  "descripcion": "SONDA UTERINA DE MARTIN DE 12\"(ACERO PLATEADO)",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F450535",
+  "descripcion": "CERPENTINA DIAMTRO 60 CM",
+  "unidad": "ROLLO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F4601001",
+  "descripcion": "VIDRIO TRANSPARENTE 3/16\"",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F51011699",
+  "descripcion": "EXTINGUIDOR",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F901002",
+  "descripcion": "VARILLA DE HIERRO LEGITIMA DE 10/8\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-FS1135",
+  "descripcion": "SISTEMA PARA FUENTE TRES CHORROS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-FS1138",
+  "descripcion": "LETRAS DECORATIVAS",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-FS1139",
+  "descripcion": "PLACA DE MARMOL",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F0102222",
+  "descripcion": "BOMBA DE 1 HP",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F0103345",
+  "descripcion": "PUERTA DE ALUMINIO Y VIDRIO COREDIZA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F011017",
+  "descripcion": "JUEGOS PARA NIÑO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F0113355",
+  "descripcion": "PORTON METALICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "HE-F-02006",
+  "descripcion": "PIPANTE",
+  "unidad": "VIAJE",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F03001",
+  "descripcion": "BOMBA PARA PRUEBA HIDROSTATICA",
+  "unidad": "DIA",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F03016",
+  "descripcion": "TIRFOR CON CABLE Y GANCHO",
+  "unidad": "JDR",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06005",
+  "descripcion": "TERMOMETRO PARA REFRIGERADORA",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06006",
+  "descripcion": "EXTINGUIDOR DE INCENDIOS PORTATIL",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06007",
+  "descripcion": "RELOG DE PARED",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06008",
+  "descripcion": "VENTILADOR DE PIE",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06009",
+  "descripcion": "OASIS",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06010",
+  "descripcion": "MEGAFONO",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06011",
+  "descripcion": "RADIOGRABADORA",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06012",
+  "descripcion": "REFRIGERADORA",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06013",
+  "descripcion": "ESTUFA",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06015",
+  "descripcion": "ESTUFA DE GAS 2 HORNILLAS",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06016",
+  "descripcion": "TELEVISOR A COLORES DE 25\"",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06017",
+  "descripcion": "VIDEO CASETTERA (VHS)",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F06018",
+  "descripcion": "MANOMETRO DE 0-100 PSI",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07001",
+  "descripcion": "BALANZA DE PIE PARA ADULTO,TALLIMETRO V",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07002",
+  "descripcion": "BALANZA PEDIATRICA",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07003",
+  "descripcion": "BALANZA TIPO SALTER PORTATIL",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07004",
+  "descripcion": "ESFIGNOMANOMETRO DE PIE",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07005",
+  "descripcion": "ESFIGNOMANOMETRO DE BRAZALETE PARA ADULTO",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07006",
+  "descripcion": "ESTETOSCOPIO",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07007",
+  "descripcion": "FETOSCOPIO DE LEE",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07008",
+  "descripcion": "TERMOMETROS ORALES",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07009",
+  "descripcion": "NEBULIZADOR",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07010",
+  "descripcion": "NEBULIZADOR PORTATIL",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07011",
+  "descripcion": "CINTA METRICA",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07012",
+  "descripcion": "CINTA ABDOMINAL",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07013",
+  "descripcion": "OTO-OFTALMOSCOPIO",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07014",
+  "descripcion": "PERILLA DE 2 ONZAS",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07015",
+  "descripcion": "AUCLAVE ELECTRICO",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07016",
+  "descripcion": "BOTIQUIN PORTATIL PARA EMERGENCIAS",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "HE-F07017",
+  "descripcion": "DETECTOR DE LATIDO FETAL DOPPLER",
+  "unidad": "UND",
+  "categoria": "Herramienta y Equipo"
+ },
+ {
+  "codigo": "MI-F1160975",
+  "descripcion": "ABRAZADERA DE PVC 10X1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160976",
+  "descripcion": "REDUCCIÓN HFD 8X6",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160977",
+  "descripcion": "REDUCCIÓN DE PVC 6X4",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160978",
+  "descripcion": "REDUCCION DE PVC 8X6\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160979",
+  "descripcion": "REDUCCIÓN DE PVC 10X8",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160990",
+  "descripcion": "ABRAZADERA DE 8X4 HFD DOBLE COREA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1230021",
+  "descripcion": "VARILLA TRONCHADA",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1230022",
+  "descripcion": "PUNTAS PARA BALCONES",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F130023",
+  "descripcion": "RIVAL PARA LAVAR ROPA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F130090",
+  "descripcion": "PLEIBO DE MADERA DE 1X1",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1301005",
+  "descripcion": "CERAMICA DE 30X20 CM",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1301091",
+  "descripcion": "CERAMICA DE 0,40X0,40",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1301099",
+  "descripcion": "CERAMICA DE ANTIDERAPANTE 50X50",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503002",
+  "descripcion": "PISO DE VINIL",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503003",
+  "descripcion": "ADHESIVO MULTIUSOS PARA PISOS",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503004",
+  "descripcion": "CERA PARA PISO DE VINIL",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503005",
+  "descripcion": "SELLADOR PARA PISO VINIL",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503415",
+  "descripcion": "JABON DE MANOS EN GEL",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503416",
+  "descripcion": "AMONIO CUATERNARIO PURO",
+  "unidad": "LITRO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503417",
+  "descripcion": "MASCARILLAS QUIRURGICAS PEDIATRICAS",
+  "unidad": "CAJA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503418",
+  "descripcion": "GEL DE MANOS CON ALCOHOL AL 70%",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1503419",
+  "descripcion": "ALCOHOL AL 70%",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1505414",
+  "descripcion": "TERMOMETRO LASER",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F16030069",
+  "descripcion": "LAMINA ALUZINC COLOR ROJO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1603089",
+  "descripcion": "GEOTEXTIL NACTEX N26.1",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1603099",
+  "descripcion": "GEOTEXTIL MACTEX N26.1.",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "OC-F01098",
+  "descripcion": "IMPREVISTOS",
+  "unidad": "%",
+  "categoria": "Mano de Obra"
+ },
+ {
+  "codigo": "OC-F01099",
+  "descripcion": "UTILIDAD DE CONTRATISTA",
+  "unidad": "%",
+  "categoria": "Mano de Obra"
+ },
+ {
+  "codigo": "OC-F01920",
+  "descripcion": "TABLA YESERO",
+  "unidad": "M2",
+  "categoria": "Mano de Obra"
+ },
+ {
+  "codigo": "MI-F00123119",
+  "descripcion": "TUBO ESTRUCTURAL 4X4",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0101003",
+  "descripcion": "PASTA PARA RELLENAR GRIETAS(KEM PATCHING)",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0102099",
+  "descripcion": "PREPARADO PARA PULIR",
+  "unidad": "BOLSA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0102221",
+  "descripcion": "BOMBA DE 1/2 HP, CON TANQUE DE 25 L",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0103345",
+  "descripcion": "PUERTA DE VIDRIO Y ALUMINIO DOBLE",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F011018",
+  "descripcion": "CAMARAS DE SEGURIDAD",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231001",
+  "descripcion": "PERFIL H W12X30",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231002",
+  "descripcion": "TUBO HSS 4\"X4\"X3/16\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231004",
+  "descripcion": "TUBO HSS 3\"X3\"X3/16\"",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231005",
+  "descripcion": "PERFIL C 6X7.2",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231006",
+  "descripcion": "ELECTRODO 7013X1/8\"X1",
+  "unidad": "LIBRA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231007",
+  "descripcion": "DISCO DE CORTE DE 7\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231008",
+  "descripcion": "DISCO PARA PULIR DE 5\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0231011",
+  "descripcion": "PINTURA PARA ALTO TRAFICO",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0250011",
+  "descripcion": "CUBIERTA CURVA AUTOPORTATNTE, LAMINA ALUZINC GRADO",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F025005",
+  "descripcion": "LAMINA DECK CALIBRE 22",
+  "unidad": "PIE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F025008",
+  "descripcion": "VIGA H DE 40 PIE / WFB GRADO-50 PIEZA 21X8.1/4x83",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F025009",
+  "descripcion": "VIGA H DE 20 PIE / WFB GRADO-50 PIEZA 21X8.1/4X73",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F025010",
+  "descripcion": "VIGA H DE 20 PIE / WFB GRADO-50 PIEZA 12X8.1/4X40",
+  "unidad": "LANCE",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F025011",
+  "descripcion": "LAMINA HIERRO LISA (4.00X6.0 PIES) CAL. 3/4",
+  "unidad": "LAM",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0420992",
+  "descripcion": "PANEL MONOLIT DE 1,22X2,44X32,60 MM",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0710155",
+  "descripcion": "BASE PARA TUBOS 2 1/4, INCLUYE ACCESORIOS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0710156",
+  "descripcion": "ABRAZADERA METALICA 2 1/4, PARA REJA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0710157",
+  "descripcion": "POSTE DE DEACERO 2.5 MTS PARA MALLA TIPO REJA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0710158",
+  "descripcion": "MALLA TIPO REJA DE 2X2.5 MTS, CLÁSICA",
+  "unidad": "MALLA",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0740201",
+  "descripcion": "EXPOSICO POLIMERO",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F084020",
+  "descripcion": "SUM E INSTALACIÒN DE CIELO FALSO PVC",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F085902",
+  "descripcion": "AISLATE TERMICO DE ESPUMA DE POLIETILENO 3MM",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0901002",
+  "descripcion": "PEGAMENTO PARA CPVC RESISTOL (4045)",
+  "unidad": "GALON",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F0901099",
+  "descripcion": "PEGADURO PARA CERAMICA",
+  "unidad": "SACO",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455501",
+  "descripcion": "BOMBA DE TURBINA DE EJE VERTICAL 800GPM @ 400' CDT",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455502",
+  "descripcion": "MOTOR ELÉCTRICO DE 100HP , 3 FASES, 60 HZ, 460PWS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455503",
+  "descripcion": "GABINETE METÁLICO, LUCES INDICADORAS, COMPLETO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455504",
+  "descripcion": "TRASFORMADOR TRIFASICO DE 37.5 KVA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455506",
+  "descripcion": "BANCO DE CAPACITORES SECOS TRIFASICO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455507",
+  "descripcion": "ACOMETIDAD ELECTRICA TRIFASICA CABLE 2/0",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455508",
+  "descripcion": "CONTROL GSM DE ARANQUE DE BOMBA TELEMETRIA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F11455509",
+  "descripcion": "EQUIPO ELECTROGENO 80 KW EST. ELEV.",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160590",
+  "descripcion": "SISTEMA ELECTRICO PARA POZO",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160800",
+  "descripcion": "SUMINISTRO E INSTALACION DE EQUIPO DE BOMBEO",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160970",
+  "descripcion": "REDUCCION HFD 12X10",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160971",
+  "descripcion": "ABRAZADERA PVC DE 4X1",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160972",
+  "descripcion": "ABRAZADERA PVC DE 6X1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160973",
+  "descripcion": "ABRAZADERA PVC DE 8X1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F480101",
+  "descripcion": "REINSTALACION DE SISTEMA SOLAR EXISTENTE",
+  "unidad": "GLB",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F51011599",
+  "descripcion": "ESPEJO CON MARCO DE ALUMINIO",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F5500001",
+  "descripcion": "VENTANA DE TUBO INDUSTRIAL",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F5500002",
+  "descripcion": "TANQUE SEPTICO DE 8 M3",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F5500003",
+  "descripcion": "SILLA CATEDRA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F5500004",
+  "descripcion": "CATEDRA MESA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F084020B",
+  "descripcion": "CIELO VISTO CON PANELIT, ESTRUCTURA INC",
+  "unidad": "M2",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1160974",
+  "descripcion": "ABRAZADERA DE PVC DE 10X1\"",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F1604021",
+  "descripcion": "LAMINA DE HIERRI ABTIDERRAPANTE DE 1/4",
+  "unidad": "LAM",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MI-F3402099",
+  "descripcion": "TANQUE DE ALMACENAMIENTO DE 2500 LTS",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F0201011",
+  "descripcion": "ASLFALTO SELLA JUNTA",
+  "unidad": "BARIL",
+  "categoria": "Materiales"
+ },
+ {
+  "codigo": "MN-F4567001",
+  "descripcion": "PERMISO DE CONEXION DE AGUA",
+  "unidad": "UND",
+  "categoria": "Materiales"
+ }
+]

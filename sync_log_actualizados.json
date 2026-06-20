@@ -1,0 +1,3845 @@
+[
+ {
+  "codigo": "MI-F1605001",
+  "descripcion_anterior": "LAMINA DE FIBRA MINERAL",
+  "descripcion_nueva": "LAMINA DE FIBRA MINERAL",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1605002",
+  "descripcion_anterior": "LAMINA TERMOACUSTICA DE PERFIL",
+  "descripcion_nueva": "LAMINA TERMOACUSTICA DE PERFIL TRAPEZOIDAL",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F1605008",
+  "descripcion_anterior": "UNION PARA BAJANTE EN CANAL DE",
+  "descripcion_nueva": "UNION PARA BAJANTE EN CANAL DE PVC",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1605009",
+  "descripcion_anterior": "TAPON PARA BAJANTE EN CANAL DE",
+  "descripcion_nueva": "TAPON PARA BAJANTE EN CANAL DE PVC",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1605010",
+  "descripcion_anterior": "CAPOTE PARA LAMINA",
+  "descripcion_nueva": "CAPOTE PARA LAMINA TERMOACUSTICA LISO L=2.95m",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1606001",
+  "descripcion_anterior": "TEE DE ALUMINIO DE 12´",
+  "descripcion_nueva": "TEE DE ALUMINIO DE 12¨",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1606002",
+  "descripcion_anterior": "TEE DE ALUMINIO DE 4´",
+  "descripcion_nueva": "TEE DE ALUMINIO DE 4¨",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1606003",
+  "descripcion_anterior": "ANGULO DE ALUMINIO DE 12´",
+  "descripcion_nueva": "ANGULO DE ALUMINIO DE 12¨",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1702001",
+  "descripcion_anterior": "TABLAYESO 4' X 8'",
+  "descripcion_nueva": "TABLAYESO 4\"X8\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1702002",
+  "descripcion_anterior": "CANAL DE 10'",
+  "descripcion_nueva": "CANAL DE 10\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1702005",
+  "descripcion_anterior": "PARAL DE 8'",
+  "descripcion_nueva": "PARAL DE 8\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1704001",
+  "descripcion_anterior": "MAZONITE 4 X 8 X 1/8",
+  "descripcion_nueva": "MAZONITE 4 X 8 X 1/8",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1904001",
+  "descripcion_anterior": "LAMINA DE METAL EXPANDIDO",
+  "descripcion_nueva": "LAMINA DE METAL EXPANDIDO 4'x8'x1/16\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1905001",
+  "descripcion_anterior": "ANGULO DE HIERRO DE",
+  "descripcion_nueva": "ANGULO DE HIERRO DE 3/4\"X3/4\"X1/8\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1905002",
+  "descripcion_anterior": "ANGULO DE HIERRO DE",
+  "descripcion_nueva": "ANGULO DE HIERRO DE 1\"X1\"X1/8\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1905003",
+  "descripcion_anterior": "ANGULO DE HIERRO DE 1\"X1\"X¼\"X20'",
+  "descripcion_nueva": "ANGULO DE HIERRO DE 1\"X1\"X1/4\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1905004",
+  "descripcion_anterior": "ANGULO 1½\" X1½ X 3/16\"",
+  "descripcion_nueva": "ANGULO 11/2\" X11/2 X 3/16\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1905005",
+  "descripcion_anterior": "ANGULO DE HIERRO DE",
+  "descripcion_nueva": "ANGULO DE HIERRO DE 11/2\"X11/2\"X1/4\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1905006",
+  "descripcion_anterior": "ANGULO DE HIERRO DE 2X1½\"X ¼\"",
+  "descripcion_nueva": "ANGULO DE HIERRO DE 2X11/2\"X 1/4\" X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1905007",
+  "descripcion_anterior": "ANGULO DE HIERRO DE 2\"X2\"X¼\"X20'",
+  "descripcion_nueva": "ANGULO DE HIERRO DE 2\"X2\"X1/4\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1905012",
+  "descripcion_anterior": "ANGULO DE 2 1/2\"x2 1/2\"x1/4\"x20´",
+  "descripcion_nueva": "ANGULO DE 2 1/2\"x2 1/2\"x1/4\"x20¨",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1906001",
+  "descripcion_anterior": "PLATINA ½\" X 1/32\" X 20'",
+  "descripcion_nueva": "PLATINA 1/2\" X 1/32\" X 20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1906002",
+  "descripcion_anterior": "PLATINA DE ½\"X1/8\"",
+  "descripcion_nueva": "PLATINA DE 1/2\"X1/8\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1906003",
+  "descripcion_anterior": "PLATINA DE ¾\" x 1/8\"",
+  "descripcion_nueva": "PLATINA DE 3/4\" x 1/8\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1906006",
+  "descripcion_anterior": "PLATINA DE 1\"X¼\"X20'",
+  "descripcion_nueva": "PLATINA DE 1\"X1/4\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1906007",
+  "descripcion_anterior": "PLATINA DE 1½\" X ¼\"",
+  "descripcion_nueva": "PLATINA DE 11/2\" X 1/4\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F1906008",
+  "descripcion_anterior": "PLATINA DE 2\"X 3/8\", LONGITUD DE =",
+  "descripcion_nueva": "PLATINA DE 2 X 6 X 3/8",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1906009",
+  "descripcion_anterior": "PLATINA DE 2\"X¼\", LONGITUD = 6\"",
+  "descripcion_nueva": "PLATINA DE 2\"X6\"X1/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1906010",
+  "descripcion_anterior": "PLATINA 2\" X ½\", LONGITUD = 8\"",
+  "descripcion_nueva": "PLATINA 2\" X 8\" X 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1908001",
+  "descripcion_anterior": "CABLE DE ACERO DE ½\"",
+  "descripcion_nueva": "CABLE DE ACERO DE 1/2\"",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F1908002",
+  "descripcion_anterior": "CABLE DE ACERO DE 1\"",
+  "descripcion_nueva": "CABLE DE ACERO DE 1\"",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F1908003",
+  "descripcion_anterior": "CABLE DE ACERO DE 1 1/8\"",
+  "descripcion_nueva": "CABLE DE ACERO DE 1 1/8\"",
+  "unidad_anterior": "P.L.",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F1908004",
+  "descripcion_anterior": "CABLE DE ACERO DE 1 1/2\"",
+  "descripcion_nueva": "CABLE DE ACERO DE 1 1/2\"",
+  "unidad_anterior": "P.L.",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F1908005",
+  "descripcion_anterior": "CABLE DE ACERO GALVANIZADO DE",
+  "descripcion_nueva": "CABLE DE ACERO GALVANIZADO DE 1/4\"",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F1909001",
+  "descripcion_anterior": "PLACA METALICA DE 6\"X8\"X¼\"",
+  "descripcion_nueva": "PLACA METALICA DE 6\"X8\"X1/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1909002",
+  "descripcion_anterior": "SOPORTES DE PLATINA PARA",
+  "descripcion_nueva": "SOPORTES DE PLATINA PARA TORNILLO EN MESAS COMP",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2101001",
+  "descripcion_anterior": "MALLA CICLON DE 4' (ROLLO DE 100",
+  "descripcion_nueva": "MALLA CICLON DE 4' (ROLLO DE 100 PIES.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2101002",
+  "descripcion_anterior": "MALLA CICLON DE 5' (ROLLO DE 100",
+  "descripcion_nueva": "MALLA CICLON DE 5' (ROLLO DE 100 PIES.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2101003",
+  "descripcion_anterior": "MALLA CICLON DE 6' (ROLLO DE 100",
+  "descripcion_nueva": "MALLA CICLON DE 6' (ROLLO DE 100 PIES.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2101004",
+  "descripcion_anterior": "MALLA CICLON DE 7' (ROLLO DE 100",
+  "descripcion_nueva": "MALLA CICLON DE 7' (ROLLO DE 100 PIES.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2101005",
+  "descripcion_anterior": "MALLA CICLON DE 8' (ROLLO DE 100",
+  "descripcion_nueva": "MALLA CICLON DE 8' (ROLLO DE 100 PIES.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2102001",
+  "descripcion_anterior": "MALLA ELECTROSOLDADA 6X6 - 2/2",
+  "descripcion_nueva": "MALLA ELECTOSOLDADA 6X6 - 2/2 (PANEL DE 6X2.35)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2103003",
+  "descripcion_anterior": "ZARANDA METALICA ¼\" X 36",
+  "descripcion_nueva": "ZARANDA METALICA 1/4\" X 36",
+  "unidad_anterior": "YARDA",
+  "unidad_nueva": "YARDA"
+ },
+ {
+  "codigo": "MI-F2103004",
+  "descripcion_anterior": "ZARANDA METALICA ¼\"X24\"",
+  "descripcion_nueva": "ZARANDA METALICA 1/4\"X24\"",
+  "unidad_anterior": "YARDA",
+  "unidad_nueva": "YARDA"
+ },
+ {
+  "codigo": "MI-F2103005",
+  "descripcion_anterior": "MALLA DE GALLINA DE 1½\" X 72\"",
+  "descripcion_nueva": "MALLA DE GALLINA DE 11/2\" X 72\"",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F2104002",
+  "descripcion_anterior": "MALLA PARA GAVION DE 1X1X2",
+  "descripcion_nueva": "MALLA PARA GAVION DE 1X1X2 MTS./CON ALAMBRE GALV.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302001",
+  "descripcion_anterior": "PERNO ¼\" X 14\"",
+  "descripcion_nueva": "PERNO 1/4\" X 14\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302002",
+  "descripcion_anterior": "PERNO DE 3/8\"",
+  "descripcion_nueva": "PERNO DE 3/8\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302003",
+  "descripcion_anterior": "PERNO 4 X 3/8",
+  "descripcion_nueva": "PERNO 4 X 3/8",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302004",
+  "descripcion_anterior": "PERNO 4\" X ½\" CON TUERCA",
+  "descripcion_nueva": "PERNO 4\" X 1/2\" CON TUERCA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302005",
+  "descripcion_anterior": "PERNO DE ¼\" X 16\"",
+  "descripcion_nueva": "PERNO DE 1/4\" X 16\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302006",
+  "descripcion_anterior": "PERNO DE 1½\" X 2\" CON TUERCA Y",
+  "descripcion_nueva": "PERNO DE 11/2\" X 2\" CON TUERCA Y ARANDELA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302007",
+  "descripcion_anterior": "PERNO METALICO DE 2 ½\" X 12 mm",
+  "descripcion_nueva": "PERNO METALICO DE 2 1/2\" X 12 mm",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302008",
+  "descripcion_anterior": "PERNO METALICO DE 3\" X 12 mm",
+  "descripcion_nueva": "PERNO METALICO DE 3\" X 12 mm",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2302028",
+  "descripcion_anterior": "PERNO DE CARRUAJE 3/8X5\"",
+  "descripcion_nueva": "ACCESORIOS PARA INSTALACIÒN DE TRASFORMADOR",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "GLB"
+ },
+ {
+  "codigo": "MI-F2303005",
+  "descripcion_anterior": "TUERCA DE 3/8\"",
+  "descripcion_nueva": "TUERCA DE 3/8",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2304007",
+  "descripcion_anterior": "ARANDELA DE 3/8\" PLANA",
+  "descripcion_nueva": "ARANDELA DE 3/8 PLANA",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2304008",
+  "descripcion_anterior": "ARANDELA DE 3/8\" DE PRESION",
+  "descripcion_nueva": "ARANDELA DE 3/8 DE PRESION",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305002",
+  "descripcion_anterior": "TORNILLO AUTORROSCANTE 1¼\"",
+  "descripcion_nueva": "TORNILLO AUTORROSCANTE 11/4\" PARA TABLAYESO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305003",
+  "descripcion_anterior": "TORNILLO AUTORROSCANTE DE 7/16",
+  "descripcion_nueva": "TORNILLO AUTORROSCANTE DE 7/16 PARA TABLAYESO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305004",
+  "descripcion_anterior": "TORNILLO AUTOTALADRANTE 1\" TIPO",
+  "descripcion_nueva": "TORNILLO AUTOTALADRANTE 1\" TIPO \"B\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305005",
+  "descripcion_anterior": "TORNILLO AUTOTALADRANTE 7/8\"",
+  "descripcion_nueva": "TORNILLO AUTOTALADRANTE 7/8\" TIPO \"A\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305006",
+  "descripcion_anterior": "TORNILLO DE ¼\" X 2½\"",
+  "descripcion_nueva": "TORNILLO DE 1/4\" X 21/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305007",
+  "descripcion_anterior": "TORNILLO GOLOSO 8 MM X 1 ½\"",
+  "descripcion_nueva": "TORNILLO GOLOSO 8 MM X 1 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305008",
+  "descripcion_anterior": "TORNILLO GOLOSO DE ½\"",
+  "descripcion_nueva": "TORNILLO GOLOSO DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305009",
+  "descripcion_anterior": "TORNILLO GOLOSO DE 1\"",
+  "descripcion_nueva": "TORNILLO GOLOSO DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305010",
+  "descripcion_anterior": "TORNILLO PARA MADERA DE 1\" A 3\" X",
+  "descripcion_nueva": "TORNILLO PARA MADERA DE 1\" A 3\" X 10 MM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305011",
+  "descripcion_anterior": "TORNILLO PARA MADERA DE 1\" A 3\" X",
+  "descripcion_nueva": "TORNILLO PARA MADERA DE 1\" A 3\" X 14 MM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305012",
+  "descripcion_anterior": "TORNILLO PARA MADERA DE 2\" X 12",
+  "descripcion_nueva": "TORNILLO PARA MADERA DE 2\" X 12 MM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305013",
+  "descripcion_anterior": "TORNILLOS",
+  "descripcion_nueva": "TORNILLOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2305014",
+  "descripcion_anterior": "TORNILLOS DE CABEZA PLANA DE",
+  "descripcion_nueva": "TORNILLOS DE CABEZA PLANA DE 21/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2306001",
+  "descripcion_anterior": "REMACHE 3/16\"X1/2",
+  "descripcion_nueva": "REMACHE 3/16\"X1/2",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2306002",
+  "descripcion_anterior": "REMACHE DE 1/8\" X ½\"",
+  "descripcion_nueva": "REMACHE DE 1/8\" X 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2306003",
+  "descripcion_anterior": "REMACHE DE 3/16\" x ½\"",
+  "descripcion_nueva": "REMACHE DE 3/16\" x 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2307001",
+  "descripcion_anterior": "GRAPA No. 51 DE 1½\"",
+  "descripcion_nueva": "GRAPA No. 51 DE 11/2\"",
+  "unidad_anterior": "CAJA",
+  "unidad_nueva": "CAJA"
+ },
+ {
+  "codigo": "MI-F2308001",
+  "descripcion_anterior": "TACO FISHER No.8",
+  "descripcion_nueva": "TACO FISHER No.8",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2309001",
+  "descripcion_anterior": "CANDADO MEDIANO",
+  "descripcion_nueva": "CANDADO MEDIANO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2310001",
+  "descripcion_anterior": "ESPICHES PARA TORNILLOS",
+  "descripcion_nueva": "ESPICHES PARA TORNILLOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2311001",
+  "descripcion_anterior": "ARGOLLAS GALVANIZADAS",
+  "descripcion_nueva": "ARGOLLAS GALVANIZADAS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2314001",
+  "descripcion_anterior": "EXPANSOR METALICO DE 3/8\"",
+  "descripcion_nueva": "EXPANSOR METALICO DE 3/8",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2401001",
+  "descripcion_anterior": "BISAGRA DE 3\"X 2\"",
+  "descripcion_nueva": "BISAGRA DE 3\"X 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2401002",
+  "descripcion_anterior": "BISAGRA DE 1\"x2\"",
+  "descripcion_nueva": "BISAGRA DE 1\"x2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2401003",
+  "descripcion_anterior": "BISAGRA DE 3\"X 4\"",
+  "descripcion_nueva": "BISAGRA DE 3\"X 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2401004",
+  "descripcion_anterior": "BISAGRA DE 3\"X3\"",
+  "descripcion_nueva": "BISAGRA DE 3\"X3\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2401005",
+  "descripcion_anterior": "BISAGRA HECHIZA",
+  "descripcion_nueva": "BISAGRA HECHIZA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2402001",
+  "descripcion_anterior": "PASADOR DE 3\"",
+  "descripcion_nueva": "PASADOR DE 3\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2402002",
+  "descripcion_anterior": "PASADOR DE 6\"",
+  "descripcion_nueva": "PASADOR DE 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2402003",
+  "descripcion_anterior": "PASADOR DE 6\" CON CADENA",
+  "descripcion_nueva": "PASADOR DE 6\" CON CADENA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2402004",
+  "descripcion_anterior": "PASADOR DE 2\"",
+  "descripcion_nueva": "PASADOR DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2402005",
+  "descripcion_anterior": "PORTACANDADO DE 5 PULGADAS",
+  "descripcion_nueva": "PORTACANDADO DE 5 PULGADAS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2403001",
+  "descripcion_anterior": "LLAVIN PARA ARMARIO",
+  "descripcion_nueva": "LLAVIN PARA ARMARIO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2403003",
+  "descripcion_anterior": "LLAVIN DOBLE PASADOR",
+  "descripcion_nueva": "LLAVIN DOBLE PASADOR",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2403004",
+  "descripcion_anterior": "LLAVIN PARA GAVETA",
+  "descripcion_nueva": "LLAVIN PARA GAVETA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2404002",
+  "descripcion_anterior": "LLAMADOR PARA PUERTA",
+  "descripcion_nueva": "LLAMADOR PARA PUERTA NIQUELADO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2404003",
+  "descripcion_anterior": "LLAMADOR PARA PUERTA",
+  "descripcion_nueva": "LLAMADOR PARA PUERTA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2404004",
+  "descripcion_anterior": "LLAMADOR DE GAVETA",
+  "descripcion_nueva": "LLAMADOR DE GAVETA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2404005",
+  "descripcion_anterior": "CASQUILLOS DE HULE P/PATAS DE",
+  "descripcion_nueva": "CASQUILLOS DE HULE P/PATAS DE MESA Y SILLA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2501001",
+  "descripcion_anterior": "BROCHA DE 1\"",
+  "descripcion_nueva": "BROCHA DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2501002",
+  "descripcion_anterior": "BROCHA DE 2\"",
+  "descripcion_nueva": "BROCHA DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2501003",
+  "descripcion_anterior": "BROCHA DE 3\"",
+  "descripcion_nueva": "BROCHA DE 3\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2501004",
+  "descripcion_anterior": "BROCHA DE 4\"",
+  "descripcion_nueva": "BROCHA DE 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602001",
+  "descripcion_anterior": "TUBO DE HG SCH-40 DE ½\" X 20'",
+  "descripcion_nueva": "TUBO DE HG SCH-40 DE 1/2\" X 20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2602002",
+  "descripcion_anterior": "TUBO DE HG SCH-40 DE ¾\" X 20'",
+  "descripcion_nueva": "TUBO DE HG SCH-40 DE 3/4\" X 20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2602004",
+  "descripcion_anterior": "TUBO DE HG SCH-40 DE 1¼\"",
+  "descripcion_nueva": "TUBO DE HG SCH-40 DE 11/4\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2602005",
+  "descripcion_anterior": "TUBO DE HG SCH-40 DE 1-1/2\"X20'",
+  "descripcion_nueva": "TUBO DE HG SCH-40 DE 1-1/2\"X20'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602007",
+  "descripcion_anterior": "TUBO DE HG SCH-40 DE 2½\" X 20'",
+  "descripcion_nueva": "TUBO DE HG SCH-40 DE 21/2\" X 20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2602011",
+  "descripcion_anterior": "TUBO DE HG SCH-40 DE 8\"X20'",
+  "descripcion_nueva": "TUBO DE HG SCH-40 DE 8\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602012",
+  "descripcion_anterior": "TUBO DE HG SCH-40 DE 10\"X20'",
+  "descripcion_nueva": "TUBO DE HG SCH-40 DE 10\"X20'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602013",
+  "descripcion_anterior": "NIPLE HG DE ½\" X 2\"",
+  "descripcion_nueva": "NIPLE HG DE 1/2\" X 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602015",
+  "descripcion_anterior": "NIPLE HG DE ½\" X 4\"",
+  "descripcion_nueva": "NIPLE HG DE 1/2\" X 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602016",
+  "descripcion_anterior": "NIPLE HG DE ½\" X 15\"",
+  "descripcion_nueva": "NIPLE HG DE 1/2\" X 15\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602017",
+  "descripcion_anterior": "NIPLE H.G. DE ½\"x18\"",
+  "descripcion_nueva": "NIPLE H.G. DE 1/2\"x18\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602018",
+  "descripcion_anterior": "NIPLE PVC DE ½\" X 30\"",
+  "descripcion_nueva": "NIPLE PVC DE 1/2\" X 30\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602019",
+  "descripcion_anterior": "NIPLE HG DE ¾\" X 4\"",
+  "descripcion_nueva": "NIPLE HG DE 3/4\" X 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602020",
+  "descripcion_anterior": "NIPLE HG DE 1\" X 6\"",
+  "descripcion_nueva": "NIPLE HG DE 1\" X 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602023",
+  "descripcion_anterior": "NIPLE HG DE 1½\" X 6\"",
+  "descripcion_nueva": "NIPLE HG DE 11/2\" X 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602026",
+  "descripcion_anterior": "NIPLE HG DE 2\" X 4\"",
+  "descripcion_nueva": "NIPLE HG DE 2\" X 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602028",
+  "descripcion_anterior": "NIPLE HG DE 2\" X 20\"",
+  "descripcion_nueva": "NIPLE HG DE 2\" X 20\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602030",
+  "descripcion_anterior": "NIPLE HG DE 2½\" X 6\"",
+  "descripcion_nueva": "NIPLE HG DE 21/2\" X 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602031",
+  "descripcion_anterior": "NIPLE HG DE 4\" X 6\"",
+  "descripcion_nueva": "NIPLE HG DE 4\" X 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602033",
+  "descripcion_anterior": "NIPLE DE HG DE 6\" » X 12\"",
+  "descripcion_nueva": "NIPLE DE HG DE 6\" ý X 12\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602035",
+  "descripcion_anterior": "NIPLE DE HG 2\" L= 0.30 M",
+  "descripcion_nueva": "NIPLE DE HG 2\" L= 0.30 M",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602036",
+  "descripcion_anterior": "NIPLE DE HG 2\" L= 0.60 M",
+  "descripcion_nueva": "NIPLE DE HG 2\" L= 0.60 M",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602037",
+  "descripcion_anterior": "NIPLE HG 3\" X4\"",
+  "descripcion_nueva": "NIPLE HG 3\" X4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602038",
+  "descripcion_anterior": "NIPLE HG 3\" X 10\"",
+  "descripcion_nueva": "NIPLE HG 3\" X 10\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602039",
+  "descripcion_anterior": "NIPLE HG 2\" X10\" LONG.",
+  "descripcion_nueva": "NIPLE HG 2\" X10\" LONG.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2602041",
+  "descripcion_anterior": "NIPLE HG 2\" X 6\"",
+  "descripcion_nueva": "NIPLE HG 2\" X 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2603001",
+  "descripcion_anterior": "TUBO DE HFD DE 12\" » (300 MM.)",
+  "descripcion_nueva": "TUBO DE HFD DE 12\" ý (300 MM.)",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F2605001",
+  "descripcion_anterior": "TUBO INDUSTRIAL CIRCULAR d=½",
+  "descripcion_nueva": "TUBO INDUSTRIAL CIRCULAR d=1/2",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2605002",
+  "descripcion_anterior": "TUBO INDUSTRIAL CIRCULAR d=¾\"",
+  "descripcion_nueva": "TUBO INDUSTRIAL CIRCULAR d=3/4\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2605003",
+  "descripcion_anterior": "TUBO INDUSTRIAL CIRCULAR d=7/8",
+  "descripcion_nueva": "TUBO INDUSTRIAL CIRCULAR d=7/8",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2605005",
+  "descripcion_anterior": "TUBO INDUSTRIAL DE ½\"X½\"X20'",
+  "descripcion_nueva": "TUBO INDUSTRIAL DE 1/2\"X1/2\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2605006",
+  "descripcion_anterior": "TUBO INDUSTRIAL DE ¾\"X20'",
+  "descripcion_nueva": "TUBO INDUSTRIAL DE 3/4\"X20'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2605008",
+  "descripcion_anterior": "TUBO INDUSTRIAL 1½\"X1\"X20'",
+  "descripcion_nueva": "TUBO INDUSTRIAL 11/2\"X1\"X20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2605009",
+  "descripcion_anterior": "TUBO INDUSTRIAL DE 1½\"X 1½\" X 20'",
+  "descripcion_nueva": "TUBO INDUSTRIAL DE 11/2\"X 11/2\" X 20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2606002",
+  "descripcion_anterior": "TUBO NEGRO CIRCULAR d=½\"",
+  "descripcion_nueva": "TUBO NEGRO CIRCULAR d=1/2\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2610001",
+  "descripcion_anterior": "TUBERIA EMT ½\" (3 M.L.)",
+  "descripcion_nueva": "TUBERIA EMT 1/2\" (3 M.L.)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2610002",
+  "descripcion_anterior": "TUBERIA EMT ¾\" (3 M.L.)",
+  "descripcion_nueva": "TUBERIA EMT 3/4\" (3 M.L.)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2610003",
+  "descripcion_anterior": "TUBO EMT DE ¾\"",
+  "descripcion_nueva": "TUBO EMT DE 3/4\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F2610005",
+  "descripcion_anterior": "TUBO EMT DE 1½\"",
+  "descripcion_nueva": "TUBO EMT DE 11/2\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MI-F2610006",
+  "descripcion_anterior": "TUBO EMT 2\"",
+  "descripcion_nueva": "TUBO EMT 2\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F2611001",
+  "descripcion_anterior": "POLIDUCTO DE ½\" (ROLLO DE 100",
+  "descripcion_nueva": "POLIDUCTO DE 1/2\" (ROLLO DE 100 YDS.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2611002",
+  "descripcion_anterior": "POLIDUCTO DE ½\"",
+  "descripcion_nueva": "POLIDUCTO DE 1/2\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F2611003",
+  "descripcion_anterior": "POLIDUCTO DE ¾\" (ROLLO DE 100",
+  "descripcion_nueva": "POLIDUCTO DE 3/4\" (ROLLO DE 100 YDS.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2611004",
+  "descripcion_anterior": "POLIDUCTO DE 3/4\"",
+  "descripcion_nueva": "POLIDUCTO DE 3/4\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F2611005",
+  "descripcion_anterior": "POLIDUCTO DE 1\" (ROLLO DE 100",
+  "descripcion_nueva": "POLIDUCTO DE 1\" (ROLLO DE 100 YDS.)",
+  "unidad_anterior": "ROLLO",
+  "unidad_nueva": "ROLLO"
+ },
+ {
+  "codigo": "MI-F2611006",
+  "descripcion_anterior": "POLIDUCTO DE 1\"",
+  "descripcion_nueva": "POLIDUCTO DE 1\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F2611007",
+  "descripcion_anterior": "POLIDUCTO DE 2\" DE DIAMETRO",
+  "descripcion_nueva": "POLIDUCTO DE 2\" DE DIAMETRO (ROLLO DE 100YDS)",
+  "unidad_anterior": "ROLLO",
+  "unidad_nueva": "ROLLO"
+ },
+ {
+  "codigo": "MI-F2701001",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701002",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 3/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701003",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 1\" ý",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701004",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 11/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701005",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701007",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 21/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701008",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 3\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701009",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2701010",
+  "descripcion_anterior": "VALVULA DE COMPUERTA DE",
+  "descripcion_nueva": "VALVULA DE COMPUERTA DE BRONCE DE 6\" ý",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2702001",
+  "descripcion_anterior": "VALVULA CHEK DE ½\"",
+  "descripcion_nueva": "VALVULA CHEK DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2702002",
+  "descripcion_anterior": "VALVULA CROMADA GLOBO DE ½\"",
+  "descripcion_nueva": "VALVULA CROMADA GLOBO DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2702003",
+  "descripcion_anterior": "VALVULA DE CONTROL DE ½\"",
+  "descripcion_nueva": "VALVULA DE CONTROL DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2702004",
+  "descripcion_anterior": "VALVULA DE PASO DE ½\"",
+  "descripcion_nueva": "VALVULA DE PASO DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2702005",
+  "descripcion_anterior": "VALVULA DE PASO DE ½\"",
+  "descripcion_nueva": "VALVULA DE PASO DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F2803003",
+  "descripcion_anterior": "SELLADOR PARA MADERA",
+  "descripcion_nueva": "SELLADOR",
+  "unidad_anterior": "GLN",
+  "unidad_nueva": "GLN"
+ },
+ {
+  "codigo": "MI-F2803006",
+  "descripcion_anterior": "RODILLOS Y ACCESORIOS",
+  "descripcion_nueva": "RODILLOS Y ACCESORIOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3001001",
+  "descripcion_anterior": "INODORO BLANCO",
+  "descripcion_nueva": "INODORO BLANCO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3001002",
+  "descripcion_anterior": "INODORO ELONGADO BLANCO",
+  "descripcion_nueva": "INODORO ELONGADO BLANCO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3001004",
+  "descripcion_anterior": "TASA DE PORCELANA PARA LETRINA",
+  "descripcion_nueva": "TASA DE PORCELANA PARA LETRINA CIERRE HIDRAULICO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3002001",
+  "descripcion_anterior": "LAVAMANO BLANCO ECONOMICO",
+  "descripcion_nueva": "LAVAMANO BLANCO ECONOMICO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3002002",
+  "descripcion_anterior": "LAVAMANO AQUALYN",
+  "descripcion_nueva": "LAVAMANO AQUALYN",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3003001",
+  "descripcion_anterior": "REGADERA DE ALUMINIO DE ¾\"",
+  "descripcion_nueva": "REGADERA DE ALUMINIO DE 3/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3003002",
+  "descripcion_anterior": "DUCHA CROMADA DE ½\"",
+  "descripcion_nueva": "DUCHA CROMADA DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3004001",
+  "descripcion_anterior": "URINARIO DE PORCELANA",
+  "descripcion_nueva": "URINARIO DE PORCELANA ECONOMICO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3101002",
+  "descripcion_anterior": "COLORANTE",
+  "descripcion_nueva": "COLORANTE",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MI-F3101003",
+  "descripcion_anterior": "SULFATO DE ZINC",
+  "descripcion_nueva": "SULFATO DE ZINC",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MI-F3201001",
+  "descripcion_anterior": "BASE PARA REFLECTOR DOBLE",
+  "descripcion_nueva": "BASE PARA REFLECTOR DOBLE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201002",
+  "descripcion_anterior": "BOMBILLO DE 110 VOLTIOS DE 40W",
+  "descripcion_nueva": "BOMBILLO DE 110 VOLTIOS DE 40W",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201004",
+  "descripcion_anterior": "CENTRO DE CARGA DE 12 ESPACIOS",
+  "descripcion_nueva": "CENTRO DE CARGA DE 12 ESPACIOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201005",
+  "descripcion_anterior": "LAMPARA CON VENTILADOR",
+  "descripcion_nueva": "LAMPARA CON VENTILADOR",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201006",
+  "descripcion_anterior": "LAMPARA FLUORESCENTE DE 1 X 40",
+  "descripcion_nueva": "LAMPARA FLUORESCENTE DE 1 X 40 W.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201007",
+  "descripcion_anterior": "LAMPARA FLUORESCENTE DE 2 X 32",
+  "descripcion_nueva": "LAMPARA FLUORESCENTE DE 2 X 40 W.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201008",
+  "descripcion_anterior": "LAMPARA FLUORESCENTE DE 4X32",
+  "descripcion_nueva": "LAMPARA FLUORESCENTE DE 4X40",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201009",
+  "descripcion_anterior": "REFLECTOR 120 VOLT.",
+  "descripcion_nueva": "REFLECTOR 120 VOLT. (1453)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201010",
+  "descripcion_anterior": "ROSETA CON CADENA",
+  "descripcion_nueva": "ROSETA CON CADENA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201011",
+  "descripcion_anterior": "REFLECTOR DE 1500 WATTS 220 V",
+  "descripcion_nueva": "REFLECTOR DE 1500 WATTS 220 V",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3201026",
+  "descripcion_anterior": "LUMINARIA TIPO REFLECTOR DE 250",
+  "descripcion_nueva": "LUMINARIA TIPO REFLECTOR DE 250W, 240V",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3202004",
+  "descripcion_anterior": "MUFA EMT DE 2\"",
+  "descripcion_nueva": "MUFA EMT DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3203001",
+  "descripcion_anterior": "BREAKER 2X30 AMP",
+  "descripcion_nueva": "BREAKER 30 AMP. 220 VOL.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3203002",
+  "descripcion_anterior": "BREAKER DE 30 AMP-60 AMP",
+  "descripcion_nueva": "BREAKER DE 30 AMP-60 AMP",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3203003",
+  "descripcion_anterior": "BREAKER DE 20 AMP., 1 POLO",
+  "descripcion_nueva": "BREAKERS DE 20 AMP .",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3204001",
+  "descripcion_anterior": "INTERRUPTOR DOBLE BAJO REPELLO",
+  "descripcion_nueva": "INTERRUPTOR DOBLE BAJO REPELLO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3204002",
+  "descripcion_anterior": "INTERRUPTOR SENCILLO BAJO",
+  "descripcion_nueva": "INTERRUPTOR SENCILLO BAJO REPELLO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3204003",
+  "descripcion_anterior": "INTERRUPTOR VAIVEN",
+  "descripcion_nueva": "INTERRUPTOR VAIVEN",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3206002",
+  "descripcion_anterior": "CABLE ELECTRICO THW No.8",
+  "descripcion_nueva": "CABLE ELECTRICO THW No.8",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3206003",
+  "descripcion_anterior": "CABLE ELECTRICO THW #10",
+  "descripcion_nueva": "CABLE ELECTRICO THW #10",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3206004",
+  "descripcion_anterior": "CABLE ELECTRICO No. 14 THHN-AWG",
+  "descripcion_nueva": "CABLE ELECTRICO No. 14 THHN-AWG",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3206005",
+  "descripcion_anterior": "CABLE ELECTRICO No.12 THHN-AWG",
+  "descripcion_nueva": "CABLE ELECTRICO No.12 THHN-AWG",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3206006",
+  "descripcion_anterior": "CABLE ELECTRICO No.10 THHN-AWG",
+  "descripcion_nueva": "CABLE ELECTRICO No.10 THHN-AWG",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3206007",
+  "descripcion_anterior": "CABLE ELECTRICO No. 8 THHN-AWG",
+  "descripcion_nueva": "CABLE ELECTRICO No. 8 THHN-AWG",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3206009",
+  "descripcion_anterior": "CABLE ELECTRICO THWN #3/0 (ROLLO",
+  "descripcion_nueva": "CABLE ELECTRICO THWN #3/0 (ROLLO DE 100 M)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3206010",
+  "descripcion_anterior": "CABLE ELECTRICO THW #2 (ROLLO DE",
+  "descripcion_nueva": "CABLE ELECTRICO THW #2 (ROLLO DE 100 M)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3206011",
+  "descripcion_anterior": "CABLE ELECTRICO THHN Nº 6",
+  "descripcion_nueva": "CABLE ELECTRICO THHN N 6",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3206012",
+  "descripcion_anterior": "CABLE ELECTRICO #2/0",
+  "descripcion_nueva": "CABLE ELECTRICO #2/0",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F3206013",
+  "descripcion_anterior": "CABLE THW 1/0",
+  "descripcion_nueva": "CABLE THW 1/0",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3207001",
+  "descripcion_anterior": "CONECTOR DE COMPRESION 1/0-1/0",
+  "descripcion_nueva": "CONECTOR CON PRESION 1/0-1/0",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3207002",
+  "descripcion_anterior": "CONECTOR DE COMPRESION BURNDY",
+  "descripcion_nueva": "CONECTOR DE COMPRESION BURNDY 27 AU4",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3208001",
+  "descripcion_anterior": "CENTRO DE CARGA DE 4 ESPACIOS",
+  "descripcion_nueva": "CENTRO DE CARGA DE 4 ESPACIOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3208002",
+  "descripcion_anterior": "CENTRO DE CARGA DE 6 ESPACIOS",
+  "descripcion_nueva": "CENTRO DE CARGA DE 6 ESPACIOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3208003",
+  "descripcion_anterior": "CENTRO DE CARGA DE 8 ESPACIOS",
+  "descripcion_nueva": "CENTRO DE CARGA DE 8 ESPACIOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3209001",
+  "descripcion_anterior": "MUFA DE 1\"",
+  "descripcion_nueva": "MUFA DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3209002",
+  "descripcion_anterior": "MUFA EMT DE 1½\"",
+  "descripcion_nueva": "MUFA EMT DE 11/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3209003",
+  "descripcion_anterior": "MUFA DE 2\"",
+  "descripcion_nueva": "MUFA DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3209005",
+  "descripcion_anterior": "CENTRO DE CARGA DE 24",
+  "descripcion_nueva": "CENTRO DE CARGA DE 24 ESPACIOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3209006",
+  "descripcion_anterior": "CENTRO CARGA 42 ESP.",
+  "descripcion_nueva": "CENTRO CARGA 42 ESP . MONOFASICO 125 AMP.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3210001",
+  "descripcion_anterior": "BASE DE CONTADOR (100 AMP.)",
+  "descripcion_nueva": "BASE DE CONTADOR (100 AMP.)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3210002",
+  "descripcion_anterior": "BASE DE CONTADOR PARA 200",
+  "descripcion_nueva": "BASE DE CONTADOR PARA 200 AMPERIOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211001",
+  "descripcion_anterior": "CURVA PVC ELECTRICA DE 1/2\" CD-20",
+  "descripcion_nueva": "CURVA PVC DE 1/2\"",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211002",
+  "descripcion_anterior": "CURVA PVC ELECTRICA DE 3/4\" CD-20",
+  "descripcion_nueva": "CURVA PVC DE 3/4\"",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211003",
+  "descripcion_anterior": "CURVA PVC DE 1\"",
+  "descripcion_nueva": "CURVA PVC DE 1\"",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211006",
+  "descripcion_anterior": "CINTA AISLANTE ROLLO DE 100 ½",
+  "descripcion_nueva": "CINTA AISLANTE ROLLO DE 100 1/2",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211007",
+  "descripcion_anterior": "CINTA AISLANTE ROLLO MEDIANO",
+  "descripcion_nueva": "CINTA AISLANTE ROLLO MEDIANO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211008",
+  "descripcion_anterior": "CINTA AISLANTE ROLLO GRANDE",
+  "descripcion_nueva": "CINTA AISLANTE ROLLO GRANDE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211011",
+  "descripcion_anterior": "VARILLA POLO A TIERRA 6' COBRE",
+  "descripcion_nueva": "VARILLA POLO A TIERRA 6' COBRE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3211034",
+  "descripcion_anterior": "TRANSFORMADOR 15KVA",
+  "descripcion_nueva": "TRANSFORMADOR 15KVA 34,5/19,92 KV-120/240 V",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3212001",
+  "descripcion_anterior": "TOMA P/ ESTUFA 2 P / 40 AMP.",
+  "descripcion_nueva": "TOMA P/ ESTUFA 2 P / 40 AMP .",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3215001",
+  "descripcion_anterior": "CAJA RECTANGULAR DE 2\" X 4\"",
+  "descripcion_nueva": "CAJA RECTANGULAR DE 2\" X 4\" PESADA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3222002",
+  "descripcion_anterior": "TOMA P/AIRE ACONDICIONADO, 220",
+  "descripcion_nueva": "TOMA P/AIRE ACONDICIONADO, 220 VOLTIOS, 30 AMPS.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3225002",
+  "descripcion_anterior": "CAJA DE 4\" X 4\"",
+  "descripcion_nueva": "CAJA DE 4\" X 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3232003",
+  "descripcion_anterior": "TOMA CORRIENTE TRIFILAR DE 50",
+  "descripcion_nueva": "TOMA P/SOLDADORA 50 AMP.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3242004",
+  "descripcion_anterior": "CAJA OCTOGONAL",
+  "descripcion_nueva": "CAJA OCTOGONAL",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3252005",
+  "descripcion_anterior": "TOMACORRIENTE PARA INTEMPERIE",
+  "descripcion_nueva": "TOMACORRIENTE PARA INTEMPERIE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3301001",
+  "descripcion_anterior": "ABRAZADERA DE 1\"",
+  "descripcion_nueva": "ABRAZADERA DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3301002",
+  "descripcion_anterior": "CAMISA DE HG DE ¾\"",
+  "descripcion_nueva": "CAMISA DE HG DE 3/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3301003",
+  "descripcion_anterior": "ABRAZADERA DE 2\"",
+  "descripcion_nueva": "ABRAZADERA DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3301004",
+  "descripcion_anterior": "ABRAZADERA METALICA 2\"",
+  "descripcion_nueva": "ABRAZADERA METALICA 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3301013",
+  "descripcion_anterior": "ABRAZADERA DE METAL DE 3\"",
+  "descripcion_nueva": "ABRAZADERA DE METAL DE 3\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302001",
+  "descripcion_anterior": "ADAPTADOR HEMBRA DE PVC DE ½\"",
+  "descripcion_nueva": "ADAPTADOR HEMBRA DE PVC DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302002",
+  "descripcion_anterior": "ADAPTADOR MACHO DE PVC DE ½\"",
+  "descripcion_nueva": "ADAPTADOR MACHO DE PVC DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302003",
+  "descripcion_anterior": "ADAPTADOR MACHO DE PVC DE 1\"",
+  "descripcion_nueva": "ADAPTADOR MACHO DE PVC DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302004",
+  "descripcion_anterior": "ADAPTADOR MACHO DE PVC DE 1½\"",
+  "descripcion_nueva": "ADAPTADOR MACHO DE PVC DE 11/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302005",
+  "descripcion_anterior": "CAMISA DE HG DE 2\"",
+  "descripcion_nueva": "CAMISA DE HG DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302006",
+  "descripcion_anterior": "ADAPTADOR MACHO DE PVC DE 3\"",
+  "descripcion_nueva": "ADAPTADOR MACHO DE PVC DE 3\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302007",
+  "descripcion_anterior": "ADAPTADOR MACHO DE PVC DE 4\"",
+  "descripcion_nueva": "ADAPTADOR MACHO DE PVC DE 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302008",
+  "descripcion_anterior": "ADAPTADOR MACHO DE PVC DE 6\"",
+  "descripcion_nueva": "ADAPTADOR MACHO DE PVC DE 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302009",
+  "descripcion_anterior": "ADAPTADOR HEMBRA PVC DE 2\"",
+  "descripcion_nueva": "ADAPTADOR HEMBRA PVC DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3302023",
+  "descripcion_anterior": "ADAPTADOR MACHO PVC 3/4\" A.P.",
+  "descripcion_nueva": "ADAPTADOR MACHO PVC 3/4\" A.P .",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303001",
+  "descripcion_anterior": "UNION UNIVERSAL HG DE ¾\"",
+  "descripcion_nueva": "UNION UNIVERSAL HG DE 3/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303002",
+  "descripcion_anterior": "UNION UNIVERSAL DE HG DE 1\"",
+  "descripcion_nueva": "UNION UNIVERSAL DE HG DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303003",
+  "descripcion_anterior": "UNION UNIVERSAL HG DE 1½\"",
+  "descripcion_nueva": "UNION UNIVERSAL HG DE 11/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303004",
+  "descripcion_anterior": "UNION UNIVERSAL HG DE 2\"",
+  "descripcion_nueva": "UNION UNIVERSAL HG DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303005",
+  "descripcion_anterior": "UNION UNIVERSAL HG DE 2½\"",
+  "descripcion_nueva": "UNION UNIVERSAL HG DE 21/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303006",
+  "descripcion_anterior": "UNION UNIVERSAL HG DE 3\" »",
+  "descripcion_nueva": "UNION UNIVERSAL HG DE 3\" ý",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303007",
+  "descripcion_anterior": "UNION UNIVERSAL HG DE 4\"",
+  "descripcion_nueva": "UNION UNIVERSAL HG DE 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303008",
+  "descripcion_anterior": "CAMISA DE HG DE 4\"",
+  "descripcion_nueva": "CAMISA DE HG DE 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3303032",
+  "descripcion_anterior": "UNION CONDUIT DE 3/4\"",
+  "descripcion_nueva": "TEE DE HG DE 6\"",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3305001",
+  "descripcion_anterior": "CAMISA DE HG DE ½\"",
+  "descripcion_nueva": "CAMISA DE HG DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3306003",
+  "descripcion_anterior": "CAMISA DE HG DE 1\"",
+  "descripcion_nueva": "CAMISA DE HG DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3306004",
+  "descripcion_anterior": "CAMISA HG DE 1½\"",
+  "descripcion_nueva": "CAMISA HG DE 11/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3307006",
+  "descripcion_anterior": "CAMISA DE HG DE 2½\"",
+  "descripcion_nueva": "CAMISA DE HG DE 21/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3307007",
+  "descripcion_anterior": "CAMISA DE HG DE 3\"",
+  "descripcion_nueva": "CAMISA DE HG DE 3\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3308009",
+  "descripcion_anterior": "CAMISA DE HG DE 6\"",
+  "descripcion_nueva": "CAMISA DE HG DE 6\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3308010",
+  "descripcion_anterior": "CAMISA DE HG DE 8\"",
+  "descripcion_nueva": "CAMISA DE HG DE 8\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309001",
+  "descripcion_anterior": "CODO DE HG DE ½\" X 90°",
+  "descripcion_nueva": "CODO DE HG DE 1/2\" X 90",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309002",
+  "descripcion_anterior": "CODO DE PVC DE ½\" X 90°",
+  "descripcion_nueva": "CODO DE PVC DE 1/2\" X 90",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309003",
+  "descripcion_anterior": "CODO DE PVC DE 2\" X 90° DRENAJE",
+  "descripcion_nueva": "CODO DE PVC DE 2\" X 90",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309004",
+  "descripcion_anterior": "CODO DE PVC DE 2\"X 90° PRESION",
+  "descripcion_nueva": "CODO DE PVC DE 2\"X 90 PRESION",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309005",
+  "descripcion_anterior": "CODO DE PVC DE 4\" X 90° A.P.",
+  "descripcion_nueva": "CODO DE PVC DE 4\" X 90 A.P.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309006",
+  "descripcion_anterior": "CODO DE PVC 1\" X 90°",
+  "descripcion_nueva": "CODO DE PVC 1\" X 90",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309007",
+  "descripcion_anterior": "CODO PVC 3\" Ø X 45",
+  "descripcion_nueva": "CODO PVC 3\" Ò X 45",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309008",
+  "descripcion_anterior": "CODO PVC 4\"X90° DRENAJE",
+  "descripcion_nueva": "CODO PVC 4\"X90 DRENAJE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309009",
+  "descripcion_anterior": "CODO PVC DE 3\" X 90° PARA",
+  "descripcion_nueva": "CODO PVC DE 3\" X 90 PARA DRENAJE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309010",
+  "descripcion_anterior": "CODO HG 3\"X90",
+  "descripcion_nueva": "CODO HG 3\"X90",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309011",
+  "descripcion_anterior": "CODO HG 2\"X90",
+  "descripcion_nueva": "CODO HG 2\"X90",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309015",
+  "descripcion_anterior": "CODO DE HG DE 2\" X 45°",
+  "descripcion_nueva": "CODO DE HG DE 2\" X 45",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309049",
+  "descripcion_anterior": "CODO LISO PVC 1/2\"X45º A.P.",
+  "descripcion_nueva": "CODO LISO PVC 1/2\"X45 A.P.",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3309064",
+  "descripcion_anterior": "CODO DE PVC DE 2\"X90 DRENAJE",
+  "descripcion_nueva": "CODO DE PVC DE 2\"X90 DRENAJE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3311002",
+  "descripcion_anterior": "TAPON COPA DE HG DE 2\" »",
+  "descripcion_nueva": "TAPON COPA DE HG DE 2\" ý",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3311003",
+  "descripcion_anterior": "TAPON COPA HG DE ½\"",
+  "descripcion_nueva": "TAPON COPA HG DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3311004",
+  "descripcion_anterior": "TAPON DE CAUCHO DE 1\"",
+  "descripcion_nueva": "TAPON DE CAUCHO DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3311005",
+  "descripcion_anterior": "TAPON DE CAUCHO DE 7/8",
+  "descripcion_nueva": "TAPON DE CAUCHO DE 7/8",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3311006",
+  "descripcion_anterior": "TAPON DE HULE DE ½\"",
+  "descripcion_nueva": "TAPON DE HULE DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3311007",
+  "descripcion_anterior": "TAPON DE PILA DE ½\"",
+  "descripcion_nueva": "TAPON DE PILA DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3311008",
+  "descripcion_anterior": "TAPON COPA HG 1 1/2\"",
+  "descripcion_nueva": "TAPON COPA HG 1 1/2\"",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3312001",
+  "descripcion_anterior": "TEE DE PVC DE ½\"",
+  "descripcion_nueva": "TEE DE PVC DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3312002",
+  "descripcion_anterior": "TEE HG DE ½\"",
+  "descripcion_nueva": "TEE HG DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3312004",
+  "descripcion_anterior": "TEE PVC DE 2\" DE DRENAJE",
+  "descripcion_nueva": "TEE PVC DE 2\" DE DRENAJE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3312006",
+  "descripcion_anterior": "TEE PVC DE 4\" (DRENAJE)",
+  "descripcion_nueva": "TEE PVC DE 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3312007",
+  "descripcion_anterior": "TEE LISA PVC DE 1\"",
+  "descripcion_nueva": "TEE LISA PVC DE 1\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3312083",
+  "descripcion_anterior": "TEE DE PVC 6\" DRENAJE",
+  "descripcion_nueva": "CODO DE HFD DE 90 GRADOS DE 12\"",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3314001",
+  "descripcion_anterior": "YEE PVC DE 6\" X 6\" X 4\"",
+  "descripcion_nueva": "YEE PVC DE 6\" X 6\" X 4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3314006",
+  "descripcion_anterior": "REDUCTOR PVC DE 1 1/2\" A 1/2\"",
+  "descripcion_nueva": "REDUCTOR PVC DE 1 1/2\" A 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3314043",
+  "descripcion_anterior": "REDUCTOR CON ROSCA HG 4\"X2\"",
+  "descripcion_nueva": "REDUCTOR CON ROSCA HG 4\"X2\" A.P.",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3314071",
+  "descripcion_anterior": "REDUCTOR PVC 4\"X2\"",
+  "descripcion_nueva": "REDUCTOR LISO PVC 4\"X2\" A.P.",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3315001",
+  "descripcion_anterior": "LLAVE SPITA DE BRONCE DE ½\"",
+  "descripcion_nueva": "LLAVE SPITA DE BRONCE DE 1/2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3316001",
+  "descripcion_anterior": "SIFON HG DE 2\"",
+  "descripcion_nueva": "SIFON HG DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3316002",
+  "descripcion_anterior": "SIFON TRAMPA DE PVC DE 2\"",
+  "descripcion_nueva": "SIFON TRAMPA DE PVC DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3317001",
+  "descripcion_anterior": "CINTA TEFLON",
+  "descripcion_nueva": "CINTA TEFLON",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3317002",
+  "descripcion_anterior": "TEFLON DE ¾\"",
+  "descripcion_nueva": "TEFLON DE 3/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3317003",
+  "descripcion_anterior": "TRAMPA PARA BAÑO DE 2\"",
+  "descripcion_nueva": "TRAMPA PARA BAÑO DE 2\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3317004",
+  "descripcion_anterior": "CANAL DE PVC",
+  "descripcion_nueva": "CANAL DE PVC",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MI-F3317005",
+  "descripcion_anterior": "UNION PARA CANAL DE PVC",
+  "descripcion_nueva": "UNION PARA CANAL DE PVC",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3317006",
+  "descripcion_anterior": "TAPON PARA CANAL DE PVC",
+  "descripcion_nueva": "TAPON PARA CANAL DE PVC",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3317023",
+  "descripcion_anterior": "BAJANTE PARA CANAL DE PVC",
+  "descripcion_nueva": "JUNTA DRESS DE 10\" HFD",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3317032",
+  "descripcion_anterior": "GRIFO DE LAVATRASTE TIPO BAR",
+  "descripcion_nueva": "MACRO MEDIDOR ULTRASONICO DE PASO TOTAL 6\"",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3402001",
+  "descripcion_anterior": "TANQUE DE ALMACENAMIENTO DE",
+  "descripcion_nueva": "TANQUE PLASTICO DE 200 GALONES",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F0301002",
+  "descripcion_anterior": "GRAVA DE RIO (1½\")",
+  "descripcion_nueva": "GRAVA DE RIO (11/2\")",
+  "unidad_anterior": "M3",
+  "unidad_nueva": "M3"
+ },
+ {
+  "codigo": "MN-F0302001",
+  "descripcion_anterior": "GRAVA TRITURADA DE ¾\"",
+  "descripcion_nueva": "GRAVA DE 3/4\"",
+  "unidad_anterior": "M3",
+  "unidad_nueva": "M3"
+ },
+ {
+  "codigo": "MN-F0502001",
+  "descripcion_anterior": "PIEDRA RAJADA 30 X 30 X 40 CM",
+  "descripcion_nueva": "PIEDRA RAJADA 30 X 30 X 40 CM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F0502002",
+  "descripcion_anterior": "PIEDRA TALLADA",
+  "descripcion_nueva": "PIEDRA TALLADA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1101001",
+  "descripcion_anterior": "ADOBE DE BARRO 5\" X 11\" X 17\"",
+  "descripcion_nueva": "ADOBE DE BARRO 5\" X 11\" X 17\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1101003",
+  "descripcion_anterior": "ADOBE DE BARRO DE 20x13x42cms",
+  "descripcion_nueva": "ADOBE DE BARRO DE 20x13x42cms",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1201001",
+  "descripcion_anterior": "LADRILLO RAFON RUSTICO",
+  "descripcion_nueva": "LADRILLO RAFON RUSTICO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1201002",
+  "descripcion_anterior": "LADRILLO RAFON PLANCHADO (2",
+  "descripcion_nueva": "LADRILLO RAFON PLANCHADO (2 CARAS)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1202001",
+  "descripcion_anterior": "LOSETA DE BARRO",
+  "descripcion_nueva": "LOSETA DE BARRO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1402001",
+  "descripcion_anterior": "BLOQUE DE CONCRETO DE 10X20X40",
+  "descripcion_nueva": "BLOQUE DE CONCRETO DE 10X20X40 CM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1402002",
+  "descripcion_anterior": "BLOQUE DE CONCRETO DE 15X20X40",
+  "descripcion_nueva": "BLOQUE DE CONCRETO DE 15X20X40 CM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1402003",
+  "descripcion_anterior": "BLOQUE DE CONCRETO DE 20X20X40",
+  "descripcion_nueva": "BLOQUE DE CONCRETO DE 20X20X40 CM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1403001",
+  "descripcion_anterior": "ADOQUIN DE 3000 LBS/PLG2",
+  "descripcion_nueva": "ADOQUIN DE 3000 LBS/PLG2",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1403002",
+  "descripcion_anterior": "ADOQUIN DE 4,000LBS/PLG2",
+  "descripcion_nueva": "ADOQUIN DE 4,000LBS/PLG2",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1404001",
+  "descripcion_anterior": "BOVEDILLA DE 15 CM.",
+  "descripcion_nueva": "BOVEDILLA DE 15 CM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1405001",
+  "descripcion_anterior": "VIGUETA",
+  "descripcion_nueva": "VIGUETA",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F1501001",
+  "descripcion_anterior": "LADRILLO MOSAICO CEMENTO 25X25",
+  "descripcion_nueva": "LADRILLO MOSAICO CEMENTO 25X25 CM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1501002",
+  "descripcion_anterior": "LADRILLO MOSAICO TIPO TERRAZO",
+  "descripcion_nueva": "LADRILLO MOSAICO TIPO TERRAZO 25X25 CM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1501003",
+  "descripcion_anterior": "LADRILLO TIPO PIEDRIN ROJO",
+  "descripcion_nueva": "LADRILLO TIPO PIEDRIN ROJO CRUZADO 25X25 CM.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1501004",
+  "descripcion_anterior": "LADRILLO DE PISO GRANITO",
+  "descripcion_nueva": "LADRILLO GRANITO TERRAZO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1502001",
+  "descripcion_anterior": "MOLDURA PARA PISO TIPO TERRAZO",
+  "descripcion_nueva": "MOLDURA PARA PISO TIPO TERRAZO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1502002",
+  "descripcion_anterior": "MOLDURA DE MOSAICO COLOR ROJO",
+  "descripcion_nueva": "MOLDURA PARA PISO ROJO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1601001",
+  "descripcion_anterior": "LAMINA FIBROCENTO ONDA TIPO",
+  "descripcion_nueva": "LAMINA FIBROCENTO ONDA TIPO SUPERS. 3'X40\"X7.5 MM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1601002",
+  "descripcion_anterior": "LAMINA FIBROCEMENTO ONDA TIPO",
+  "descripcion_nueva": "LAMINA FIBROCEMENTO ONDA TIPO SUPERS 4'X40\"X7.5 MM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1601003",
+  "descripcion_anterior": "LAMINA FIBROCEMENTO ONDA TIPO",
+  "descripcion_nueva": "LAMINA FIBROCEMENTO ONDA TIPO SUPERS 6'X40\"X7.5 MM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1601004",
+  "descripcion_anterior": "LAMINA FIBROCEMENTO ONDA TIPO",
+  "descripcion_nueva": "LAMINA FIBROCEMENTO ONDA TIPO SUPERS 8'X40\"X7.5 MM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1601005",
+  "descripcion_anterior": "LAMINA DE FIBROCEMENTO LISO DE 2'",
+  "descripcion_nueva": "LAMINA DE FIBROCEMENTO LISO DE 2' X 4' X 8mm",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1601006",
+  "descripcion_anterior": "LAMINA FIBROCEMENTO LISO DE 2' X",
+  "descripcion_nueva": "LAMINA FIBROCEMENTO LISO DE 2' X 4' X 5 MM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1601007",
+  "descripcion_anterior": "LAMINA FIBROCEMENTO LISO 100 ( 4'",
+  "descripcion_nueva": "LAMINA FIBROCEMENTO LISO 100 ( 4' X 8' ) X 8MM",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1603001",
+  "descripcion_anterior": "LAMINA ALUMINIZADA ONDULADA",
+  "descripcion_nueva": "LAMINA ALUZINC ONDULADA CAL.26 DE 4'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1603002",
+  "descripcion_anterior": "LAMINA ALUMINIZADA CAL. 26",
+  "descripcion_nueva": "LAMINA ALUZINC CAL. 26 ONDULADA 36\"x 6¨",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1603003",
+  "descripcion_anterior": "LAMINA ALUMINIZADA ONDULADA",
+  "descripcion_nueva": "LAMINA ALUZINC ONDULADA CAL. 26 DE 8'x36\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1603006",
+  "descripcion_anterior": "LAMINA ALUMINIZADA INDUSTRIAL",
+  "descripcion_nueva": "LAM. ALUZINC IND. 6'X42\" CAL. 26",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1603007",
+  "descripcion_anterior": "LAMINA ALUMINIZADA INDUSTRIAL",
+  "descripcion_nueva": "LAMINA DE ALUZINC INDUSTRIAL 42\"X 8¨ CAL 26",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1603008",
+  "descripcion_anterior": "LAMINA ALUMINIZADA INDUSTRIAL",
+  "descripcion_nueva": "LAMINA INDUSTRIAL ALUZINC 42\", CAL 26",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MN-F1603010",
+  "descripcion_anterior": "LAMINA ALUMINIZADA INDUSTRIAL",
+  "descripcion_nueva": "LAMINA ALUZINC INDUSTRIAL 10'X42\" CAL 26",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604001",
+  "descripcion_anterior": "LAMINA ACANALADA DE ZINC 32\" X 4'",
+  "descripcion_nueva": "LAMINA ACANALADA DE ZINC 32\" X 4' CAL 26",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604002",
+  "descripcion_anterior": "LAMINA ACANALADA DE ZINC DE 32\"",
+  "descripcion_nueva": "LAMINA ACANALADA DE ZINC DE 32\" X 6' CAL. 26",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604003",
+  "descripcion_anterior": "LAMINA ACANALADA DE ZINC DE 32\"",
+  "descripcion_nueva": "LAMINA ACANALADA DE ZINC DE 32\" X 8' CAL. 26",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604005",
+  "descripcion_anterior": "LAMINA ACANALADA DE ZINC 32\"X6'",
+  "descripcion_nueva": "LAMINA DE ZINC 32\"X6' CAL. 28",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604006",
+  "descripcion_anterior": "LAMINA DE ZINC LISA DE 10'X3' CAL.",
+  "descripcion_nueva": "LAMINA DE ZINC LISA DE 10' CAL. 28",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604007",
+  "descripcion_anterior": "LAMINA LISA DE ZINC DE 3' X 6' CAL.",
+  "descripcion_nueva": "LAMINA LISA DE ZINC DE 3' X 6' CAL. 29.5",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604008",
+  "descripcion_anterior": "LAMINA LISA DE ZINC DE 3' X 8' CAL.",
+  "descripcion_nueva": "LAMINA LISA DE ZINC DE 3' X 8' CAL. 29.5",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604009",
+  "descripcion_anterior": "LAMINA DE LISA DE ZINC DE 3'X12'",
+  "descripcion_nueva": "LAMINA DE LISA DE ZINC CAL. 29.5 DE 3'X12'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604010",
+  "descripcion_anterior": "LAMINA DE ZINC PLANA DE 26\" X 6'",
+  "descripcion_nueva": "LAMINA DE ZINC PLANA DE 26\" X 6' CAL. 32",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604011",
+  "descripcion_anterior": "LAMINA ACANALADA ZINC DE 32\" X 8'",
+  "descripcion_nueva": "LAMINA ACANALADA ZINC DE 32\" X 8' CAL. 32",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604012",
+  "descripcion_anterior": "LAMINA ACANALADA ZINC DE 26\" X",
+  "descripcion_nueva": "LAMINA ACANALADA ZINC DE 26\" X 10' CAL. 32",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604013",
+  "descripcion_anterior": "LAMINA ACANALADA DE ZINC 32\"X4´",
+  "descripcion_nueva": "LAMINA ACANALADA DE ZINC 32\"X4¨ CAL. 28",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604014",
+  "descripcion_anterior": "LAMINA ACANALADA ZINC DE 32\"x10'",
+  "descripcion_nueva": "LAMINA ACANALADA ZINC DE 32\"x10' CAL.28",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1604019",
+  "descripcion_anterior": "LAMINA ACANALADA DE ZINC 32\"X6'",
+  "descripcion_nueva": "LAMINA TROQUELADA DE 8 PIES",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "LAM"
+ },
+ {
+  "codigo": "MN-F1605001",
+  "descripcion_anterior": "CAPOTE PARA LAMINA ALUMINIZADA",
+  "descripcion_nueva": "CAPOTE PARA ALUZINC",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MN-F1605002",
+  "descripcion_anterior": "CAPOTE PARA LAMINA ZINC",
+  "descripcion_nueva": "CAPOTE PARA LAMINA ZINC",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MN-F1605003",
+  "descripcion_anterior": "CAPOTE FIBROCEMENTO",
+  "descripcion_nueva": "CAPOTE FIBROCEMENTO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1605004",
+  "descripcion_anterior": "CENEFA DE FIBROCEMENTO",
+  "descripcion_nueva": "CENEFA DE FIBROCEMENTO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1605005",
+  "descripcion_anterior": "TAPON FIBROCEMENTO",
+  "descripcion_nueva": "TAPON FIBROCEMENTO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1605007",
+  "descripcion_anterior": "TAPA-GOTERAS",
+  "descripcion_nueva": "TAPA-GOTERAS",
+  "unidad_anterior": "GLN",
+  "unidad_nueva": "GALON"
+ },
+ {
+  "codigo": "MN-F1702004",
+  "descripcion_anterior": "MASILLA PARA TABLAYESO",
+  "descripcion_nueva": "MASILLA PARA TABLAYESO",
+  "unidad_anterior": "CUBE",
+  "unidad_nueva": "CUBETA"
+ },
+ {
+  "codigo": "MN-F1801001",
+  "descripcion_anterior": "ALAMBRE DE AMARRE",
+  "descripcion_nueva": "ALAMBRE DE AMARRE",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F1901001",
+  "descripcion_anterior": "ACERO DE REFUERZO, GRADO INTER.",
+  "descripcion_nueva": "ACERO DE REFUERZO, GRADO INTER. FY=2800",
+  "unidad_anterior": "KG",
+  "unidad_nueva": "KG"
+ },
+ {
+  "codigo": "MN-F1901002",
+  "descripcion_anterior": "ACERO DE REFUERZO, GRADO INTER.",
+  "descripcion_nueva": "ACERO DE REFUERZO, GRADO INTER. FY=4200 KG/CM2",
+  "unidad_anterior": "KG",
+  "unidad_nueva": "KG"
+ },
+ {
+  "codigo": "MN-F1902001",
+  "descripcion_anterior": "VARILLA LISA DE 1/4\" X 30 PIES",
+  "descripcion_nueva": "VARILLA DE HIERRO CORRUGADA DE 1/4\"X30' LEG",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902002",
+  "descripcion_anterior": "VARILLA DE HIER. CORRUG. DE",
+  "descripcion_nueva": "VARILLA DE HIER. CORRUG. DE 3/8\"X30' LEG",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902003",
+  "descripcion_anterior": "VARILLA DE HIER.CORRUG.DE ½\"X30'",
+  "descripcion_nueva": "VARILLA DE HIER.CORRUG.DE 1/2\"X30' LEG",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902004",
+  "descripcion_anterior": "VARILLA DE HIERRO CORRUGADA",
+  "descripcion_nueva": "VARILLA DE HIERRO CORRUGADA 3/4\"X30' LEG",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902005",
+  "descripcion_anterior": "VARILLA DE HIERRO LISA DE 5/8\"X30'",
+  "descripcion_nueva": "VARILLA DE HIERRO LISA DE 5/8\"X30' LEGITIMA",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902006",
+  "descripcion_anterior": "VARILLA DE HIERRO CORRUGADA DE",
+  "descripcion_nueva": "VARILLA DE HIERRO CORRUGADA DE 7/8\"X30' LEG",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902007",
+  "descripcion_anterior": "VARILLA DE HIERRO CORRUGADA DE",
+  "descripcion_nueva": "VARILLA DE HIERRO CORRUGADA DE 1\"X30 LEGIT",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902008",
+  "descripcion_anterior": "VARILLA DE HIERRO LISA DE ¼\"X30'",
+  "descripcion_nueva": "VARILLA DE HIERRO LISA DE 1/4\"X30' LEGITIMA",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1902009",
+  "descripcion_anterior": "VARILLA DE HIERRO CORRUGADO DE",
+  "descripcion_nueva": "VARILLA DE HIERRO CORRUGADO DE 5/8\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F1904001",
+  "descripcion_anterior": "LAMINA DE METAL EXPANDIDO",
+  "descripcion_nueva": "LAMINA DE METAL EXPANDIDO 4'x8'x1/16\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F1904002",
+  "descripcion_anterior": "LAMINA DE HIERRO DE 4'X8'X1/16\"",
+  "descripcion_nueva": "LAMINA DE HIERRO DE 4'X8'X1/16\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2301001",
+  "descripcion_anterior": "CLAVOS",
+  "descripcion_nueva": "CLAVOS",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F2301002",
+  "descripcion_anterior": "CLAVO DE ½\" A 1\"",
+  "descripcion_nueva": "CLAVO DE 1/2\" A 1\"",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F2301003",
+  "descripcion_anterior": "CLAVOS DE 1½\" A 2\"",
+  "descripcion_nueva": "CLAVOS DE 11/2\" A 2\"",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F2301004",
+  "descripcion_anterior": "CLAVOS DE 1\" A 3\"",
+  "descripcion_nueva": "CLAVOS DE 1\" A 3\"",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F2301005",
+  "descripcion_anterior": "CLAVOS DE 2\" A 6\"",
+  "descripcion_nueva": "CLAVOS DE 2\" A 6\"",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F2301007",
+  "descripcion_anterior": "CLAVOS DE 2\" A 4\"",
+  "descripcion_nueva": "CLAVOS DE 2\" A 4\"",
+  "unidad_anterior": "LBS",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F2301008",
+  "descripcion_anterior": "CLAVOS DE ACERO",
+  "descripcion_nueva": "CLAVOS DE ACERO",
+  "unidad_anterior": "UNIDA",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2301009",
+  "descripcion_anterior": "CLAVO DE ACERO 1 \"",
+  "descripcion_nueva": "CLAVO DE ACERO 1 \"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2301010",
+  "descripcion_anterior": "CLAVO PARA LAMINA DE ZINC",
+  "descripcion_nueva": "CLAVO PARA LAMINA DE ZINC",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F2402007",
+  "descripcion_anterior": "PASADOR PARA PORTON VARILLA",
+  "descripcion_nueva": "PASADOR PARA PORTON VARILLA No.4 LISA",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2404005",
+  "descripcion_anterior": "CASQUILLOS DE HULE P/PATAS DE",
+  "descripcion_nueva": "CASQUILLOS DE HULE P/PATAS DE MESA Y SILLA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2601001",
+  "descripcion_anterior": "TUBO DE PVC DE ½\" X 20' RD-13.5",
+  "descripcion_nueva": "TUBO DE PVC DE 1/2\" X 20' RD-13.5",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601005",
+  "descripcion_anterior": "TUBO CPVC DE ½\" X 10'",
+  "descripcion_nueva": "TUBO CPVC DE 1/2\" X 20'",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601006",
+  "descripcion_anterior": "TUBO DE PVC DE ¾\" X 20' RD-13.5",
+  "descripcion_nueva": "TUBO DE PVC DE 3/4\" X 20' RD-13.5",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601007",
+  "descripcion_anterior": "TUBO DE PVC DE ¾\" X 20' RD-17",
+  "descripcion_nueva": "TUBO DE PVC DE 3/4\" X 20' RD-17",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601008",
+  "descripcion_anterior": "TUBO DE PVC DE ¾\" X 20' RD-21",
+  "descripcion_nueva": "TUBO DE PVC DE 3/4\" X 20' RD-21",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601009",
+  "descripcion_anterior": "TUBO DE PVC DE ¾\" X 20' RD-26",
+  "descripcion_nueva": "TUBO DE PVC DE 3/4\" X 20' RD-26",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601014",
+  "descripcion_anterior": "TUBO DE PVC DE 1¼\" RD-26",
+  "descripcion_nueva": "TUBO DE PVC DE 11/4\" RD-26",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601015",
+  "descripcion_anterior": "TUBO DE PVC DE 1½\" X 20' RD-13.5",
+  "descripcion_nueva": "TUBO DE PVC DE 11/2\" X 20' RD-13.5",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601016",
+  "descripcion_anterior": "TUBO DE PVC DE 1½\" X 20' RD-17",
+  "descripcion_nueva": "TUBO DE PVC DE 11/2\" X 20' RD-17",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601017",
+  "descripcion_anterior": "TUBO DE PVC DE 1½\" X 20' RD-21",
+  "descripcion_nueva": "TUBO DE PVC DE 11/2\" X 20' RD-21",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601018",
+  "descripcion_anterior": "TUBO DE PVC DE 1½\" X 20' RD-26",
+  "descripcion_nueva": "TUBO DE PVC DE 11/2\" X 20' RD-26",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601019",
+  "descripcion_anterior": "TUBO DE PVC DE 1½\" X 20' RD-32.5",
+  "descripcion_nueva": "TUBO DE PVC DE 11/2\" X 20' RD-32.5",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601020",
+  "descripcion_anterior": "TUBO DE PVC DE 2\" » X 20' RD-17",
+  "descripcion_nueva": "TUBO DE PVC DE 2\" ý X 20' RD-17",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601021",
+  "descripcion_anterior": "TUBO DE PVC DE 2\" » X 20' RD-21",
+  "descripcion_nueva": "TUBO DE PVC DE 2\" ý X 20' RD-21",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601026",
+  "descripcion_anterior": "TUBO DE PVC DE 2½\" X 20' RD-17",
+  "descripcion_nueva": "TUBO DE PVC DE 21/2\" X 20' RD-17",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601027",
+  "descripcion_anterior": "TUBO DE PVC DE 2½\" X 20' RD-21",
+  "descripcion_nueva": "TUBO DE PVC DE 21/2\" X 20' RD-21",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601028",
+  "descripcion_anterior": "TUBO DE PVC DE 2½\" X 20' RD-26",
+  "descripcion_nueva": "TUBO DE PVC DE 21/2\" X 20' RD-26",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601029",
+  "descripcion_anterior": "TUBO DE PVC DE 2½\" X 20' RD-32.5",
+  "descripcion_nueva": "TUBO DE PVC DE 21/2\" X 20' RD-32.5",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601066",
+  "descripcion_anterior": "TUBERIA DE PVC 12\" RD 50",
+  "descripcion_nueva": "TUBERIA DE PVC 12\" RD 50",
+  "unidad_anterior": "LCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601067",
+  "descripcion_anterior": "TUBO DE ABASTO P.V.C",
+  "descripcion_nueva": "TUBO DE ABASTO P .V.C",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2601068",
+  "descripcion_anterior": "TUBERIA PVC PERFILADO HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADO HELICOIDAL DE 8 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601069",
+  "descripcion_anterior": "TUBERIA PVC PERFILADO HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADO HELICOIDAL DE 10 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601070",
+  "descripcion_anterior": "TUBERIA PVC PERFILADO HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADO HELICOIDAL DE 12 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601071",
+  "descripcion_anterior": "TUBERIA PVC PERFILADA HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADA HELICOIDAL 15\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601072",
+  "descripcion_anterior": "TUBERIA PVC PERFILADO HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADO HELICOIDAL DE 18 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601073",
+  "descripcion_anterior": "TUBERIA PVC PERFILADO HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADO HELICOIDAL DE 20 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601074",
+  "descripcion_anterior": "TUBERIA PVC PERFILADO HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADO HELICOIDAL DE 24 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601075",
+  "descripcion_anterior": "TUBERIA PVC PERFILADO HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADO HELICOIDAL DE 30 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601076",
+  "descripcion_anterior": "TUBERIA PVC PERFILADA HELICOIDAL",
+  "descripcion_nueva": "TUBERIA PVC PERFILADA HELICOIDAL DE 36 \"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2601077",
+  "descripcion_anterior": "TUBERIA PVC PERFILADA DOBLE",
+  "descripcion_nueva": "TUBERIA PVC PERFILADA DOBLE PARED DE 18 \"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601078",
+  "descripcion_anterior": "TUBERIA ELECTRICA PVC DE 3/4\" CED",
+  "descripcion_nueva": "TUBERIA ELECTRICA PVC DE 3/4\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601079",
+  "descripcion_anterior": "TUBERIA ELECTRICA PVC DE 1/2\" CED",
+  "descripcion_nueva": "TUBERIA ELECTRICA PVC DE 1/2\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2601080",
+  "descripcion_anterior": "TUBERIA ELECTRICA PVC DE 1\" CED 40",
+  "descripcion_nueva": "TUBERIA ELECTRICA PVC DE 1\"",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2604001",
+  "descripcion_anterior": "TUBO DE CONCRETO DE 4\"",
+  "descripcion_nueva": "TUBO DE CONCRETO DE 4\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604002",
+  "descripcion_anterior": "TUBO DE CONCRETO DE 6\"",
+  "descripcion_nueva": "TUBO DE CONCRETO DE 6\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604003",
+  "descripcion_anterior": "TUBO DE CONCRETO DE 8\"",
+  "descripcion_nueva": "TUBO DE CONCRETO DE 8\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604004",
+  "descripcion_anterior": "TUBO DE CONCRETO DE 12\"",
+  "descripcion_nueva": "TUBO DE CONCRETO DE 12\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604005",
+  "descripcion_anterior": "TUBO DE CONCRETO DE 15\"",
+  "descripcion_nueva": "TUBO DE CONCRETO DE 15\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604006",
+  "descripcion_anterior": "TUBERIA DE CONCRETO SIMPLE DE 24\"",
+  "descripcion_nueva": "TUBERIA DE CONCRETO SIMPLE DE 24\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604007",
+  "descripcion_anterior": "TUBO DE CONCRETO REFORZADO DE",
+  "descripcion_nueva": "TUBO DE CONCRETO REFORZADO DE 15\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604008",
+  "descripcion_anterior": "TUBO DE CONCRETO REFORZADO DE",
+  "descripcion_nueva": "TUBO DE CONCRETO REFORZADO DE 18\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604009",
+  "descripcion_anterior": "TUBO DE CONCRETO REFORZADO DE",
+  "descripcion_nueva": "TUBO DE CONCRETO REFORZADO DE 24\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604010",
+  "descripcion_anterior": "TUBO DE CONCRETO REFORZADO DE",
+  "descripcion_nueva": "TUBO DE CONCRETO REFORZADO DE 36\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604011",
+  "descripcion_anterior": "TUBO DE CONCRETO REFORZADO DE",
+  "descripcion_nueva": "TUBO DE CONCRETO REFORZADO DE 30\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604012",
+  "descripcion_anterior": "TUBO DE CONCRETO REFORZADO DE",
+  "descripcion_nueva": "TUBO DE CONCRETO REFORZADO DE 48\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2604013",
+  "descripcion_anterior": "TUBO CONC. TIPO III ASTM C-76 60\"",
+  "descripcion_nueva": "TUBO CONC. TIPO III ASTM C-76 60\"",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2609001",
+  "descripcion_anterior": "TUBERIA POLIETILENO ALTA",
+  "descripcion_nueva": "TUBERIA POLIETILENO ALTA DENSIDAD 12\" (HDP)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2609002",
+  "descripcion_anterior": "TUBERIA POLIETILENO ALTA",
+  "descripcion_nueva": "TUBERIA POLIETILENO ALTA DENSIDAD 15\" (HDP)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2609003",
+  "descripcion_anterior": "TUBERIA POLIETILENO ALTA",
+  "descripcion_nueva": "TUBERIA POLIETILENO ALTA DENSIDAD 18\" (HDP)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2609004",
+  "descripcion_anterior": "TUBERIA POLIETILENO ALTA",
+  "descripcion_nueva": "TUBERIA POLIETILENO ALTA DENSIDAD 24\" (HDP)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2609005",
+  "descripcion_anterior": "TUBERIA POLIETILENO ALTA",
+  "descripcion_nueva": "TUBERIA POLIETILENO ALTA DENSIDAD 30\" (HDP)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2609006",
+  "descripcion_anterior": "TUBERIA POLIETILENO ALTA",
+  "descripcion_nueva": "TUBERIA POLIETILENO ALTA DENSIDAD 36\" (HDP)",
+  "unidad_anterior": "LANCE",
+  "unidad_nueva": "LANCE"
+ },
+ {
+  "codigo": "MN-F2609007",
+  "descripcion_anterior": "TUBERIA POLIETILENO ALTA",
+  "descripcion_nueva": "TUBERIA POLIETILENO ALTA DENSIDAD 42\" (HDP)",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F2903002",
+  "descripcion_anterior": "MADERA CEPILLADA CURADA ½\" X 1\"",
+  "descripcion_nueva": "MADERA CEPILLADA CURADA 1/2\" X 1\"",
+  "unidad_anterior": "PT",
+  "unidad_nueva": "PT"
+ },
+ {
+  "codigo": "MN-F2904001",
+  "descripcion_anterior": "PLYWOOD DE PINO 8'X 4' X ¼\"",
+  "descripcion_nueva": "PLYWOOD DE PINO 8'X 4' X 1/4\"",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2904002",
+  "descripcion_anterior": "PLYWOOD DE PINO ¾\" X 4' X 8'",
+  "descripcion_nueva": "PLYWOOD DE PINO 3/4\" X 4' X 8'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2904003",
+  "descripcion_anterior": "PLYWOOD DE PINO 3/16\" X 3' X7'",
+  "descripcion_nueva": "PLYWOOD DE PINO 3/16\" X 3' X7'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2904004",
+  "descripcion_anterior": "PLYWOOD DE PINO ½\" X 4' X 8'",
+  "descripcion_nueva": "PLYWOOD DE PINO 1/2\" X 4' X 8'",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F2905001",
+  "descripcion_anterior": "MACHIMBRE DE 1'' CEPILLADA",
+  "descripcion_nueva": "MACHIMBRE DE 1'' CEPILLADA CURADA",
+  "unidad_anterior": "PT",
+  "unidad_nueva": "PT"
+ },
+ {
+  "codigo": "MN-F2906001",
+  "descripcion_anterior": "MOCHETA 1\" X ½\"",
+  "descripcion_nueva": "MOCHETA 1\" X 1/2\"",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MN-F2906002",
+  "descripcion_anterior": "MOCHETA 1¾\" X ½\"",
+  "descripcion_nueva": "MOCHETA 13/4\" X 1/2\"",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MN-F2906003",
+  "descripcion_anterior": "MOLDURA MADERA CURADA",
+  "descripcion_nueva": "MOLDURA MADERA CURADA",
+  "unidad_anterior": "PL",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MN-F3001003",
+  "descripcion_anterior": "TAPADERA P/INODORO PLASTICA",
+  "descripcion_nueva": "TAPADERA P/INODORO PLASTICA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3005001",
+  "descripcion_anterior": "LAVAPLATOS DE ACERO INOXIDABLE",
+  "descripcion_nueva": "LAVAPLATOS DE ACERO INOXIDABLE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3601001",
+  "descripcion_anterior": "ESCOBA",
+  "descripcion_nueva": "ESCOBA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3601002",
+  "descripcion_anterior": "JABON PARA LAVAR",
+  "descripcion_nueva": "JABON PARA LAVAR",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3601003",
+  "descripcion_anterior": "RECOGEDOR DE BASURA",
+  "descripcion_nueva": "RECOGEDOR DE BASURA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3601004",
+  "descripcion_anterior": "BALDE METALICO",
+  "descripcion_nueva": "BALDE METALICO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3701005",
+  "descripcion_anterior": "COLCHA DE 1 X 1.94 Mts.",
+  "descripcion_nueva": "COLCHA DE 1 X 1.94 Mts.",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801001",
+  "descripcion_anterior": "PAPEL BOND",
+  "descripcion_nueva": "PAPEL BOND",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801002",
+  "descripcion_anterior": "PAPEL MANILA 36X24",
+  "descripcion_nueva": "PAPEL MANILA 36X24",
+  "unidad_anterior": "PLIEG",
+  "unidad_nueva": "PLIEGO"
+ },
+ {
+  "codigo": "MN-F3801003",
+  "descripcion_anterior": "HOJAS CARTOGRAFICAS",
+  "descripcion_nueva": "HOJAS CARTOGRAFICAS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801004",
+  "descripcion_anterior": "SEPIAS 1:20,000",
+  "descripcion_nueva": "SEPIAS 1:20,000",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801005",
+  "descripcion_anterior": "COPIAS HELIOGRAFICAS",
+  "descripcion_nueva": "COPIAS HELIOGRAFICAS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801006",
+  "descripcion_anterior": "LAPICES DE CERA",
+  "descripcion_nueva": "LAPICES DE CERA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801007",
+  "descripcion_anterior": "FOTOS AEREAS",
+  "descripcion_nueva": "FOTOS AEREAS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801008",
+  "descripcion_anterior": "MEMORIA TECNICA/ DOCUMENTO",
+  "descripcion_nueva": "MEMORIA TECNICA/ DOCUMENTO FINAL",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801009",
+  "descripcion_anterior": "PLANO",
+  "descripcion_nueva": "PLANO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3801010",
+  "descripcion_anterior": "COPIAS",
+  "descripcion_nueva": "COPIAS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F3802001",
+  "descripcion_anterior": "MANUAL DE MANTENIMIENTO",
+  "descripcion_nueva": "MANUAL DE MANTENIMIENTO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001004",
+  "descripcion_anterior": "ANALISIS BACTERIOLOGICO DE AGUA",
+  "descripcion_nueva": "ANALISIS BACTERIOLOGICO DE AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001005",
+  "descripcion_anterior": "ANALISIS DE COLOR EN AGUA",
+  "descripcion_nueva": "ANALISIS DE COLOR EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001006",
+  "descripcion_anterior": "ANALISIS DEMANDA BIOQUIMICA DE",
+  "descripcion_nueva": "ANALISIS DEMANDA BIOQUIMICA DE OXIGENO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001007",
+  "descripcion_anterior": "ANALISIS DEMANDA QUIMICA",
+  "descripcion_nueva": "ANALISIS DEMANDA QUIMICA OXIGENO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001008",
+  "descripcion_anterior": "ANALISIS FISICO QUIMICO",
+  "descripcion_nueva": "ANALISIS FISICO QUIMICO BACTERIOLOGICO AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001009",
+  "descripcion_anterior": "ANALISIS NITRATOS EN AGUA",
+  "descripcion_nueva": "ANALISIS NITRATOS EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001020",
+  "descripcion_anterior": "ANALISIS NITRITOS EN AGUA",
+  "descripcion_nueva": "ANALISIS NITRITOS EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001021",
+  "descripcion_anterior": "ANALISIS pH EN AGUA",
+  "descripcion_nueva": "ANALISIS pH EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001022",
+  "descripcion_anterior": "ANALISIS PRESENCIA DE ZINC EN",
+  "descripcion_nueva": "ANALISIS PRESENCIA DE ZINC EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001023",
+  "descripcion_anterior": "ANALISIS PRESENCIA HIERRO EN",
+  "descripcion_nueva": "ANALISIS PRESENCIA HIERRO EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001024",
+  "descripcion_anterior": "ANALISIS PRESENCIA MANGANESO EN",
+  "descripcion_nueva": "ANALISIS PRESENCIA MANGANESO EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001025",
+  "descripcion_anterior": "ANALISIS PRESENCIA NIQUEL EN",
+  "descripcion_nueva": "ANALISIS PRESENCIA NIQUEL EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001026",
+  "descripcion_anterior": "ANALISIS PRESENCIA PLOMO EN",
+  "descripcion_nueva": "ANALISIS PRESENCIA PLOMO EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001027",
+  "descripcion_anterior": "ANALISIS RESIDUOS",
+  "descripcion_nueva": "ANALISIS RESIDUOS ORGANOFOSFORADOS EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001028",
+  "descripcion_anterior": "ANALISIS SOLIDOS DISUELTOS EN",
+  "descripcion_nueva": "ANALISIS SOLIDOS DISUELTOS EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001029",
+  "descripcion_anterior": "ANALISIS TURBIEDAD EN AGUA",
+  "descripcion_nueva": "ANALISIS TURBIEDAD EN AGUA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001032",
+  "descripcion_anterior": "ENVASE DE VIDRIO ESTERILIZADO",
+  "descripcion_nueva": "ENVASE DE VIDRIO ESTERILIZADO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001039",
+  "descripcion_anterior": "PRUEBA DE CONCRETO (COMPRESION",
+  "descripcion_nueva": "PRUEBA DE CONCRETO (COMPRESION CILINDRO)",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4001042",
+  "descripcion_anterior": "RECUENTO DE COLIFORMES TOTALES",
+  "descripcion_nueva": "RECUENTO DE COLIFORMES TOTALES Y FECALES",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4402002",
+  "descripcion_anterior": "VENTANA C/MARCO DE ALUMINIO Y",
+  "descripcion_nueva": "VENTANA C/MARCO DE ALUMINIO Y CELOSIA DE ALUMINIO",
+  "unidad_anterior": "M2",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4402003",
+  "descripcion_anterior": "TUBO PARA CHIMENEA DE 6\" DE",
+  "descripcion_nueva": "TUBO PARA CHIMENEA DE 6\" DE LAMINA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4405002",
+  "descripcion_anterior": "CANAL DE PVC",
+  "descripcion_nueva": "CANAL DE PVC",
+  "unidad_anterior": "M.L.",
+  "unidad_nueva": "ML"
+ },
+ {
+  "codigo": "MN-F4405004",
+  "descripcion_anterior": "CASETA DE LAMINA ALUMINIZADA",
+  "descripcion_nueva": "CASETA DE LAMINA ALUMINIZADA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4405005",
+  "descripcion_anterior": "TAPADERA METALICA PARA POZO",
+  "descripcion_nueva": "TAPADERA METALICA PARA POZO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4405007",
+  "descripcion_anterior": "PIZARRA DE FORMICA DE 2.40 X 1.20",
+  "descripcion_nueva": "PIZARRA DE FORMICA DE 2.40 X 1.20",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4405008",
+  "descripcion_anterior": "TASA Y PLANCHA/ FIBRA DE VIDRIO /",
+  "descripcion_nueva": "TASA Y PLANCHA/ FIBRA DE VIDRIO / LETR. FOSO SIMPL",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4405011",
+  "descripcion_anterior": "ROTULO METALICO 2.44X1.22m",
+  "descripcion_nueva": "ROTULO METALICO FABRICADO EN FHIS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4405013",
+  "descripcion_anterior": "SENTADERA DE PLASTICO PARA",
+  "descripcion_nueva": "SENTADERA DE PLASTICO PARA LETRINA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4502001",
+  "descripcion_anterior": "ACEITE VEGETAL",
+  "descripcion_nueva": "ACEITE VEGETAL",
+  "unidad_anterior": "LT",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MN-F4503001",
+  "descripcion_anterior": "NEUMATICO DE LLANTA USADO",
+  "descripcion_nueva": "NEUMATICO DE LLANTA USADO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MN-F4503002",
+  "descripcion_anterior": "LLANTA VIEJA SIN RODAJE",
+  "descripcion_nueva": "LLANTA VIEJA SIN RODAJE",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F3501002",
+  "descripcion_anterior": "ELECTRODO DE SOLDADURA 6013 X",
+  "descripcion_nueva": "ELECTRODO DE SOLDADURA 6013 X 3/32 X1",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MI-F3501003",
+  "descripcion_anterior": "ELECTRODO SOLDADURA 6011 X 1/8\"",
+  "descripcion_nueva": "ELECTRODO SOLDADURA 6011 X 1/8\"",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MI-F3501004",
+  "descripcion_anterior": "ELECTRODO SOLDADURA 6013 X 1/8",
+  "descripcion_nueva": "ELECTRODO SOLDADURA 6013 X 1/8 X 1'",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MI-F3803001",
+  "descripcion_anterior": "CRAYOLAS",
+  "descripcion_nueva": "CRAYOLAS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4001001",
+  "descripcion_anterior": "COMPARADOR DE CLORO",
+  "descripcion_nueva": "COMPARADOR DE CLORO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4001002",
+  "descripcion_anterior": "HIPOCLORITO DE CALCIO (HTH)",
+  "descripcion_nueva": "HIPOCLORITO DE CALCIO (HTH)",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MI-F4001003",
+  "descripcion_anterior": "HIPOCLORITO DE SODIO",
+  "descripcion_nueva": "HIPOCLORITO DE SODIO",
+  "unidad_anterior": "LB",
+  "unidad_nueva": "LIBRA"
+ },
+ {
+  "codigo": "MI-F4101002",
+  "descripcion_anterior": "SACO DE POLIETILENO DE 0.75 X 1.00",
+  "descripcion_nueva": "SACO DE POLIETILENO DE 0.75 X 1.00 X 0.20",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4203001",
+  "descripcion_anterior": "APOYOS DE NEOPRENO PARA",
+  "descripcion_nueva": "APOYOS DE NEOPRENO PARA PUENTES",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4401001",
+  "descripcion_anterior": "VENTANA ALUMINIO,CELOSIA DE",
+  "descripcion_nueva": "VENTANA DE ALUMINIO Y CELOSIA DE VIDRIO",
+  "unidad_anterior": "M2",
+  "unidad_nueva": "M2"
+ },
+ {
+  "codigo": "MI-F4405010",
+  "descripcion_anterior": "PLACA DE ALUMINIO",
+  "descripcion_nueva": "PLACA DE ALUMINIO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4405019",
+  "descripcion_anterior": "MANGUERA PLIOVIC MULTIUSOS DE",
+  "descripcion_nueva": "MANGUERA PLIOVIC MULTIUSOS DE 3/4\"",
+  "unidad_anterior": "P.L.",
+  "unidad_nueva": "PIE"
+ },
+ {
+  "codigo": "MI-F4501001",
+  "descripcion_anterior": "DIESEL",
+  "descripcion_nueva": "DIESEL",
+  "unidad_anterior": "GLN",
+  "unidad_nueva": "GALON"
+ },
+ {
+  "codigo": "MI-F4502002",
+  "descripcion_anterior": "ACEITE QUEMADO",
+  "descripcion_nueva": "ACEITE QUEMADO",
+  "unidad_anterior": "GLN",
+  "unidad_nueva": "GALON"
+ },
+ {
+  "codigo": "MI-F4701001",
+  "descripcion_anterior": "LIJA",
+  "descripcion_nueva": "LIJA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4701002",
+  "descripcion_anterior": "LIJA DE AGUA No. 280",
+  "descripcion_nueva": "LIJA DE AGUA No. 280",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4701003",
+  "descripcion_anterior": "LIJA PARA MADERA No. 60",
+  "descripcion_nueva": "LIJA PARA MADERA No. 60",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4701004",
+  "descripcion_anterior": "LIJA PARA MADERA No. 80",
+  "descripcion_nueva": "LIJA PARA MADERA No. 80",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F4801001",
+  "descripcion_anterior": "IMPERMEABILIZANTE EQUIVALENTE A",
+  "descripcion_nueva": "IMPERMEABILIZANTE SIKATOP 144 O SIMILAR",
+  "unidad_anterior": "KIT",
+  "unidad_nueva": "KIT"
+ },
+ {
+  "codigo": "HE-F01001",
+  "descripcion_anterior": "CARGADORA 930 O SIMILAR",
+  "descripcion_nueva": "CARGADORA 930 O SIMILAR",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01002",
+  "descripcion_anterior": "CARGADORA FRONTAL DE RUEDA",
+  "descripcion_nueva": "CARGADORA FRONTAL DE RUEDA",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01004",
+  "descripcion_anterior": "CISTERNA",
+  "descripcion_nueva": "CISTERNA",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01006",
+  "descripcion_anterior": "COMPACTADORA DE RODILLO",
+  "descripcion_nueva": "COMPACTADORA DE RODILLO",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01008",
+  "descripcion_anterior": "EXCAVADORA DE ORUGA 790",
+  "descripcion_nueva": "EXCAVADORA DE ORUGA 790",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01009",
+  "descripcion_anterior": "MOTONIVELADORA",
+  "descripcion_nueva": "MOTONIVELADORA",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01010",
+  "descripcion_anterior": "RETROEXCAVADORA DE LLANTA",
+  "descripcion_nueva": "RETROEXCAVADORA DE LLANTA",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01011",
+  "descripcion_anterior": "TANQUE CISTERNA",
+  "descripcion_nueva": "TANQUE CISTERNA",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01012",
+  "descripcion_anterior": "TRACTOR D - 8 K O EQUIVALENTE",
+  "descripcion_nueva": "TRACTOR D - 8 K O EQUIVALENTE",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01013",
+  "descripcion_anterior": "TRACTOR DE ORUGA D-7",
+  "descripcion_nueva": "TRACTOR DE ORUGA D-7",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01014",
+  "descripcion_anterior": "TRACTOR DE ORUGA D6D",
+  "descripcion_nueva": "TRACTOR DE ORUGA D6",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01015",
+  "descripcion_anterior": "VIBRO-COMPACTADORA",
+  "descripcion_nueva": "VIBRO-COMPACTADORA",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F01016",
+  "descripcion_anterior": "VOLQUETA 5 M3",
+  "descripcion_nueva": "VOLQUETA 5 M3",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F02002",
+  "descripcion_anterior": "CAMION PLATAFORMA",
+  "descripcion_nueva": "CAMION PLATAFORMA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "HE-F03002",
+  "descripcion_anterior": "BOMBA DE AGUA 4¼ »",
+  "descripcion_nueva": "BOMBA DE AGUA 4\"",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F03003",
+  "descripcion_anterior": "BOMBA DE AGUA DE 2\"",
+  "descripcion_nueva": "BOMBA DE AGUA DE 2\"",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F03005",
+  "descripcion_anterior": "COMPRESOR",
+  "descripcion_nueva": "COMPRESOR",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F03008",
+  "descripcion_anterior": "CORTADORA DE CONCRETO",
+  "descripcion_nueva": "CORTADORA",
+  "unidad_anterior": "DIA",
+  "unidad_nueva": "DIA"
+ },
+ {
+  "codigo": "HE-F03009",
+  "descripcion_anterior": "DOBLADORA MANUAL",
+  "descripcion_nueva": "DOBLADORA MANUAL",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F03014",
+  "descripcion_anterior": "SOLDADORA",
+  "descripcion_nueva": "SOLDADORA",
+  "unidad_anterior": "HRA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F04001",
+  "descripcion_anterior": "EQUIPO DE TOPOGRAFIA",
+  "descripcion_nueva": "EQUIPO DE TOPOGRAFIA",
+  "unidad_anterior": "DIA",
+  "unidad_nueva": "HORA"
+ },
+ {
+  "codigo": "HE-F05002",
+  "descripcion_anterior": "MABLES PEQUEÑOS",
+  "descripcion_nueva": "MABLES PEQUEÑOS",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "HE-F06014",
+  "descripcion_anterior": "AIRE ACONDICIONADO DE 60,000 BTU,",
+  "descripcion_nueva": "AIRE ACONDICIONADO DE 60,000 BTU, 220V.",
+  "unidad_anterior": "UND",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1301002",
+  "descripcion_anterior": "MOLDURA PISO DE CERAMICA",
+  "descripcion_nueva": "MOLDURA PISO DE CERAMICA",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F1302001",
+  "descripcion_anterior": "AZULEJO DE 15 X 15 CMS.",
+  "descripcion_nueva": "AZULEJO DE 15 X 15 CMS.",
+  "unidad_anterior": "unid",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "OC-F01014",
+  "descripcion_anterior": "TOPOGRAFO",
+  "descripcion_nueva": "TOPOGRAFO",
+  "unidad_anterior": "JRD",
+  "unidad_nueva": "JDR"
+ },
+ {
+  "codigo": "OC-F01015",
+  "descripcion_anterior": "DIRECCION POR MAESTRO DE OBRA",
+  "descripcion_nueva": "DIRECCION POR MAESTRO DE OBRA (D - PROYECTO)",
+  "unidad_anterior": "GLB",
+  "unidad_nueva": "GLB"
+ },
+ {
+  "codigo": "OC-F01017",
+  "descripcion_anterior": "VIATICOS DE",
+  "descripcion_nueva": "VIATICOS DE CARTOGRAFO/NAVEGADOR",
+  "unidad_anterior": "JDR",
+  "unidad_nueva": "JDR"
+ },
+ {
+  "codigo": "OC-F02001",
+  "descripcion_anterior": "INVITACION A LICITACION",
+  "descripcion_nueva": "INVITACION A LICITACION",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "OC-F02002",
+  "descripcion_anterior": "AVISO ESCRITO",
+  "descripcion_nueva": "AVISO ESCRITO",
+  "unidad_anterior": "UNID",
+  "unidad_nueva": "UND"
+ },
+ {
+  "codigo": "MI-F0101002",
+  "descripcion_anterior": "LIGA PARA CERAMICA",
+  "descripcion_nueva": "GROUT DUSTI ( LIGA PARA CERAMICA )",
+  "unidad_anterior": "BOLSA",
+  "unidad_nueva": "BOLSA"
+ },
+ {
+  "codigo": "MI-F0901001",
+  "descripcion_anterior": "PEGAMENTO PARA MADERA",
+  "descripcion_nueva": "PEGAMENTO PARA MADERA RESISTOL 850",
+  "unidad_anterior": "GLN",
+  "unidad_nueva": "GALON"
+ },
+ {
+  "codigo": "MI-F0901003",
+  "descripcion_anterior": "PEGAMENTO PARA PVC",
+  "descripcion_nueva": "PEGAMENTO PARA PVC RESISTOL 4045",
+  "unidad_anterior": "GLN",
+  "unidad_nueva": "GALON"
+ }
+]

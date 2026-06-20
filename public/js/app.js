@@ -3,7 +3,6 @@
 // Mapa de páginas — lazy lookup para evitar errores si una función no carga
 const pageMap = {
   dashboard:            () => renderDashboard,
-  proyectos:            () => renderProyectos,
   presupuestos:         () => renderPresupuestos,
   centros:              () => renderCentros,
   actividades:          () => renderActividades,
@@ -14,10 +13,102 @@ const pageMap = {
   actualizacion_precios:() => renderActualizacionPrecios,
   plantillas:           () => renderPlantillas,
   bodega:               () => renderBodega,
+  requisiciones:        () => renderRequisiciones,
+  movimientos:          () => renderMovimientos,
+  clientes:             () => renderClientes,
   usuarios:             () => renderUsuarios,
+  seguimiento:          () => renderSeguimiento,
+  licitacion:           () => renderLicitacion,
+  documentacion:        () => renderDocumentacion,
+  bitacora:             () => renderBitacora,
+  configuracion:        () => renderConfiguracion,
+  valuaciones:          () => renderValuaciones,
+  planilla:             () => renderPlanilla,
+  adm_dashboard:        () => renderAdmDashboard,
+  proveedores:          () => renderProveedores,
+  ordenes_compra:       () => renderOrdenesCompra,
+  cuentas_pagar:        () => renderCuentasPagar,
+  tareo:                () => renderTareo,
+};
+
+// Mapa página → grupo al que pertenece
+const pageGroupMap = {
+  dashboard:            'costos_ppto',
+  presupuestos:         'costos_ppto',
+  centros:              'costos_ppto',
+  licitacion:           'costos_ppto',
+  actividades:         'costos_ppto',
+  insumos:             'costos_ppto',
+  catalogos:           'costos_ppto',
+  especificaciones:    'costos_ppto',
+  actualizacion_precios:'costos_ppto',
+  reportes:            'costos_ppto',
+  seguimiento:         'costos_ppto',
+  clientes:             'admin',
+  usuarios:             'admin',
+  configuracion:        'admin',
+  valuaciones:             'costos_ppto',
+  planilla:             'costos_ppto',
+  adm_dashboard:        'adm_fin',
+  proveedores:          'adm_fin',
+  ordenes_compra:       'adm_fin',
+  bodega:               'adm_fin',
+  requisiciones:        'adm_fin',
+  movimientos:          'adm_fin',
+  cuentas_pagar:        'adm_fin',
+  tareo:                'adm_fin',
+  documentacion:             'costos_ppto',
+  bitacora:             'costos_ppto',
 };
 
 let currentPage = 'dashboard';
+
+// ============ GRUPOS DESPLEGABLES ============
+
+function toggleGroup(groupId, forceOpen) {
+  const header = document.querySelector(`.nav-group-header[data-group="${groupId}"]`);
+  const body   = document.getElementById(`group-${groupId}`);
+  if (!header || !body) return;
+
+  const shouldOpen = forceOpen !== undefined ? forceOpen : !header.classList.contains('open');
+  header.classList.toggle('open', shouldOpen);
+  body.classList.toggle('open', shouldOpen);
+}
+
+// Mapa página → sub-grupo colapsable
+const pageSubgroupMap = {
+  presupuestos:          'gestion',
+  centros:               'gestion',
+  licitacion:            'gestion',
+  actividades:           'catalogos_precios',
+  insumos:               'catalogos_precios',
+  catalogos:             'catalogos_precios',
+  especificaciones:      'catalogos_precios',
+  actualizacion_precios: 'catalogos_precios',
+  valuaciones:           'ejecucion',
+  seguimiento:           'ejecucion',
+  bitacora:              'ejecucion',
+  documentacion:         'ejecucion',
+  reportes:              'reportes_cp',
+};
+
+function toggleSubgroup(subId, forceOpen) {
+  const header = document.querySelector(`.nav-subgroup-header[data-subgroup="${subId}"]`);
+  const body   = document.getElementById(`subgroup-${subId}`);
+  if (!header || !body) return;
+  const shouldOpen = forceOpen !== undefined ? forceOpen : !header.classList.contains('open');
+  header.classList.toggle('open', shouldOpen);
+  body.classList.toggle('open', shouldOpen);
+}
+
+function openGroupForPage(page) {
+  const group = pageGroupMap[page];
+  if (group) toggleGroup(group, true);
+  const sub = pageSubgroupMap[page];
+  if (sub) toggleSubgroup(sub, true);
+}
+
+// ============ NAVEGACIÓN ============
 
 function navigateTo(page, ctx = {}) {
   currentPage = page;
@@ -26,6 +117,9 @@ function navigateTo(page, ctx = {}) {
   document.querySelectorAll('.nav-item').forEach(el => {
     el.classList.toggle('active', el.dataset.page === page);
   });
+
+  // Abrir el grupo correspondiente si aplica
+  openGroupForPage(page);
 
   // Resolver función en tiempo de ejecución (lazy)
   const getFn = pageMap[page];
@@ -96,8 +190,25 @@ document.getElementById('btnLogout').addEventListener('click', async () => {
   toast('Sesión cerrada', 'info');
 });
 
-// Delegación dinámica — captura items del nav sin importar cuándo fueron creados
+// Delegación dinámica — nav-item (páginas)
 document.addEventListener('click', (e) => {
+  // Toggle de grupo desplegable
+  const groupHeader = e.target.closest('.nav-group-header');
+  if (groupHeader) {
+    e.preventDefault();
+    toggleGroup(groupHeader.dataset.group);
+    return;
+  }
+
+  // Toggle de sub-grupo colapsable
+  const subHeader = e.target.closest('.nav-subgroup-header');
+  if (subHeader) {
+    e.preventDefault();
+    toggleSubgroup(subHeader.dataset.subgroup);
+    return;
+  }
+
+  // Navegación a página
   const navItem = e.target.closest('.nav-item');
   if (!navItem) return;
   e.preventDefault();

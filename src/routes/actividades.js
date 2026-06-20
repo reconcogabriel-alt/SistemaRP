@@ -33,6 +33,34 @@ router.get('/', requireAuth, async (req, res) => {
   } catch (e) { res.status(500).json({ error: e.message }); }
 });
 
+
+// ── GET actividades SIN especificación técnica (selector modal EETT) ──
+// ?q=texto  →  busca por código o descripción
+router.get('/sin-eett', requireAuth, async (req, res) => {
+  try {
+    const db  = await getDb();
+    const q   = (req.query.q || '').trim();
+    const pat = `%${q}%`;
+    const sql = q
+      ? `SELECT a.id_actividad, a.codigo, a.descripcion, a.unidad
+         FROM actividades a
+         LEFT JOIN especificaciones_fhis e ON e.codigo = a.codigo
+         WHERE e.id_especificacion IS NULL
+           AND (UPPER(a.codigo) LIKE UPPER(?) OR UPPER(a.descripcion) LIKE UPPER(?))
+         ORDER BY a.codigo LIMIT 40`
+      : `SELECT a.id_actividad, a.codigo, a.descripcion, a.unidad
+         FROM actividades a
+         LEFT JOIN especificaciones_fhis e ON e.codigo = a.codigo
+         WHERE e.id_especificacion IS NULL
+         ORDER BY a.codigo LIMIT 40`;
+    const r = db.exec(sql, q ? [pat, pat] : []);
+    const rows = r.length ? r[0].values.map(v => ({
+      id_actividad: v[0], codigo: v[1], descripcion: v[2], unidad: v[3]
+    })) : [];
+    res.json({ rows });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
 // GET actividad detalle con insumos
 router.get('/:id', requireAuth, async (req, res) => {
   try {
@@ -180,6 +208,30 @@ router.post('/recalcular', requireAuth, async (req, res) => {
     saveDb();
     res.json({ ok: true, actualizadas: n });
   } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// POST clonar actividad (copia completa con nuevo código)
+router.post('/:id/clonar', requireAuth, async (req, res) => {
+  try {
+    const db = await getDb();
+    const actR = db.exec('SELECT codigo,descripcion,unidad,costo_total FROM actividades WHERE id_actividad=?',[req.params.id]);
+    if (!actR.length||!actR[0].values.length) return res.status(404).json({error:'No encontrada'});
+    const [cod,desc,unidad,total] = actR[0].values[0];
+    const nuevoCod = cod + '-COPIA';
+    db.run('INSERT INTO actividades (codigo,descripcion,unidad,costo_total) VALUES (?,?,?,?)',
+      [nuevoCod, desc+' (copia)', unidad, total]);
+    const newId = db.exec('SELECT last_insert_rowid()')[0].values[0][0];
+    // Copiar insumos
+    const dets = db.exec('SELECT id_insumo,cantidad,rendimiento,desperdicio,costo_parcial FROM actividad_insumos WHERE id_actividad=?',[req.params.id]);
+    if (dets.length&&dets[0].values.length) {
+      for (const [idIns,cant,rend,desp,cp] of dets[0].values) {
+        db.run('INSERT INTO actividad_insumos (id_actividad,id_insumo,cantidad,rendimiento,desperdicio,costo_parcial) VALUES (?,?,?,?,?,?)',
+          [newId,idIns,cant,rend,desp,cp]);
+      }
+    }
+    saveDb();
+    res.json({ok:true,id:newId,codigo:nuevoCod});
+  } catch(e){res.status(500).json({error:e.message});}
 });
 
 module.exports = router;

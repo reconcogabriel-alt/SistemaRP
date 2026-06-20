@@ -23,7 +23,7 @@ async function renderUsuarios() {
         <p style="color:var(--text-muted);font-size:0.85rem;margin-top:4px">Gestión de acceso al sistema — solo visible para administradores</p>
       </div>
       <div class="page-actions">
-        <button class="btn-primary" onclick="abrirModalNuevoUsuario()">+ Nuevo Usuario</button>
+        <button class="btn btn-primary" onclick="abrirModalNuevoUsuario()">+ Nuevo Usuario</button>
       </div>
     </div>
 
@@ -71,7 +71,7 @@ async function renderUsuarios() {
           <label>Confirmar nueva contraseña</label>
           <input type="password" id="passConfirm" placeholder="••••••••">
         </div>
-        <button class="btn-primary" onclick="cambiarMiPassword()" style="width:fit-content">Actualizar Contraseña</button>
+        <button class="btn btn-primary" onclick="cambiarMiPassword()" style="width:fit-content">Actualizar Contraseña</button>
       </div>
     </div>
   `;
@@ -151,13 +151,13 @@ function renderTablaUsuarios(lista) {
       <td style="color:var(--text-muted);font-size:0.82rem">${u.fecha_creacion ? u.fecha_creacion.slice(0,10) : '—'}</td>
       <td>
         <div style="display:flex;gap:6px">
-          <button class="btn-sm btn-outline" onclick="abrirModalEditarUsuario(${u.id_usuario})" title="Editar">✏</button>
-          <button class="btn-sm ${u.activo ? 'btn-warning' : 'btn-success'}"
+          <button class="btn btn-secondary btn-sm" onclick="abrirModalEditarUsuario(${u.id_usuario})" title="Editar">✏</button>
+          <button class="btn btn-secondary btn-sm"
             onclick="toggleActivoUsuario(${u.id_usuario}, ${u.activo ? 0 : 1}, '${sanitize(u.nombre)}')"
             title="${u.activo ? 'Desactivar' : 'Activar'}">
             ${u.activo ? '⏸' : '▶'}
           </button>
-          <button class="btn-sm btn-danger" onclick="eliminarUsuario(${u.id_usuario}, '${sanitize(u.nombre)}')" title="Eliminar">✕</button>
+          <button class="btn btn-danger btn-sm" onclick="eliminarUsuario(${u.id_usuario}, '${sanitize(u.nombre)}')" title="Eliminar">✕</button>
         </div>
       </td>
     </tr>
@@ -191,18 +191,16 @@ function abrirModalNuevoUsuario() {
         <select id="nu_rol">
           <option value="ingeniero">Ingeniero — acceso completo sin administración</option>
           <option value="consulta">Consulta — solo lectura</option>
-          <option value="admin">Administrador — acceso total</option>
         </select>
       </div>
       <div style="background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:0.82rem;color:var(--text-muted)">
         <strong style="color:var(--text)">Roles:</strong><br>
-        <b>Administrador</b>: acceso completo + gestión de usuarios<br>
-        <b>Ingeniero</b>: crea/edita proyectos, presupuestos y reportes<br>
+        <b>Ingeniero</b>: crea/edita presupuestos y reportes<br>
         <b>Consulta</b>: solo visualización, sin crear ni editar
       </div>
       <div style="display:flex;gap:10px;justify-content:flex-end;padding-top:4px">
-        <button class="btn-outline" onclick="hideModal()">Cancelar</button>
-        <button class="btn-primary" onclick="guardarNuevoUsuario()">Crear Usuario</button>
+        <button class="btn btn-secondary" onclick="hideModal()">Cancelar</button>
+        <button class="btn btn-primary" onclick="guardarNuevoUsuario()">Crear Usuario</button>
       </div>
     </div>
   `);
@@ -243,7 +241,6 @@ function abrirModalEditarUsuario(id) {
         <select id="eu_rol">
           <option value="ingeniero" ${u.rol==='ingeniero'?'selected':''}>Ingeniero</option>
           <option value="consulta"  ${u.rol==='consulta' ?'selected':''}>Consulta</option>
-          <option value="admin"     ${u.rol==='admin'    ?'selected':''}>Administrador</option>
         </select>
       </div>
       <div class="field-group">
@@ -251,8 +248,8 @@ function abrirModalEditarUsuario(id) {
         <input type="password" id="eu_pass" placeholder="••••••••" autocomplete="new-password">
       </div>
       <div style="display:flex;gap:10px;justify-content:flex-end;padding-top:4px">
-        <button class="btn-outline" onclick="hideModal()">Cancelar</button>
-        <button class="btn-primary" onclick="guardarEdicionUsuario(${id})">Guardar Cambios</button>
+        <button class="btn btn-secondary" onclick="hideModal()">Cancelar</button>
+        <button class="btn btn-primary" onclick="guardarEdicionUsuario(${id})">Guardar Cambios</button>
       </div>
     </div>
   `);

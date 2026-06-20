@@ -13,15 +13,10 @@ async function renderDashboard() {
 
   try {
     const data = await api.get('/api/reportes/dashboard');
-    const { stats, proyectosRecientes, cambiosPrecios } = data;
+    const { stats, presupuestosRecientes, cambiosPrecios } = data;
 
     el.querySelector('.page-body').innerHTML = `
       <div class="stat-grid">
-        <div class="stat-card">
-          <div class="stat-label">Proyectos Activos</div>
-          <div class="stat-value">${stats.proyectos}</div>
-          <div class="stat-bg-icon">◻</div>
-        </div>
         <div class="stat-card orange">
           <div class="stat-label">Actividades / CU</div>
           <div class="stat-value">${stats.actividades}</div>
@@ -47,26 +42,25 @@ async function renderDashboard() {
       <div class="dashboard-grid">
         <div class="card">
           <div class="card-header">
-            <span class="card-title">Proyectos Recientes</span>
-            <button class="btn btn-primary btn-sm" onclick="navigateTo('proyectos')">Ver todos</button>
+            <span class="card-title">Presupuestos Recientes</span>
+            <button class="btn btn-primary btn-sm" onclick="navigateTo('presupuestos')">Ver todos</button>
           </div>
           <div class="table-wrap">
             <table>
               <thead><tr>
-                <th>Proyecto</th><th>Cliente</th><th>Ubicación</th>
-                <th>Pres.</th><th>Monto Total</th><th>Estado</th>
+                <th>Presupuesto</th><th>Cliente</th>
+                <th>Ubicación</th><th>Monto Total</th><th>Estado</th>
               </tr></thead>
               <tbody>
-                ${proyectosRecientes.length ? proyectosRecientes.map(p => `
+                ${presupuestosRecientes.length ? presupuestosRecientes.map(p => `
                   <tr>
                     <td><strong>${sanitize(p.nombre)}</strong></td>
                     <td>${sanitize(p.cliente || '—')}</td>
                     <td>${sanitize(p.ubicacion || '—')}</td>
-                    <td style="text-align:center">${p.presupuestos}</td>
                     <td class="td-monto">L ${fmt(p.monto_total)}</td>
                     <td><span class="badge badge-${p.estado}">${p.estado}</span></td>
                   </tr>`).join('') : 
-                  `<tr><td colspan="6"><div class="empty-state"><div class="empty-icon">◻</div><div class="empty-title">Sin proyectos</div></div></td></tr>`}
+                  `<tr><td colspan="5"><div class="empty-state"><div class="empty-icon">◻</div><div class="empty-title">Sin presupuestos</div></div></td></tr>`}
               </tbody>
             </table>
           </div>

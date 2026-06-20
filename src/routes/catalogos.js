@@ -110,10 +110,10 @@ router.delete('/:id', requireAuth, async (req, res) => {
     const db = await getDb();
     const chk = db.exec('SELECT es_base FROM catalogos_precios WHERE id_catalogo=?', [req.params.id]);
     if (chk.length && chk[0].values[0][0]) return res.status(400).json({ error: 'No se puede eliminar el catálogo base' });
-    // Verificar si algún proyecto lo usa
-    const enUso = db.exec('SELECT COUNT(*) FROM proyectos WHERE id_catalogo=?', [req.params.id]);
+    // Verificar si algún presupuesto lo usa
+    const enUso = db.exec('SELECT COUNT(*) FROM presupuestos WHERE id_catalogo=?', [req.params.id]);
     if (enUso.length && enUso[0].values[0][0] > 0)
-      return res.status(400).json({ error: 'El catálogo está asignado a uno o más proyectos' });
+      return res.status(400).json({ error: 'El catálogo está asignado a uno o más presupuestos' });
     db.run('DELETE FROM catalogo_precios_detalle WHERE id_catalogo=?', [req.params.id]);
     db.run('DELETE FROM catalogos_precios WHERE id_catalogo=?', [req.params.id]);
     saveDb();
@@ -161,13 +161,13 @@ router.delete('/:id/insumos/:idIns', requireAuth, async (req, res) => {
   } catch(e) { res.status(500).json({ error: e.message }); }
 });
 
-// ── GET precio efectivo de un insumo en proyecto ───────────
+// ── GET precio efectivo de un insumo en presupuesto ────────
 // Usado por presupuestos al calcular costos
-router.get('/proyecto/:idProyecto/precio/:idInsumo', requireAuth, async (req, res) => {
+router.get('/presupuesto/:idPresupuesto/precio/:idInsumo', requireAuth, async (req, res) => {
   try {
     const db = await getDb();
-    const proy = db.exec('SELECT id_catalogo FROM proyectos WHERE id_proyecto=?', [req.params.idProyecto]);
-    const idCat = proy.length && proy[0].values.length ? proy[0].values[0][0] : null;
+    const pres = db.exec('SELECT id_catalogo FROM presupuestos WHERE id_presupuesto=?', [req.params.idPresupuesto]);
+    const idCat = pres.length && pres[0].values.length ? pres[0].values[0][0] : null;
 
     let precio = null;
     if (idCat) {
@@ -184,26 +184,26 @@ router.get('/proyecto/:idProyecto/precio/:idInsumo', requireAuth, async (req, re
   } catch(e) { res.status(500).json({ error: e.message }); }
 });
 
-// ── POST asignar catálogo a proyecto ──────────────────────
-router.post('/asignar-proyecto', requireAuth, async (req, res) => {
+// ── POST asignar catálogo a presupuesto ───────────────────
+router.post('/asignar-presupuesto', requireAuth, async (req, res) => {
   try {
-    const { id_proyecto, id_catalogo } = req.body;
+    const { id_presupuesto, id_catalogo } = req.body;
     const db = await getDb();
-    db.run('UPDATE proyectos SET id_catalogo=? WHERE id_proyecto=?', [id_catalogo||null, id_proyecto]);
+    db.run('UPDATE presupuestos SET id_catalogo=? WHERE id_presupuesto=?', [id_catalogo||null, id_presupuesto]);
     saveDb();
     res.json({ ok: true });
   } catch(e) { res.status(500).json({ error: e.message }); }
 });
 
-// ── GET costo unitario de actividad con precios de proyecto ─
-router.get('/proyecto/:idProyecto/actividad/:idActividad/costo', requireAuth, async (req, res) => {
+// ── GET costo unitario de actividad con precios de presupuesto
+router.get('/presupuesto/:idPresupuesto/actividad/:idActividad/costo', requireAuth, async (req, res) => {
   try {
     const db = await getDb();
-    const { idProyecto, idActividad } = req.params;
+    const { idPresupuesto, idActividad } = req.params;
 
-    // Obtener catálogo del proyecto
-    const proyR = db.exec('SELECT id_catalogo FROM proyectos WHERE id_proyecto=?', [idProyecto]);
-    const idCat = proyR.length && proyR[0].values.length ? proyR[0].values[0][0] : null;
+    // Obtener catálogo del presupuesto
+    const presR = db.exec('SELECT id_catalogo FROM presupuestos WHERE id_presupuesto=?', [idPresupuesto]);
+    const idCat = presR.length && presR[0].values.length ? presR[0].values[0][0] : null;
 
     // Insumos de la actividad
     const ins = db.exec(`
@@ -219,7 +219,7 @@ router.get('/proyecto/:idProyecto/actividad/:idActividad/costo', requireAuth, as
     let total = 0;
     const detalles = [];
     for (const [detId, idIns, cant, rend, desp, desc, unid, precioBase, cat] of ins[0].values) {
-      // Precio local del catálogo del proyecto, sino precio base
+      // Precio local del catálogo del presupuesto, sino precio base
       let precio = precioBase;
       if (idCat) {
         const loc = db.exec(

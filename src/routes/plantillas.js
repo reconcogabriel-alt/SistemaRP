@@ -64,7 +64,7 @@ const FINANCIADORES = {
     nombre: 'BID — Banco Interamericano de Desarrollo',
     sigla: 'BID',
     color: 'FF0057A8',
-    columnas: ['No.','CÓDIGO','DESCRIPCIÓN DE LA PARTIDA','U/M','METRADO','PRECIO UNIT.','PARCIAL','% DEL TOTAL'],
+    columnas: ['No.','CÓDIGO','DESCRIPCIÓN DE LA ACTIVIDAD','U/M','METRADO','PRECIO UNIT.','PARCIAL','% DEL TOTAL'],
     anchos: [5,12,43,8,10,13,13,10],
     pie: 'Presupuesto de Oferta — Contrato BID/FOMIN. Incluye todos los costos directos e indirectos.',
     seccionResumen: true,
@@ -84,7 +84,7 @@ const FINANCIADORES = {
     nombre: 'KfW — Kreditanstalt für Wiederaufbau',
     sigla: 'KFW',
     color: 'FF004B87',
-    columnas: ['Pos.','Código','Descripción de la Partida','Ud.','Cant.','P.U. (€)','P.U. (L)','Total (L)','Total (€)'],
+    columnas: ['Pos.','Código','Descripción de la Actividad','Ud.','Cant.','P.U. (€)','P.U. (L)','Total (L)','Total (€)'],
     anchos: [5,12,42,7,9,12,12,12,12],
     pie: 'Leistungsverzeichnis / Lista de Cantidades — KfW. Precios en EUR son referenciales (BCE).',
     seccionResumen: true,
@@ -119,15 +119,14 @@ router.get('/presupuestos', requireAuth, async (req, res) => {
     const db = await getDb();
     const r = db.exec(`
       SELECT pr.id_presupuesto, pr.nombre, pr.total_general, pr.fecha_creacion,
-             p.nombre as proyecto_nombre, p.cliente, p.ubicacion, p.moneda
+             pr.cliente, pr.ubicacion, pr.moneda
       FROM presupuestos pr
-      JOIN proyectos p ON pr.id_proyecto = p.id_proyecto
-      WHERE p.estado != 'archivado'
+      WHERE pr.estado != 'archivado'
       ORDER BY pr.fecha_creacion DESC`);
     const rows = r.length ? r[0].values.map(v => ({
       id_presupuesto: v[0], nombre: v[1], total_general: v[2],
-      fecha_creacion: v[3], proyecto_nombre: v[4],
-      cliente: v[5], ubicacion: v[6], moneda: v[7]
+      fecha_creacion: v[3],
+      cliente: v[4], ubicacion: v[5], moneda: v[6]
     })) : [];
     res.json(rows);
   } catch(e) { res.status(500).json({ error: e.message }); }
@@ -153,9 +152,8 @@ router.post('/generar', requireAuth, async (req, res) => {
              pr.porcentaje_indirectos, pr.porcentaje_utilidad, pr.porcentaje_imprevistos,
              pr.costos_indirectos, pr.utilidad, pr.imprevistos, pr.total_general,
              pr.fecha_creacion,
-             p.nombre as proyecto_nombre, p.cliente, p.ubicacion, p.moneda
+             pr.cliente, pr.ubicacion, pr.moneda
       FROM presupuestos pr
-      JOIN proyectos p ON pr.id_proyecto = p.id_proyecto
       WHERE pr.id_presupuesto = ?`, [id_presupuesto]);
 
     if (!presR.length || !presR[0].values.length)
@@ -166,24 +164,24 @@ router.post('/generar', requireAuth, async (req, res) => {
       id: pv[0], nombre: pv[1], costos_directos: pv[2],
       pct_indirect: pv[3], pct_utilidad: pv[4], pct_imprevistos: pv[5],
       indirectos: pv[6], utilidad: pv[7], imprevistos: pv[8], total: pv[9],
-      fecha: pv[10], proyecto: pv[11], cliente: pv[12], ubicacion: pv[13], moneda: pv[14]
+      fecha: pv[10], cliente: pv[11], ubicacion: pv[12], moneda: pv[13]
     };
 
-    // Capítulos y partidas
+    // Módulos y actividades
     const capR = db.exec(
-      'SELECT id_capitulo, nombre, orden_visual FROM capitulos WHERE id_presupuesto=? ORDER BY orden_visual, id_capitulo',
+      'SELECT id_modulo, nombre, orden_visual FROM modulos WHERE id_presupuesto=? ORDER BY orden_visual, id_modulo',
       [id_presupuesto]);
     const caps = capR.length ? capR[0].values.map(v => ({ id:v[0], nombre:v[1], orden:v[2] })) : [];
 
     const parR = db.exec(`
-      SELECT pp.id_partida, pp.id_capitulo, pp.id_actividad,
+      SELECT pp.id_partida, pp.id_modulo, pp.id_actividad,
              pp.cantidad, pp.precio_unitario, pp.subtotal,
              a.codigo, a.descripcion, a.unidad
       FROM presupuesto_partidas pp
       JOIN actividades a ON pp.id_actividad = a.id_actividad
       WHERE pp.id_presupuesto = ?
-      ORDER BY pp.id_capitulo, pp.id_partida`, [id_presupuesto]);
-    const partidas = parR.length ? parR[0].values.map(v => ({
+      ORDER BY pp.id_modulo, pp.id_partida`, [id_presupuesto]);
+    const actividades = parR.length ? parR[0].values.map(v => ({
       id:v[0], id_cap:v[1], id_act:v[2],
       cantidad:v[3], pu:v[4], subtotal:v[5],
       codigo:v[6], desc:v[7], unidad:v[8]
@@ -217,10 +215,10 @@ router.post('/generar', requireAuth, async (req, res) => {
     ws.getRow(rn).height = 28;
     rn++;
 
-    // Info del proyecto
+    // Info del presupuesto
     const infoData = [
-      [`Proyecto: ${pres.proyecto}`, `Cliente: ${pres.cliente || '—'}`, `Ubicación: ${pres.ubicacion || '—'}`],
-      [`Presupuesto: ${pres.nombre}`, `Fecha: ${new Date(pres.fecha).toLocaleDateString('es-HN')}`,
+      [`Presupuesto: ${pres.nombre}`, `Cliente: ${pres.cliente || '—'}`, `Ubicación: ${pres.ubicacion || '—'}`],
+      [`Fecha: ${new Date(pres.fecha).toLocaleDateString('es-HN')}`, '',
        fin.dualMoneda ? `T.C. USD: L ${tcUSD.toFixed(2)} | T.C. EUR: L ${tcEUR.toFixed(2)}` : `Moneda: ${pres.moneda}`]
     ];
     for (const row of infoData) {
@@ -253,27 +251,27 @@ router.post('/generar', requireAuth, async (req, res) => {
     });
     rn++;
 
-    // ── PARTIDAS ──────────────────────────────────────────
+    // ── ACTIVIDADES ──────────────────────────────────────────
     let itemNum = 0;
     let capMap = {};
     caps.forEach(c => capMap[c.id] = c.nombre);
 
-    // Calcular totales por capítulo
+    // Calcular totales por módulo
     let totalGeneral = 0;
     const capTotales = {};
-    partidas.forEach(p => {
+    actividades.forEach(p => {
       capTotales[p.id_cap] = (capTotales[p.id_cap] || 0) + p.subtotal;
       totalGeneral += p.subtotal;
     });
 
-    // Agrupar por capítulo
-    const capIds = [...new Set(partidas.map(p => p.id_cap))];
+    // Agrupar por módulo
+    const capIds = [...new Set(actividades.map(p => p.id_cap))];
 
     for (const capId of capIds) {
-      const capNombre = capMap[capId] || `Capítulo ${capId}`;
-      const capParts = partidas.filter(p => p.id_cap === capId);
+      const capNombre = capMap[capId] || `Módulo ${capId}`;
+      const capParts = actividades.filter(p => p.id_cap === capId);
 
-      // Fila de capítulo
+      // Fila de módulo
       ws.mergeCells(`A${rn}:${COL_END}${rn}`);
       const cr = ws.getRow(rn);
       cr.height = 18;
@@ -284,7 +282,7 @@ router.post('/generar', requireAuth, async (req, res) => {
       cc.alignment = { horizontal:'left', vertical:'middle' };
       rn++;
 
-      // Partidas del capítulo
+      // Actividades del módulo
       capParts.forEach((p, idx) => {
         itemNum++;
         const dr = ws.getRow(rn);
@@ -343,7 +341,7 @@ router.post('/generar', requireAuth, async (req, res) => {
         rn++;
       });
 
-      // Subtotal de capítulo
+      // Subtotal de módulo
       const str = ws.getRow(rn);
       str.height = 16;
       const nCols = fin.columnas.length;
@@ -371,7 +369,7 @@ router.post('/generar', requireAuth, async (req, res) => {
         { label: `B. COSTOS INDIRECTOS (${pres.pct_indirect}%)`, val: pres.indirectos, bold: false },
         { label: `C. UTILIDAD (${pres.pct_utilidad}%)`, val: pres.utilidad, bold: false },
         { label: `D. IMPREVISTOS (${pres.pct_imprevistos}%)`, val: pres.imprevistos, bold: false },
-        { label: 'TOTAL GENERAL DEL PROYECTO', val: pres.total, bold: true, highlight: true },
+        { label: 'TOTAL GENERAL DEL PRESUPUESTO', val: pres.total, bold: true, highlight: true },
       ];
 
       if (fin.dualMoneda) {
@@ -427,7 +425,7 @@ router.post('/generar', requireAuth, async (req, res) => {
 
       ws2.mergeCells('A1:G1');
       const dt = ws2.getRow(1).getCell(1);
-      dt.value = `DESGLOSE DE INSUMOS — ${pres.proyecto} (${pres.nombre})`;
+      dt.value = `DESGLOSE DE INSUMOS — ${pres.nombre}`;
       dt.fill = { type:'pattern', pattern:'solid', fgColor:{argb:fin.color} };
       dt.font = { bold:true, size:11, color:{argb:C_WHITE}, name:'Calibri' };
       dt.alignment = { horizontal:'center', vertical:'middle' };
@@ -440,9 +438,9 @@ router.post('/generar', requireAuth, async (req, res) => {
       });
       dhr.height = 20;
 
-      // Agregar insumos sumados de todas las partidas
+      // Agregar insumos sumados de todas las actividades
       const insumoMap = {};
-      for (const p of partidas) {
+      for (const p of actividades) {
         const aiR = db.exec(`
           SELECT ai.id_insumo, i.codigo, i.descripcion, i.unidad,
                  c.nombre as categoria,
@@ -488,7 +486,7 @@ router.post('/generar', requireAuth, async (req, res) => {
     }
 
     // ── Enviar archivo ────────────────────────────────────
-    const fname = `Plantilla_${fin.sigla}_${pres.proyecto.replace(/\s+/g,'_').substring(0,30)}.xlsx`;
+    const fname = `Plantilla_${fin.sigla}_${pres.nombre.replace(/\s+/g,'_').substring(0,30)}.xlsx`;
     res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     res.setHeader('Content-Disposition', `attachment; filename="${fname}"`);
     await wb.xlsx.write(res);

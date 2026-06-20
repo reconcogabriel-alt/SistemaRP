@@ -8,17 +8,11 @@ async function renderReportes() {
       </div>
     </div>
     <div class="page-body">
-      <div class="loading"><div class="spinner"></div> Cargando proyectos...</div>
+      <div class="loading"><div class="spinner"></div> Cargando presupuestos...</div>
     </div>`;
 
   try {
-    const proyectos = await api.get('/api/proyectos');
-    const presupuestos_all = await Promise.all(
-      proyectos.map(p => api.get(`/api/presupuestos/proyecto/${p.id_proyecto}`)
-        .then(prs => prs.map(pr => ({ ...pr, proyecto_nombre: p.nombre })))
-        .catch(() => []))
-    );
-    const allPres = presupuestos_all.flat();
+    const allPres = await api.get('/api/presupuestos');
 
     el.querySelector('.page-body').innerHTML = `
       <div class="tabs">
@@ -38,27 +32,27 @@ async function renderReportes() {
           </div>
           <div class="card-body">
             <p style="margin-bottom:16px; color:var(--text-muted); font-size:13px">
-              Genera una ficha detallada para cada actividad usada en el proyecto, con composición de insumos, rendimientos, desperdicios y costos parciales. Incluye precios de referencia de mercado Honduras 2025-2026.
+              Genera una ficha detallada para cada actividad usada en el presupuesto, con composición de insumos, rendimientos, desperdicios y costos parciales. Incluye precios de referencia de mercado Honduras 2025-2026.
             </p>
             <div class="form-grid form-grid-2">
               <div class="form-group">
-                <label class="form-label">Seleccionar Proyecto *</label>
-                <select id="rpt1-proy" style="width:100%">
-                  <option value="">-- Seleccionar proyecto --</option>
-                  ${proyectos.map(p => `<option value="${p.id_proyecto}">${p.nombre} (${p.ubicacion||'—'})</option>`).join('')}
+                <label class="form-label">Seleccionar Presupuesto *</label>
+                <select id="rpt1-pres" style="width:100%">
+                  <option value="">-- Seleccionar presupuesto --</option>
+                  ${allPres.map(pr => `<option value="${pr.id_presupuesto}">${pr.nombre||'Presupuesto'} (L ${fmt(pr.total_general)})</option>`).join('')}
                 </select>
               </div>
             </div>
             <div class="form-actions">
-              <button class="btn btn-orange" onclick="descargarReporte('/api/reportes/proyecto/' + document.getElementById('rpt1-proy').value + '/fichas', 'rpt1-proy', 'Fichas_Costos.xlsx')">
+              <button class="btn btn-orange" onclick="descargarReporte('/api/reportes/presupuesto/' + document.getElementById('rpt1-pres').value + '/fichas', 'rpt1-pres', 'Fichas_Costos.xlsx')">
                 📥 Descargar Excel
               </button>
-              <button class="btn btn-secondary" onclick="imprimirFichasPDF(document.getElementById('rpt1-proy').value)">
+              <button class="btn btn-secondary" onclick="imprimirFichasPDF(document.getElementById('rpt1-pres').value)">
                 🖨️ Imprimir PDF
               </button>
             </div>
             <div style="margin-top:16px; padding:12px; background:var(--gray-light); border-radius:4px; font-size:12px; color:var(--text-muted)">
-              <strong>Contenido:</strong> Una ficha por cada actividad del proyecto con código, descripción, unidad, composición detallada por categoría (Materiales / Mano de Obra / Equipo) y costo total. Precios actualizados con datos CHICO y Larach y Cía 2025-2026.
+              <strong>Contenido:</strong> Una ficha por cada actividad del presupuesto con código, descripción, unidad, composición detallada por categoría (Materiales / Mano de Obra / Equipo) y costo total. Precios actualizados con datos CHICO y Larach y Cía 2025-2026.
             </div>
           </div>
         </div>
@@ -68,31 +62,31 @@ async function renderReportes() {
       <div id="rpt-insumos" class="rpt-panel hidden">
         <div class="card">
           <div class="card-header">
-            <span class="card-title">LISTADO DE INSUMOS DEL PROYECTO</span>
+            <span class="card-title">LISTADO DE INSUMOS DEL PRESUPUESTO</span>
           </div>
           <div class="card-body">
             <p style="margin-bottom:16px; color:var(--text-muted); font-size:13px">
-              Consolida todos los insumos requeridos para el proyecto, agrupados por categoría, con cantidades totales y costos.
+              Consolida todos los insumos requeridos para el presupuesto, agrupados por categoría, con cantidades totales y costos.
             </p>
             <div class="form-grid form-grid-2">
               <div class="form-group">
-                <label class="form-label">Seleccionar Proyecto *</label>
-                <select id="rpt2-proy" style="width:100%">
-                  <option value="">-- Seleccionar proyecto --</option>
-                  ${proyectos.map(p => `<option value="${p.id_proyecto}">${p.nombre} (${p.ubicacion||'—'})</option>`).join('')}
+                <label class="form-label">Seleccionar Presupuesto *</label>
+                <select id="rpt2-pres" style="width:100%">
+                  <option value="">-- Seleccionar presupuesto --</option>
+                  ${allPres.map(pr => `<option value="${pr.id_presupuesto}">${pr.nombre||'Presupuesto'} (L ${fmt(pr.total_general)})</option>`).join('')}
                 </select>
               </div>
             </div>
             <div class="form-actions">
-              <button class="btn btn-orange" onclick="descargarReporte('/api/reportes/proyecto/' + document.getElementById('rpt2-proy').value + '/insumos', 'rpt2-proy', 'Insumos_Proyecto.xlsx')">
+              <button class="btn btn-orange" onclick="descargarReporte('/api/reportes/presupuesto/' + document.getElementById('rpt2-pres').value + '/insumos', 'rpt2-pres', 'Insumos_Presupuesto.xlsx')">
                 📥 Descargar Excel
               </button>
-              <button class="btn btn-secondary" onclick="imprimirInsumosPDF(document.getElementById('rpt2-proy').value)">
+              <button class="btn btn-secondary" onclick="imprimirInsumosPDF(document.getElementById('rpt2-pres').value)">
                 🖨️ Imprimir PDF
               </button>
             </div>
             <div style="margin-top:16px; padding:12px; background:var(--gray-light); border-radius:4px; font-size:12px; color:var(--text-muted)">
-              <strong>Contenido:</strong> Listado consolidado de todos los insumos necesarios para el proyecto, agrupados por categoría (Materiales, Mano de Obra, Equipo, Herramientas), con precio unitario de referencia, cantidad total y costo total. Útil para gestión de compras y licitaciones.
+              <strong>Contenido:</strong> Listado consolidado de todos los insumos necesarios para el presupuesto, agrupados por categoría (Materiales, Mano de Obra, Equipo, Herramientas), con precio unitario de referencia, cantidad total y costo total. Útil para gestión de compras y licitaciones.
             </div>
           </div>
         </div>
@@ -106,14 +100,14 @@ async function renderReportes() {
           </div>
           <div class="card-body">
             <p style="margin-bottom:16px; color:var(--text-muted); font-size:13px">
-              Reporte detallado del presupuesto con capítulos, partidas, subtotales por capítulo y resumen de costos directos + indirectos.
+              Reporte detallado del presupuesto con módulos, actividades, subtotales por módulo y resumen de costos directos + indirectos.
             </p>
             <div class="form-grid form-grid-2">
               <div class="form-group">
                 <label class="form-label">Seleccionar Presupuesto *</label>
                 <select id="rpt3-pres" style="width:100%">
                   <option value="">-- Seleccionar presupuesto --</option>
-                  ${allPres.map(pr => `<option value="${pr.id_presupuesto}">${pr.proyecto_nombre} — ${pr.nombre||'Presupuesto'} (L ${fmt(pr.total_general)})</option>`).join('')}
+                  ${allPres.map(pr => `<option value="${pr.id_presupuesto}">${pr.nombre||'Presupuesto'} (L ${fmt(pr.total_general)})</option>`).join('')}
                 </select>
               </div>
             </div>
@@ -126,7 +120,7 @@ async function renderReportes() {
               </button>
             </div>
             <div style="margin-top:16px; padding:12px; background:var(--gray-light); border-radius:4px; font-size:12px; color:var(--text-muted)">
-              <strong>Contenido:</strong> Presupuesto completo con número de ítem, código de actividad, descripción, unidad, cantidad, precio unitario y subtotal por partida. Subtotales por capítulo. Resumen de costos directos, indirectos, utilidad, imprevistos y total general.
+              <strong>Contenido:</strong> Presupuesto completo con número de ítem, código de actividad, descripción, unidad, cantidad, precio unitario y subtotal por actividad. Subtotales por módulo. Resumen de costos directos, indirectos, utilidad, imprevistos y total general.
             </div>
           </div>
         </div>
@@ -249,27 +243,27 @@ async function renderReportes() {
           </div>
           <div class="card-body">
             <p style="margin-bottom:16px; color:var(--text-muted); font-size:13px">
-              Especificaciones técnicas individuales para cada actividad del proyecto, con normas, materiales, procedimiento de ejecución y composición de insumos.
+              Especificaciones técnicas individuales para cada actividad del presupuesto, con normas, materiales, procedimiento de ejecución y composición de insumos.
             </p>
             <div class="form-grid form-grid-2">
               <div class="form-group">
-                <label class="form-label">Seleccionar Proyecto *</label>
-                <select id="rpt5-proy" style="width:100%">
-                  <option value="">-- Seleccionar proyecto --</option>
-                  ${proyectos.map(p => `<option value="${p.id_proyecto}">${p.nombre} (${p.ubicacion||'—'})</option>`).join('')}
+                <label class="form-label">Seleccionar Presupuesto *</label>
+                <select id="rpt5-pres" style="width:100%">
+                  <option value="">-- Seleccionar presupuesto --</option>
+                  ${allPres.map(pr => `<option value="${pr.id_presupuesto}">${pr.nombre||'Presupuesto'} (L ${fmt(pr.total_general)})</option>`).join('')}
                 </select>
               </div>
             </div>
             <div class="form-actions">
-              <button class="btn btn-orange" onclick="descargarReporte('/api/reportes/proyecto/' + document.getElementById('rpt5-proy').value + '/especificaciones', 'rpt5-proy', 'EETT_Actividades.xlsx')">
+              <button class="btn btn-orange" onclick="descargarReporte('/api/reportes/presupuesto/' + document.getElementById('rpt5-pres').value + '/especificaciones', 'rpt5-pres', 'EETT_Actividades.xlsx')">
                 📥 Descargar Excel
               </button>
-              <button class="btn btn-secondary" onclick="imprimirEETTPDF(document.getElementById('rpt5-proy').value)">
+              <button class="btn btn-secondary" onclick="imprimirEETTPDF(document.getElementById('rpt5-pres').value)">
                 🖨️ Imprimir PDF
               </button>
             </div>
             <div style="margin-top:16px; padding:12px; background:var(--gray-light); border-radius:4px; font-size:12px; color:var(--text-muted)">
-              <strong>Contenido:</strong> Una sección por cada actividad del proyecto con: norma aplicable, alcance, materiales requeridos, procedimiento de ejecución, composición de insumos y costos. Agrupado por código de actividad.
+              <strong>Contenido:</strong> Una sección por cada actividad del presupuesto con: norma aplicable, alcance, materiales requeridos, procedimiento de ejecución, composición de insumos y costos. Agrupado por código de actividad.
             </div>
           </div>
         </div>
@@ -317,13 +311,13 @@ function descargarCotizacion(filtro) {
 
 function descargarReporte(url, selectId, filename) {
   const val = document.getElementById(selectId)?.value;
-  if (!val) { toast('Selecciona un proyecto o presupuesto', 'error'); return; }
+  if (!val) { toast('Selecciona un presupuesto', 'error'); return; }
   window.open(url, '_blank');
   toast(`Generando ${filename}...`, 'info');
 }
 
 // ═══════════════════════════════════════════════════════════
-//  MOTOR PDF — funciones compartidas
+//  MOTOR PDF — funciones comactividades
 // ═══════════════════════════════════════════════════════════
 const PDF = {
   fmt: n => 'L ' + (n||0).toLocaleString('es-HN', {minimumFractionDigits:2, maximumFractionDigits:2}),
@@ -369,25 +363,51 @@ const PDF = {
     .print-btn{position:fixed;bottom:20px;right:20px;background:#025196;color:#fff;border:none;padding:12px 20px;border-radius:6px;font-size:13px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.25)}
     .print-btn:hover{background:#FDB338;color:#333}`,
 
-  header: (titulo, subtitulo='') => `
+  // Configuración de empresa (se carga antes de imprimir con PDF.cargarConfig())
+  _cfg: { empresa_nombre: '', reporte_mostrar_fecha: '1' }, // Se sobreescribe con cargarConfig()
+
+  cargarConfig: async function() {
+    try {
+      const cfg = await api.get('/api/configuracion');
+      if (cfg.empresa_nombre && cfg.empresa_nombre.valor)
+        PDF._cfg.empresa_nombre = cfg.empresa_nombre.valor;
+      if (cfg.reporte_mostrar_fecha && cfg.reporte_mostrar_fecha.valor !== undefined)
+        PDF._cfg.reporte_mostrar_fecha = cfg.reporte_mostrar_fecha.valor;
+    } catch(e) {
+      // Si la BD aún no tiene la tabla (primera vez), usa el valor de la BD original
+      if (!PDF._cfg.empresa_nombre) PDF._cfg.empresa_nombre = 'Servicios y Construcciones RP';
+    }
+  },
+
+  header: (titulo, subtitulo='') => {
+    const empresa = PDF._cfg.empresa_nombre;
+    const mostrarFecha = PDF._cfg.reporte_mostrar_fecha !== '0';
+    const fechaStr = mostrarFecha ? `&nbsp;|&nbsp; ${new Date().toLocaleDateString('es-HN')}` : '';
+    return `
     <div class="logo-bar">
       <div>
         <h1>${titulo}</h1>
         ${subtitulo ? `<small>${subtitulo}</small>` : ''}
       </div>
-      <small>Servicios y Construcciones RP &nbsp;|&nbsp; ${new Date().toLocaleDateString('es-HN')}</small>
-    </div>`,
+      <small>${empresa}${fechaStr}</small>
+    </div>`;
+  },
 
   metaGrid: (campos) => `
     <div class="meta-grid">${campos.map(([k,v]) =>
       `<div class="meta-item"><span class="meta-label">${k}:</span> ${v||'—'}</div>`).join('')}
     </div>`,
 
-  footer: () => `
+  footer: () => {
+    const empresa = PDF._cfg.empresa_nombre;
+    const mostrarFecha = PDF._cfg.reporte_mostrar_fecha !== '0';
+    const fechaStr = mostrarFecha ? `<span>${new Date().toLocaleString('es-HN')}</span>` : '';
+    return `
     <div class="footer">
-      <span>Generado por Sistema de Costos Unitarios — Servicios y Construcciones RP</span>
-      <span>${new Date().toLocaleString('es-HN')}</span>
-    </div>`,
+      <span>Generado por Sistema de Costos Unitarios — ${empresa}</span>
+      ${fechaStr}
+    </div>`;
+  },
 
   wrap: (body, titulo) => `<!DOCTYPE html><html lang="es"><head>
     <meta charset="UTF-8"><title>${titulo}</title>
@@ -408,326 +428,46 @@ const PDF = {
 // ═══════════════════════════════════════════════════════════
 //  PDF 1 — FICHAS DE COSTOS
 // ═══════════════════════════════════════════════════════════
-async function imprimirFichasPDF(id_proyecto) {
-  if (!id_proyecto) { toast('Selecciona un proyecto', 'error'); return; }
-  toast('Generando PDF de fichas...', 'info');
-  try {
-    const d = await api.get(`/api/reportes/proyecto/${id_proyecto}/fichas/pdf-data`);
-    let fichasHTML = '';
-    for (const act of d.actividades) {
-      // Agrupar insumos por categoría
-      const cats = {};
-      for (const ins of act.insumos) {
-        if (!cats[ins.categoria]) cats[ins.categoria] = [];
-        cats[ins.categoria].push(ins);
-      }
-      let insumosHTML = '';
-      if (act.insumos.length) {
-        insumosHTML = `<table class="insumos-table">
-          <thead><tr><th>Código</th><th>Descripción</th><th>Unid</th>
-            <th style="text-align:right">Cant.</th><th style="text-align:right">Rendto</th>
-            <th style="text-align:right">P.Unit.</th><th style="text-align:right">C.Parcial</th></tr></thead>
-          <tbody>`;
-        for (const [cat, items] of Object.entries(cats)) {
-          const sub = items.reduce((s,i) => s+Number(i.costo_parcial||0), 0);
-          insumosHTML += `<tr><td colspan="7" style="background:#dce8f5;font-weight:700;color:#025196;font-size:10px">▸ ${cat}</td></tr>`;
-          items.forEach(i => {
-            insumosHTML += `<tr><td style="font-family:monospace;color:#025196">${i.codigo}</td>
-              <td>${i.descripcion}</td><td>${i.unidad}</td>
-              <td style="text-align:right">${PDF.num(i.cantidad,4)}</td>
-              <td style="text-align:right">${PDF.num(i.rendimiento,4)}</td>
-              <td style="text-align:right">${PDF.fmt(i.precio_unitario)}</td>
-              <td style="text-align:right">${PDF.fmt(i.costo_parcial)}</td></tr>`;
-          });
-          insumosHTML += `<tr><td colspan="6" style="text-align:right;font-weight:700;color:#025196;font-size:10px">Subtotal ${cat}</td>
-            <td style="text-align:right;font-weight:700;color:#025196">${PDF.fmt(sub)}</td></tr>`;
-        }
-        insumosHTML += `<tr style="background:#025196"><td colspan="6" style="color:#fff;font-weight:700;text-align:right">COSTO TOTAL</td>
-          <td style="color:#fff;font-weight:700;text-align:right">${PDF.fmt(act.costo_total)}</td></tr>`;
-        insumosHTML += '</tbody></table>';
-      } else {
-        insumosHTML = '<p style="color:#888;font-size:10px;font-style:italic">Sin insumos registrados</p>';
-      }
-      fichasHTML += `
-        <div class="ficha-box">
-          <div class="ficha-header">
-            <span class="code">${act.codigo}</span>
-            <span class="name">${act.descripcion}</span>
-            <span class="unit">${act.unidad}</span>
-          </div>
-          <div class="ficha-body">${insumosHTML}</div>
-        </div>`;
-    }
-    const body = `
-      ${PDF.header('FICHAS DE COSTOS UNITARIOS', d.proyecto)}
-      ${PDF.metaGrid([['Proyecto',d.proyecto],['Cliente',d.cliente],['Ubicación',d.ubicacion],['Moneda',d.moneda]])}
-      ${fichasHTML}
-      ${PDF.footer()}`;
-    PDF.abrir(PDF.wrap(body, `Fichas — ${d.proyecto}`));
-  } catch(e) { toast('Error generando PDF: ' + (e.error||e), 'error'); }
+async function imprimirFichasPDF(id_presupuesto) {
+  if (!id_presupuesto) { toast('Selecciona un presupuesto', 'error'); return; }
+  window.open(`/api/reportes/presupuesto/${id_presupuesto}/fichas/html`, '_blank');
+  toast('Generando fichas...', 'info');
 }
-
 // ═══════════════════════════════════════════════════════════
 //  PDF 2 — LISTADO DE INSUMOS
 // ═══════════════════════════════════════════════════════════
-async function imprimirInsumosPDF(id_proyecto) {
-  if (!id_proyecto) { toast('Selecciona un proyecto', 'error'); return; }
-  toast('Generando PDF de insumos...', 'info');
-  try {
-    const d = await api.get(`/api/reportes/proyecto/${id_proyecto}/insumos/pdf-data`);
-    // Agrupar por categoría
-    const cats = {};
-    for (const ins of d.insumos) {
-      if (!cats[ins.categoria]) cats[ins.categoria] = [];
-      cats[ins.categoria].push(ins);
-    }
-    let filas = '';
-    for (const [cat, items] of Object.entries(cats)) {
-      const sub = items.reduce((s,i) => s+Number(i.costo_total||0), 0);
-      filas += `<tr class="cat-header"><td colspan="6">${cat}</td></tr>`;
-      items.forEach((i,idx) => {
-        filas += `<tr>
-          <td style="font-family:monospace;color:#025196;font-size:10px">${i.codigo}</td>
-          <td>${i.descripcion}</td><td style="text-align:center">${i.unidad}</td>
-          <td style="text-align:right">${PDF.fmt(i.precio_unitario)}</td>
-          <td style="text-align:right">${PDF.num(i.cantidad,4)}</td>
-          <td style="text-align:right">${PDF.fmt(i.costo_total)}</td></tr>`;
-      });
-      filas += `<tr class="subtotal"><td colspan="5" style="text-align:right">Subtotal ${cat}</td>
-        <td style="text-align:right">${PDF.fmt(sub)}</td></tr>`;
-    }
-    filas += `<tr class="grand-total"><td colspan="5" style="text-align:right">COSTO TOTAL DE INSUMOS</td>
-      <td style="text-align:right">${PDF.fmt(d.gran_total)}</td></tr>`;
-
-    const body = `
-      ${PDF.header('LISTADO DE INSUMOS DEL PROYECTO', d.proyecto)}
-      ${PDF.metaGrid([['Proyecto',d.proyecto],['Cliente',d.cliente],['Ubicación',d.ubicacion],['Fecha',new Date().toLocaleDateString('es-HN')]])}
-      <table>
-        <thead><tr><th>Código</th><th>Descripción</th><th>Unidad</th>
-          <th style="text-align:right">P. Unitario</th>
-          <th style="text-align:right">Cantidad Total</th>
-          <th style="text-align:right">Costo Total</th></tr></thead>
-        <tbody>${filas}</tbody>
-      </table>
-      ${(() => {
-        const cero = d.insumos.filter(i => !i.precio_unitario || Number(i.precio_unitario) === 0);
-        if (cero.length > 0) {
-          const lista = cero.slice(0,5).map(i => '• ' + i.descripcion + ' (' + i.unidad + ')').join('<br>');
-          const extra = cero.length > 5 ? '<br>... y ' + (cero.length-5) + ' más' : '';
-          return '<div style="background:#fff8e1;border:1.5px solid #f59e0b;border-radius:6px;padding:10px 14px;margin-bottom:14px">'
-            + '<div style="font-weight:700;color:#92400e;font-size:10px;margin-bottom:4px">⚠ ADVERTENCIA — ' + cero.length + ' insumo' + (cero.length>1?'s':'') + ' con precio L 0.00</div>'
-            + '<div style="font-size:9px;color:#b45309;line-height:1.6">' + lista + extra + '</div>'
-            + '<div style="font-size:9px;color:#92400e;margin-top:4px;font-style:italic">Actualice precios en Catálogos → Insumos y presione Recalcular.</div>'
-            + '</div>';
-        }
-        return '<p style="font-size:9px;color:#888;font-style:italic;margin-bottom:14px">Todos los insumos tienen precio. Precios de referencia Honduras 2025-2026.</p>';
-      })()}
-      ${PDF.footer()}`;
-    PDF.abrir(PDF.wrap(body, `Insumos — ${d.proyecto}`));
-  } catch(e) { toast('Error generando PDF: ' + (e.error||e), 'error'); }
+async function imprimirInsumosPDF(id_presupuesto) {
+  if (!id_presupuesto) { toast('Selecciona un presupuesto', 'error'); return; }
+  window.open(`/api/reportes/presupuesto/${id_presupuesto}/insumos/html`, '_blank');
+  toast('Generando insumos...', 'info');
 }
-
 // ═══════════════════════════════════════════════════════════
 //  PDF 3 — PRESUPUESTO
 // ═══════════════════════════════════════════════════════════
 async function imprimirPresupuestoPDF(id_presupuesto) {
   if (!id_presupuesto) { toast('Selecciona un presupuesto', 'error'); return; }
-  toast('Generando PDF de presupuesto...', 'info');
-  try {
-    const d = await api.get(`/api/reportes/presupuesto/${id_presupuesto}/pdf-data`);
-    // Agrupar por capítulo
-    const caps = {};
-    for (const p of d.partidas) {
-      const cap = p.capitulo || 'General';
-      if (!caps[cap]) caps[cap] = [];
-      caps[cap].push(p);
-    }
-    let filas = '', item = 0;
-    for (const [cap, parts] of Object.entries(caps)) {
-      const subCap = parts.reduce((s,p) => s+Number(p.subtotal||0), 0);
-      if (Object.keys(caps).length > 1) {
-        filas += `<tr class="cat-header"><td colspan="6">${cap}</td></tr>`;
-      }
-      parts.forEach(p => {
-        item++;
-        filas += `<tr>
-          <td style="text-align:center">${item}</td>
-          <td style="font-family:monospace;color:#025196;font-size:10px">${p.codigo||''}</td>
-          <td>${p.descripcion}</td><td style="text-align:center">${p.unidad}</td>
-          <td style="text-align:right">${PDF.num(p.cantidad)}</td>
-          <td style="text-align:right">${PDF.fmt(p.precio_unitario)}</td>
-          <td style="text-align:right">${PDF.fmt(p.subtotal)}</td></tr>`;
-      });
-      if (Object.keys(caps).length > 1) {
-        filas += `<tr class="subtotal">
-          <td colspan="6" style="text-align:right">Subtotal ${cap}</td>
-          <td style="text-align:right">${PDF.fmt(subCap)}</td></tr>`;
-      }
-    }
-    const body = `
-      ${PDF.header('PRESUPUESTO DE OBRA', d.proyecto)}
-      ${PDF.metaGrid([['Proyecto',d.proyecto],['Presupuesto',d.nombre_presupuesto],['Cliente',d.cliente],['Ubicación',d.ubicacion]])}
-      <table>
-        <thead><tr><th style="text-align:center">N°</th><th>Código</th><th>Descripción</th>
-          <th style="text-align:center">Unidad</th><th style="text-align:right">Cantidad</th>
-          <th style="text-align:right">P. Unitario</th><th style="text-align:right">Subtotal</th></tr></thead>
-        <tbody>${filas}
-          <tr class="grand-total"><td colspan="6" style="text-align:right">COSTOS DIRECTOS</td>
-            <td style="text-align:right">${PDF.fmt(d.costos_directos)}</td></tr>
-        </tbody>
-      </table>
-      <div class="totales-box">
-        <div class="total-row highlight"><span>Costos Directos</span><span>${PDF.fmt(d.costos_directos)}</span></div>
-        <div class="total-row"><span>Costos Indirectos (${d.porcentaje_indirectos||0}%)</span><span>${PDF.fmt(d.costos_indirectos)}</span></div>
-        <div class="total-row highlight"><span>Utilidad (${d.porcentaje_utilidad||0}%)</span><span>${PDF.fmt(d.utilidad)}</span></div>
-        <div class="total-row"><span>Imprevistos (${d.porcentaje_imprevistos||0}%)</span><span>${PDF.fmt(d.imprevistos)}</span></div>
-        <div class="total-row grand"><span>TOTAL GENERAL</span><span>${PDF.fmt(d.total_general)}</span></div>
-      </div>
-      ${PDF.footer()}`;
-    PDF.abrir(PDF.wrap(body, `Presupuesto — ${d.proyecto}`));
-  } catch(e) { toast('Error generando PDF: ' + (e.error||e), 'error'); }
+  window.open(`/api/reportes/presupuesto/${id_presupuesto}/html`, '_blank');
+  toast('Generando presupuesto...', 'info');
 }
-
 // ═══════════════════════════════════════════════════════════
 //  PDF 4 — EETT POR ACTIVIDAD
 // ═══════════════════════════════════════════════════════════
-async function imprimirEETTPDF(id_proyecto) {
-  if (!id_proyecto) { toast('Selecciona un proyecto', 'error'); return; }
-  toast('Generando PDF de especificaciones técnicas...', 'info');
-  try {
-    const d = await api.get(`/api/reportes/proyecto/${id_proyecto}/especificaciones/pdf-data`);
-    let eettHTML = '';
-    for (const act of d.actividades) {
-      const s = act.spec;
-      eettHTML += `
-        <div class="ficha-box">
-          <div class="ficha-header">
-            <span class="code">${act.codigo}</span>
-            <span class="name">${act.descripcion}</span>
-            <span class="unit">${act.unidad}</span>
-          </div>
-          <div class="ficha-body">
-            ${s ? `
-              <div class="ficha-section">
-                <h4>Descripción de la actividad</h4>
-                <p>${s.descripcion||'—'}</p>
-              </div>
-              <div class="ficha-section">
-                <h4>Consideraciones del análisis de costo</h4>
-                <p>${s.consideraciones||'—'}</p>
-              </div>
-              <div class="ficha-section">
-                <h4>Criterios de medición y pago</h4>
-                <p>${s.criterios_pago||'—'}</p>
-              </div>` :
-              `<p style="color:#888;font-size:10px;font-style:italic">
-                Especificación técnica no disponible para código ${act.codigo}.<br>
-                Descripción del sistema: ${act.descripcion}
-              </p>`
-            }
-          </div>
-        </div>`;
-    }
-    const body = `
-      ${PDF.header('ESPECIFICACIONES TÉCNICAS POR ACTIVIDAD', d.proyecto)}
-      ${PDF.metaGrid([['Proyecto',d.proyecto],['Cliente',d.cliente],['Ubicación',d.ubicacion],['Fuente','Especificaciones Técnicas de Actividades — agosto 2007']])}
-      ${eettHTML}
-      ${PDF.footer()}`;
-    PDF.abrir(PDF.wrap(body, `EETT — ${d.proyecto}`));
-  } catch(e) { toast('Error generando PDF: ' + (e.error||e), 'error'); }
+async function imprimirEETTPDF(id_presupuesto) {
+  if (!id_presupuesto) { toast('Selecciona un presupuesto', 'error'); return; }
+  window.open(`/api/reportes/presupuesto/${id_presupuesto}/especificaciones/html`, '_blank');
+  toast('Generando especificaciones técnicas...', 'info');
 }
-
 // ═══════════════════════════════════════════════════════════
 //  PDF 5 — LISTA DE COTIZACIÓN
 // ═══════════════════════════════════════════════════════════
 async function imprimirCotizacionPDF(filtro) {
-  toast('Generando PDF de cotización...', 'info');
-  try {
-    const d = await api.get(`/api/reportes/insumos/cotizacion/pdf-data?filtro=${filtro}`);
-    const labels = { sin_precio:'Insumos sin precio (prioritario)', con_precio:'Insumos con precio (actualización)', todos:'Catálogo completo de insumos' };
-    const cats = {};
-    for (const ins of d.insumos) {
-      if (!cats[ins.categoria]) cats[ins.categoria] = [];
-      cats[ins.categoria].push(ins);
-    }
-    let filas = '';
-    let n = 0;
-    for (const [cat, items] of Object.entries(cats)) {
-      filas += `<tr class="cat-header"><td colspan="6">${cat}</td></tr>`;
-      items.forEach(i => {
-        n++;
-        filas += `<tr>
-          <td style="text-align:center;color:#888">${n}</td>
-          <td style="font-family:monospace;color:#025196;font-size:10px">${i.codigo}</td>
-          <td>${i.descripcion}</td>
-          <td style="text-align:center">${i.unidad}</td>
-          <td style="text-align:right">${i.precio_unitario > 0 ? PDF.fmt(i.precio_unitario) : '<span style="color:#c00">Sin precio</span>'}</td>
-          <td style="background:#fffbe6;text-align:center;color:#888;font-style:italic">Anotar aquí</td></tr>`;
-      });
-    }
-    const body = `
-      ${PDF.header('LISTA DE COTIZACIÓN DE INSUMOS', labels[filtro]||'')}
-      ${PDF.metaGrid([['Tipo',labels[filtro]||filtro],['Total insumos',d.insumos.length.toLocaleString()],['Fecha emisión',d.fecha],['Instrucción','Complete la columna "Precio cotizado" y devuelva']])}
-      <table>
-        <thead><tr><th style="text-align:center">N°</th><th>Código</th><th>Descripción</th>
-          <th style="text-align:center">Unidad</th>
-          <th style="text-align:right">Precio actual</th>
-          <th style="background:#fffbe6;color:#333;text-align:center">Precio cotizado (L)</th></tr></thead>
-        <tbody>${filas}</tbody>
-      </table>
-      <div style="background:#e8f4fd;border-left:4px solid #025196;padding:10px 14px;border-radius:0 4px 4px 0;font-size:10px;margin-bottom:14px">
-        <strong style="color:#025196">Instrucciones para el proveedor:</strong>
-        Complete la columna <strong>"Precio cotizado"</strong> con el precio en Lempiras (L) incluyendo IVA.
-        Indique también el nombre de su empresa/ferretería. Devuelva este documento al solicitante.
-      </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;font-size:11px">
-        <div style="border-top:1px solid #333;padding-top:8px;text-align:center">Firma del proveedor / Sello</div>
-        <div style="border-top:1px solid #333;padding-top:8px;text-align:center">Nombre del proveedor / Ferretería</div>
-      </div>
-      ${PDF.footer()}`;
-    PDF.abrir(PDF.wrap(body, `Cotización — ${labels[filtro]||filtro}`));
-  } catch(e) { toast('Error generando PDF: ' + (e.error||e), 'error'); }
+  window.open(`/api/reportes/insumos/cotizacion/html?filtro=${filtro}`, '_blank');
+  toast('Generando lista de cotización...', 'info');
 }
-
 // ═══════════════════════════════════════════════════════════
 //  PDF 6 — EETT GENERALES (sin datos de BD, texto estático)
 // ═══════════════════════════════════════════════════════════
-function imprimirEETTGeneralesPDF() {
-  toast('Generando PDF de EETT Generales...', 'info');
-  const secciones = [
-    ['1. NORMATIVA APLICABLE',
-     'Las presentes especificaciones técnicas se rigen por: Ley de Contratación del Estado (Decreto 74-2001), Reglamento General de la Ley de Municipalidades (Decreto 134-90), normas ACI 318 para concreto estructural, normas ASTM para materiales de construcción, normas AWWA para sistemas de agua potable, Normas Técnicas de SANAA para sistemas de agua y saneamiento en Honduras, y Manual de Especificaciones Técnicas de Actividades (agosto 2007).'],
-    ['2. ESPECIFICACIONES DE MATERIALES',
-     'CEMENTO: Se utilizará cemento Portland Tipo I o Tipo II, conforme a ASTM C-150. El cemento debe almacenarse en bodegas secas sobre tarimas. No se aceptará cemento con grumos o parcialmente fraguado. ACERO DE REFUERZO: Varilla corrugada grado 40 (Fy=2,800 kg/cm²) o grado 60 (Fy=4,200 kg/cm²) según diseño, conforme a ASTM A-615. AGREGADOS: Arena de río limpia, libre de arcillas y materia orgánica. Grava o piedra triturada de granulometría uniforme. Tamaño máximo del agregado grueso no mayor a 1/3 del espesor del elemento estructural. AGUA: Potable, libre de aceites, ácidos, álcalis o materias orgánicas. TUBERÍAS PVC: Conforme a ASTM D-1785 (presión) y ASTM D-3034 (drenaje). Las tuberías de agua potable deben cumplir NSF/ANSI 61.'],
-    ['3. PROCEDIMIENTOS DE EJECUCIÓN',
-     'TRAZO Y REPLANTEO: Toda obra civil iniciará con replanteo topográfico por Ingeniero o Topógrafo calificado, dejando referencias permanentes para control de niveles y alineamientos. EXCAVACIONES: Las excavaciones se ejecutarán conforme a los planos aprobados. En suelos inestables se requerirá entibado o taludes adecuados. Se prohíbe circular equipo pesado a menos de 1.0 m del borde de excavación. CONCRETO: El concreto se producirá con mezcladoras mecánicas. La mezcla manual solo se permite para concreto no estructural. El vaciado debe ser continuo sin interrupciones que causen juntas frías. El curado mínimo es de 7 días con agua. MAMPOSTERÍA: Los bloques de concreto deben tener resistencia mínima de 55 kg/cm². La mezcla de pega será proporción 1:4 (cemento:arena). El espesor de juntas horizontales y verticales será de 10-15 mm. INSTALACIONES HIDRÁULICAS: Las tuberías de PVC se instalarán con accesorios del mismo material y fabricante. Las uniones solventadas requieren limpieza previa con primer. El relleno sobre tuberías se ejecutará en capas de 15 cm compactadas manualmente.'],
-    ['4. CONTROL DE CALIDAD',
-     'CONCRETO: Se realizarán ensayos de resistencia a la compresión conforme a ASTM C-39. Mínimo un juego de 3 cilindros por cada 10 m³ vaciados. La resistencia de diseño debe alcanzarse a los 28 días. COMPACTACIÓN: El control de compactación de rellenos se verificará por ensayo Proctor Estándar (ASTM D-698). La compactación mínima será del 95% del Proctor en áreas exteriores y 98% bajo estructuras. TUBERÍAS: Prueba hidrostática a 1.5 veces la presión de trabajo durante 2 horas sin pérdidas.'],
-    ['5. SEGURIDAD E HIGIENE OCUPACIONAL',
-     'El Contratista es responsable de la seguridad del personal según la Ley del IHSS y el Reglamento General de Medidas Preventivas de Accidentes de Trabajo y Enfermedades Profesionales. Todo el personal usará equipo de protección personal (EPP): casco, botas punta de acero, guantes y chaleco reflectivo. Las excavaciones mayores de 1.5 m de profundidad requieren sistemas de protección contra derrumbes. Se mantendrá señalización perimetral y luminaria nocturna en toda la obra.'],
-    ['6. MEDICIÓN Y PAGO',
-     'Los trabajos se medirán y pagarán conforme a las unidades establecidas en el catálogo de precios del contrato. No se reconocerá trabajo adicional sin orden de cambio escrita y aprobada por la supervisión. Los precios unitarios son fijos durante la vigencia del contrato. Las demasías de materiales por desperdicio no justificado son a cargo del Contratista.']
-  ];
-  const seccionesHTML = secciones.map(([titulo, contenido]) => `
-    <div style="margin-bottom:18px;page-break-inside:avoid">
-      <div class="section-title">${titulo}</div>
-      <p style="font-size:11px;line-height:1.75;text-align:justify">${contenido}</p>
-    </div>`).join('');
-
-  const body = `
-    ${PDF.header('ESPECIFICACIONES TÉCNICAS GENERALES', 'Proyectos de Construcción — Honduras')}
-    ${PDF.metaGrid([
-      ['Normas de referencia','SOPTRAVI/INSEP, SANAA, ACI, ASTM, AWWA'],
-      ['Aplicación','Proyectos de infraestructura y edificaciones'],
-      ['Fecha emisión', new Date().toLocaleDateString('es-HN')],
-      ['Vigencia','Verificar actualización normativa antes de aplicar']
-    ])}
-    ${seccionesHTML}
-    <div style="margin-top:20px;padding:12px 14px;background:#fff3cd;border:1px solid #FDB338;border-radius:4px;font-size:10px;color:#555">
-      <strong style="color:#025196">Nota:</strong> Las presentes especificaciones son de carácter general.
-      Las especificaciones particulares de cada actividad del catálogo prevalecen sobre estas.
-      La revisión técnica por el Ingeniero responsable del proyecto es obligatoria antes de su aplicación.
-    </div>
-    ${PDF.footer()}`;
-  PDF.abrir(PDF.wrap(body, 'EETT Generales — Servicios y Construcciones RP'));
+async function imprimirEETTGeneralesPDF() {
+  window.open('/api/reportes/especificaciones/generales/html', '_blank');
+  toast('Generando EETT Generales...', 'info');
 }

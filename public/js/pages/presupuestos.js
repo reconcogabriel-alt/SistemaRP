@@ -1,89 +1,38 @@
 // ═══════════════════════════════════════════════════════════════
 // PRESUPUESTOS
 // ═══════════════════════════════════════════════════════════════
-let _presCtx = { idProyecto: null, nombre: null };
 let _presupuestos = [];
-let _presActual = null;   // { presupuesto, capitulos, partidas }
+let _presActual = null;   // { presupuesto, modulos, actividades }
 
-// ─── RENDER PRINCIPAL ────────────────────────────────────────
+// ─── RENDER PRINCIPAL — lista directa de presupuestos ────────
 async function renderPresupuestos(ctx = {}) {
-  if (ctx.idProyecto) _presCtx = { idProyecto: ctx.idProyecto, nombre: ctx.nombre };
-
   const el = document.getElementById('pageContent');
-
-  if (!_presCtx.idProyecto) {
-    el.innerHTML = `
-      <div class="page-header">
-        <div>
-          <div class="page-title">PRESUPUESTOS</div>
-          <div class="page-subtitle">Selecciona un proyecto</div>
-        </div>
-      </div>
-      <div class="page-body">
-        <div class="loading"><div class="spinner"></div> Cargando proyectos...</div>
-      </div>`;
-    try {
-      const proyectos = await api.get('/api/proyectos');
-      el.querySelector('.page-body').innerHTML = `
-        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px">
-          ${proyectos.filter(p => p.estado !== 'archivado').map(p => `
-            <div class="card" style="cursor:pointer; transition:box-shadow 0.2s"
-                 onclick="verPresupuestosProyecto(${p.id_proyecto}, '${sanitize(p.nombre)}')"
-                 onmouseenter="this.style.boxShadow='0 4px 20px rgba(2,81,150,0.15)'"
-                 onmouseleave="this.style.boxShadow=''">
-              <div class="card-body">
-                <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px">
-                  <span class="badge badge-${p.estado}">${p.estado}</span>
-                  <span class="badge badge-blue">${p.moneda}</span>
-                </div>
-                <div style="font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:700; color:var(--blue); margin-bottom:4px">${sanitize(p.nombre)}</div>
-                <div style="font-size:12px; color:var(--text-muted)">${sanitize(p.cliente||'—')} · ${sanitize(p.ubicacion||'—')}</div>
-                <div style="margin-top:12px; padding-top:12px; border-top:1px solid var(--gray-light); display:flex; justify-content:space-between">
-                  <span style="font-size:12px; color:var(--text-muted)">${p.num_presupuestos||0} presupuesto(s)</span>
-                  <span style="color:var(--blue); font-size:13px">Ver →</span>
-                </div>
-              </div>
-            </div>`).join('')}
-        </div>`;
-    } catch(e) { console.error(e); }
-    return;
-  }
-
   el.innerHTML = `
     <div class="page-header">
       <div>
-        <div class="breadcrumb"><a onclick="resetPresupuestos()">Proyectos</a> → ${sanitize(_presCtx.nombre||'')}</div>
         <div class="page-title">PRESUPUESTOS</div>
-        <div class="page-subtitle">${sanitize(_presCtx.nombre||'')}</div>
+        <div class="page-subtitle">Todos los presupuestos del sistema</div>
       </div>
       <div class="btn-group">
-        <button class="btn btn-secondary" onclick="resetPresupuestos()">← Proyectos</button>
         <button class="btn btn-orange" onclick="modalNuevoPresupuesto()">+ Nuevo Presupuesto</button>
       </div>
     </div>
     <div class="page-body">
-      <div id="presListWrap"><div class="loading"><div class="spinner"></div></div></div>
+      <div id="presListWrap"><div class="loading"><div class="spinner"></div> Cargando...</div></div>
     </div>`;
   await loadPresupuestos();
 }
 
-function resetPresupuestos() { _presCtx = { idProyecto: null }; renderPresupuestos(); }
-
-async function verPresupuestosProyecto(id, nombre) {
-  _presCtx = { idProyecto: id, nombre };
-  renderPresupuestos();
-}
-
 async function loadPresupuestos() {
   try {
-    _presupuestos = await api.get(`/api/presupuestos/proyecto/${_presCtx.idProyecto}`);
+    _presupuestos = await api.get('/api/presupuestos');
     const wrap = document.getElementById('presListWrap');
     if (!wrap) return;
     if (!_presupuestos.length) {
       wrap.innerHTML = `<div class="empty-state">
         <div class="empty-icon">▤</div>
         <div class="empty-title">Sin presupuestos</div>
-        <div class="empty-desc">Crea el primer presupuesto para este proyecto</div>
+        <div class="empty-desc">Crea el primer presupuesto</div>
         <button class="btn btn-orange" style="margin-top:16px" onclick="modalNuevoPresupuesto()">+ Nuevo Presupuesto</button>
       </div>`;
       return;
@@ -96,15 +45,23 @@ async function loadPresupuestos() {
                onmouseenter="this.style.boxShadow='0 4px 20px rgba(2,81,150,0.15)'"
                onmouseleave="this.style.boxShadow=''">
             <div class="card-body">
-              <div style="font-family:'Barlow Condensed',sans-serif; font-size:17px; font-weight:700; color:var(--blue)">${sanitize(p.nombre||'Presupuesto')}</div>
-              <div style="font-size:11px; color:var(--text-muted); margin:4px 0 12px">${p.fecha_creacion?.substring(0,10)||''}</div>
-              <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; font-size:12px">
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
+                <span class="badge badge-${p.estado||'activo'}">${p.estado||'activo'}</span>
+                <span style="font-size:11px;color:var(--text-muted)">${p.fecha_creacion?.substring(0,10)||''}</span>
+              </div>
+              <div style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:var(--blue);margin-bottom:2px">${sanitize(p.nombre||'Presupuesto')}</div>
+              <div style="font-size:11px;color:var(--text-muted);margin-bottom:10px">${sanitize(p.ubicacion||'')} · ${sanitize(p.cliente||'—')}</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px">
                 <div><div style="color:var(--text-muted)">Costos Directos</div><div style="font-weight:600">L ${fmt(p.costos_directos||0)}</div></div>
                 <div><div style="color:var(--text-muted)">Indirectos</div><div style="font-weight:600">${p.porcentaje_indirectos||0}%</div></div>
               </div>
-              <div style="margin-top:12px; padding-top:12px; border-top:1px solid var(--gray-light); display:flex; justify-content:space-between; align-items:center">
-                <span style="font-size:12px; color:var(--text-muted)">TOTAL</span>
-                <span style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; color:var(--blue)">L ${fmt(p.total_general||0)}</span>
+              <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--gray-light);display:flex;justify-content:space-between;align-items:center">
+                <span style="font-size:12px;color:var(--text-muted)">TOTAL</span>
+                <span style="font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:700;color:var(--blue)">L ${fmt(p.total_general||0)}</span>
+              </div>
+              <div style="margin-top:8px;display:flex;justify-content:flex-end;gap:6px">
+                <button class="btn btn-danger btn-sm" style="font-size:11px"
+                  onclick="event.stopPropagation(); eliminarPresupuesto(${p.id_presupuesto})">✕ Eliminar</button>
               </div>
             </div>
           </div>`).join('')}
@@ -113,6 +70,15 @@ async function loadPresupuestos() {
 }
 
 // ─── DETALLE DE PRESUPUESTO ──────────────────────────────────
+async function eliminarPresupuesto(presId) {
+  if (!confirm('¿Eliminar este presupuesto y todas sus actividades? Esta acción no se puede deshacer.')) return;
+  try {
+    await api.del(`/api/presupuestos/${presId}`);
+    toast('Presupuesto eliminado');
+    await loadPresupuestos();
+  } catch(e) { toast(e.error || 'Error al eliminar', 'error'); }
+}
+
 async function verPresupuestoDetalle(id) {
   const el = document.getElementById('pageContent');
   el.querySelector && el.querySelector('.page-body')
@@ -126,16 +92,16 @@ async function verPresupuestoDetalle(id) {
 }
 
 function renderDetallePres(data, presId) {
-  const { presupuesto: pres, capitulos, partidas } = data;
+  const { presupuesto: pres, modulos, actividades } = data;
   const moneda = pres.moneda || 'L';
 
-  // Construir mapa de capítulos con sus partidas
+  // Construir mapa de módulos con sus actividades
   const chMap = new Map();
-  capitulos.forEach(c => chMap.set(c.id_capitulo, { ...c, partidas: [] }));
+  modulos.forEach(c => chMap.set(c.id_modulo, { ...c, actividades: [] }));
   const sinCap = [];
-  partidas.forEach(p => {
-    if (p.id_capitulo && chMap.has(p.id_capitulo)) {
-      chMap.get(p.id_capitulo).partidas.push(p);
+  actividades.forEach(p => {
+    if (p.id_modulo && chMap.has(p.id_modulo)) {
+      chMap.get(p.id_modulo).actividades.push(p);
     } else {
       sinCap.push(p);
     }
@@ -146,13 +112,10 @@ function renderDetallePres(data, presId) {
     <div class="page-header">
       <div>
         <div class="breadcrumb">
-          <a onclick="resetPresupuestos()">Proyectos</a> →
-          <a onclick="verPresupuestosProyecto(${pres.id_proyecto}, '${sanitize(pres.proyecto_nombre||'')}')">
-            ${sanitize(pres.proyecto_nombre||'')}
-          </a> → ${sanitize(pres.nombre||'Presupuesto')}
+          <a onclick="renderPresupuestos()">Presupuestos</a> → ${sanitize(pres.nombre||'Presupuesto')}
         </div>
         <div class="page-title">${sanitize(pres.nombre||'Presupuesto')}</div>
-        <div class="page-subtitle">${sanitize(pres.proyecto_nombre||'')} — ${sanitize(pres.cliente||'')}</div>
+        <div class="page-subtitle">${sanitize(pres.ubicacion||'')} · ${sanitize(pres.cliente||'')}</div>
       <div style="margin-top:5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap">
         <span style="font-size:12px;color:var(--text-muted)">Centro de costos:</span>
         ${pres.id_centro_costo
@@ -163,9 +126,9 @@ function renderDetallePres(data, presId) {
       </div>
       </div>
       <div class="btn-group" style="flex-wrap:wrap; justify-content:flex-end">
-        <button class="btn btn-secondary btn-sm" onclick="verPresupuestosProyecto(${pres.id_proyecto}, '${sanitize(pres.proyecto_nombre||'')}')">← Volver</button>
-        <button class="btn btn-secondary btn-sm" onclick="modalNuevoCapitulo(${presId})">+ Capítulo</button>
-        <button class="btn btn-secondary btn-sm" onclick="modalNuevaPartida(${presId})">+ Partida</button>
+        <button class="btn btn-secondary btn-sm" onclick="renderPresupuestos()">← Presupuestos</button>
+        <button class="btn btn-secondary btn-sm" onclick="modalNuevoMódulo(${presId})">+ Módulo</button>
+        <button class="btn btn-secondary btn-sm" onclick="modalNuevaActividad(${presId})">+ Actividad</button>
         <button class="btn btn-secondary btn-sm" onclick="modalPorcentajes(${presId})">% Indirectos</button>
         <button class="btn btn-secondary btn-sm" id="btnRecalcular" onclick="recalcularPresupuesto(${presId})">🔄 Recalcular</button>
         <button class="btn btn-orange btn-sm" onclick="window.open('/api/reportes/presupuesto/${presId}/excel','_blank'); toast('Generando Excel...','info')">📥 Excel</button>
@@ -187,7 +150,7 @@ function renderDetallePres(data, presId) {
               <th style="width:56px"></th>
             </tr></thead>
             <tbody id="presTableBody">
-              ${buildPartidasRows(chMap, sinCap, moneda, presId)}
+              ${buildActividadesRows(chMap, sinCap, moneda, presId)}
             </tbody>
           </table>
         </div>
@@ -214,13 +177,13 @@ function renderDetallePres(data, presId) {
   setTimeout(() => cargarInsumosCero(presId), 50);
 }
 
-function buildPartidasRows(chMap, sinCap, moneda, presId) {
+function buildActividadesRows(chMap, sinCap, moneda, presId) {
   let n = 1;
   let html = '';
 
-  // Capítulos con sus partidas
+  // Módulos con sus actividades
   chMap.forEach((cap, capId) => {
-    const subtotal = cap.partidas.reduce((s, p) => s + p.subtotal, 0);
+    const subtotal = cap.actividades.reduce((s, p) => s + p.subtotal, 0);
     html += `
       <tr class="pres-chapter">
         <td colspan="6">
@@ -229,40 +192,40 @@ function buildPartidasRows(chMap, sinCap, moneda, presId) {
           <span style="margin-left:12px; font-weight:400; opacity:0.8; font-size:12px">${moneda} ${fmt(subtotal)}</span>
         </td>
         <td style="text-align:right; padding-right:6px">
-          <button class="btn btn-add-partida btn-sm"
-            onclick="modalNuevaPartida(${presId}, ${capId})" title="Agregar partida a este capítulo"
+          <button class="btn btn-add-actividad btn-sm"
+            onclick="modalNuevaActividad(${presId}, ${capId})" title="Agregar actividad a este módulo"
             style="background:rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.5);
                    color:#fff; font-size:11px; padding:3px 9px; border-radius:4px; cursor:pointer;
-                   font-weight:600; letter-spacing:0.5px; white-space:nowrap">+ Partida</button>
+                   font-weight:600; letter-spacing:0.5px; white-space:nowrap">+ Actividad</button>
         </td>
         <td style="text-align:center">
           <button class="btn btn-danger btn-sm btn-icon"
-            onclick="eliminarCapitulo(${presId},${capId},event)" title="Eliminar capítulo">✕</button>
+            onclick="eliminarMódulo(${presId},${capId},event)" title="Eliminar módulo">✕</button>
         </td>
       </tr>`;
-    if (cap.partidas.length === 0) {
-      html += `<tr><td colspan="8" style="padding:8px 14px; font-size:11px; color:var(--text-muted); font-style:italic">— Capítulo vacío. Agrega partidas y asigna este capítulo. —</td></tr>`;
+    if (cap.actividades.length === 0) {
+      html += `<tr><td colspan="8" style="padding:8px 14px; font-size:11px; color:var(--text-muted); font-style:italic">— Módulo vacío. Agrega actividades y asigna este módulo. —</td></tr>`;
     }
-    cap.partidas.forEach(p => { html += rowPartida(p, n++, moneda, presId); });
+    cap.actividades.forEach(p => { html += rowActividad(p, n++, moneda, presId); });
   });
 
-  // Partidas sin capítulo
-  sinCap.forEach(p => { html += rowPartida(p, n++, moneda, presId); });
+  // Actividades sin módulo
+  sinCap.forEach(p => { html += rowActividad(p, n++, moneda, presId); });
 
   if (!html) {
     html = `<tr><td colspan="8">
       <div class="empty-state" style="padding:40px">
         <div class="empty-icon">▤</div>
-        <div class="empty-title">Sin partidas</div>
-        <div class="empty-desc">Crea capítulos con <strong>+ Capítulo</strong>, luego agrega partidas con <strong>+ Partida</strong></div>
+        <div class="empty-title">Sin actividades</div>
+        <div class="empty-desc">Crea módulos con <strong>+ Módulo</strong>, luego agrega actividades con <strong>+ Actividad</strong></div>
       </div>
     </td></tr>`;
   }
   return html;
 }
 
-function rowPartida(p, n, moneda, presId) {
-  return `<tr data-partida="${p.id_partida}">
+function rowActividad(p, n, moneda, presId) {
+  return `<tr data-actividad="${p.id_partida}">
     <td style="color:var(--text-muted); font-size:11px; text-align:center">${n}</td>
     <td class="td-code">${sanitize(p.actividad_codigo||'')}</td>
     <td>${sanitize(p.actividad_desc||'')}</td>
@@ -281,7 +244,7 @@ function rowPartida(p, n, moneda, presId) {
     <td class="td-monto subtotal-cell" style="color:var(--green)">${moneda} ${fmt(p.subtotal)}</td>
     <td style="text-align:center">
       <button class="btn btn-danger btn-sm btn-icon"
-        onclick="eliminarPartida(${presId},${p.id_partida})" title="Eliminar">✕</button>
+        onclick="eliminarActividad(${presId},${p.id_partida})" title="Eliminar">✕</button>
     </td>
   </tr>`;
 }
@@ -293,13 +256,13 @@ function sumRow(label, val, moneda) {
   </tr>`;
 }
 
-// ─── CREAR CAPÍTULO ──────────────────────────────────────────
-function modalNuevoCapitulo(presId) {
-  const orden = (_presActual?.capitulos?.length || 0) + 1;
-  showModal('NUEVO CAPÍTULO', `
+// ─── CREAR MÓDULO ──────────────────────────────────────────
+function modalNuevoMódulo(presId) {
+  const orden = (_presActual?.modulos?.length || 0) + 1;
+  showModal('NUEVO MÓDULO', `
     <div class="form-grid">
       <div class="form-group" style="grid-column:span 2">
-        <label class="form-label">Nombre del Capítulo *</label>
+        <label class="form-label">Nombre del Módulo *</label>
         <input type="text" id="capNombre" placeholder="Ej: I. OBRAS PRELIMINARES" autofocus>
         <div style="margin-top:6px; display:flex; flex-wrap:wrap; gap:4px">
           ${['I. PRELIMINARES','II. CIMENTACIONES','III. ESTRUCTURA','IV. MAMPOSTERÍA','V. TECHOS','VI. REPELLOS Y ACABADOS',
@@ -317,45 +280,45 @@ function modalNuevoCapitulo(presId) {
     </div>
     <div class="form-actions">
       <button class="btn btn-secondary" onclick="hideModal()">Cancelar</button>
-      <button class="btn btn-orange" onclick="guardarCapitulo(${presId})">Crear Capítulo</button>
+      <button class="btn btn-orange" onclick="guardarMódulo(${presId})">Crear Módulo</button>
     </div>`);
   setTimeout(() => document.getElementById('capNombre')?.focus(), 50);
 }
 
-async function guardarCapitulo(presId) {
+async function guardarMódulo(presId) {
   const nombre = document.getElementById('capNombre').value.trim();
-  if (!nombre) { toast('Escribe el nombre del capítulo', 'error'); return; }
+  if (!nombre) { toast('Escribe el nombre del módulo', 'error'); return; }
   try {
-    await api.post(`/api/presupuestos/${presId}/capitulos`, {
+    await api.post(`/api/presupuestos/${presId}/modulos`, {
       nombre,
       orden_visual: parseInt(document.getElementById('capOrden').value) || 1
     });
     hideModal();
-    toast('Capítulo creado ✓');
+    toast('Módulo creado ✓');
     await verPresupuestoDetalle(presId);
   } catch(e) { toast(e.error||'Error', 'error'); }
 }
 
-async function eliminarCapitulo(presId, capId, evt) {
+async function eliminarMódulo(presId, capId, evt) {
   evt && evt.stopPropagation();
-  const cap = _presActual?.capitulos?.find(c => c.id_capitulo == capId);
-  const tienePartidas = _presActual?.partidas?.some(p => p.id_capitulo == capId);
-  if (tienePartidas) {
-    toast('No se puede eliminar — el capítulo tiene partidas asignadas', 'error');
+  const cap = _presActual?.modulos?.find(c => c.id_modulo == capId);
+  const tieneActividades = _presActual?.actividades?.some(p => p.id_modulo == capId);
+  if (tieneActividades) {
+    toast('No se puede eliminar — el módulo tiene actividades asignadas', 'error');
     return;
   }
-  if (!confirm(`¿Eliminar capítulo "${cap?.nombre||capId}"?`)) return;
+  if (!confirm(`¿Eliminar módulo "${cap?.nombre||capId}"?`)) return;
   try {
-    await api.del(`/api/presupuestos/${presId}/capitulos/${capId}`);
-    toast('Capítulo eliminado');
+    await api.del(`/api/presupuestos/${presId}/modulos/${capId}`);
+    toast('Módulo eliminado');
     await verPresupuestoDetalle(presId);
   } catch(e) { toast(e.error||'Error al eliminar', 'error'); }
 }
 
-// ─── NUEVA PARTIDA ───────────────────────────────────────────
-async function modalNuevaPartida(presId, preselCapId = null) {
-  const caps = _presActual?.capitulos || [];
-  showModal('NUEVA PARTIDA', `
+// ─── NUEVA ACTIVIDAD ───────────────────────────────────────────
+async function modalNuevaActividad(presId, preselCapId = null) {
+  const caps = _presActual?.modulos || [];
+  showModal('NUEVA ACTIVIDAD', `
     <div class="form-grid">
       <div class="form-group" style="grid-column:span 2">
         <label class="form-label">Buscar actividad *</label>
@@ -373,10 +336,10 @@ async function modalNuevaPartida(presId, preselCapId = null) {
         <div id="partActInfo" style="font-size:11px; color:var(--text-muted); margin-top:3px; height:16px"></div>
       </div>
       <div class="form-group">
-        <label class="form-label">Capítulo</label>
+        <label class="form-label">Módulo</label>
         <select id="partCap" style="width:100%">
-          <option value="">Sin capítulo</option>
-          ${caps.map(c => `<option value="${c.id_capitulo}" ${preselCapId == c.id_capitulo ? 'selected' : ''}>${c.nombre}</option>`).join('')}
+          <option value="">Sin módulo</option>
+          ${caps.map(c => `<option value="${c.id_modulo}" ${preselCapId == c.id_modulo ? 'selected' : ''}>${c.nombre}</option>`).join('')}
         </select>
       </div>
       <div class="form-group">
@@ -386,7 +349,7 @@ async function modalNuevaPartida(presId, preselCapId = null) {
     </div>
     <div class="form-actions">
       <button class="btn btn-secondary" onclick="hideModal()">Cancelar</button>
-      <button class="btn btn-orange" onclick="guardarPartida(${presId})">Agregar Partida</button>
+      <button class="btn btn-orange" onclick="guardarActividad(${presId})">Agregar Actividad</button>
     </div>`);
   setTimeout(() => {
     document.getElementById('partActSearch')?.focus();
@@ -439,19 +402,19 @@ async function buscarActsPart(inmediato = false, forceQ) {
   if (inmediato) { run(); } else { _partTimer = setTimeout(run, 300); }
 }
 
-async function guardarPartida(presId) {
+async function guardarActividad(presId) {
   const sel = document.getElementById('partAct');
   const id_actividad = sel?.value;
   if (!id_actividad) { toast('Selecciona una actividad de la lista', 'error'); return; }
   const capVal = document.getElementById('partCap').value;
   try {
-    await api.post(`/api/presupuestos/${presId}/partidas`, {
+    await api.post(`/api/presupuestos/${presId}/actividades`, {
       id_actividad,
-      id_capitulo: capVal || null,
+      id_modulo: capVal || null,
       cantidad: parseFloat(document.getElementById('partCant').value) || 1
     });
     hideModal();
-    toast('Partida agregada ✓');
+    toast('Actividad agregada ✓');
     await verPresupuestoDetalle(presId);
   } catch(e) { toast(e.error||'Error', 'error'); }
 }
@@ -467,9 +430,9 @@ async function actualizarCantidad(presId, partId, inputEl) {
   inputEl.disabled = true;
   inputEl.style.opacity = '0.6';
   try {
-    const res = await api.put(`/api/presupuestos/${presId}/partidas/${partId}`, { cantidad: val });
+    const res = await api.put(`/api/presupuestos/${presId}/actividades/${partId}`, { cantidad: val });
     // Actualizar subtotal de la fila
-    const tr = inputEl.closest('tr[data-partida]');
+    const tr = inputEl.closest('tr[data-actividad]');
     if (tr) {
       const subtotalCell = tr.querySelector('.subtotal-cell');
       if (subtotalCell) {
@@ -480,23 +443,28 @@ async function actualizarCantidad(presId, partId, inputEl) {
     // Actualizar los totales del pie de presupuesto sin recargar toda la página
     if (res.totales) {
       const t = res.totales;
-      const moneda = _presActual?.presupuesto?.moneda || 'HNL';
-      const sumRows = document.querySelectorAll('.sum-table tr');
-      sumRows.forEach(row => {
+      const moneda = _presActual?.presupuesto?.moneda || 'L';
+      // Recorrer TODAS las filas de todas las tablas del pie
+      document.querySelectorAll('table tr').forEach(row => {
+        if (row.cells.length < 2) return;
         const lbl = row.cells[0]?.textContent?.trim() || '';
         const valCell = row.cells[1];
         if (!valCell) return;
-        if (lbl.includes('Costos Directos'))    valCell.textContent = `${moneda} ${fmt(t.costos_directos)}`;
-        if (lbl.includes('Indirectos'))         valCell.textContent = `${moneda} ${fmt(t.costos_indirectos)}`;
-        if (lbl.includes('Utilidad'))           valCell.textContent = `${moneda} ${fmt(t.utilidad)}`;
-        if (lbl.includes('Imprevistos'))        valCell.textContent = `${moneda} ${fmt(t.imprevistos)}`;
+        if (lbl.includes('Costos Directos'))   valCell.textContent = `${moneda} ${fmt(t.costos_directos)}`;
+        if (lbl.includes('Indirectos'))        valCell.textContent = `${moneda} ${fmt(t.costos_indirectos)}`;
+        if (lbl.includes('Utilidad'))          valCell.textContent = `${moneda} ${fmt(t.utilidad)}`;
+        if (lbl.includes('Imprevistos'))       valCell.textContent = `${moneda} ${fmt(t.imprevistos)}`;
       });
       // Total general (grand total)
       const grandCell = document.querySelector('.grand-total td:last-child');
       if (grandCell) grandCell.textContent = `${moneda} ${fmt(t.total_general)}`;
       // Actualizar datos en memoria
       if (_presActual?.presupuesto) {
-        _presActual.presupuesto.total_general = t.total_general;
+        _presActual.presupuesto.costos_directos   = t.costos_directos;
+        _presActual.presupuesto.costos_indirectos = t.costos_indirectos;
+        _presActual.presupuesto.utilidad          = t.utilidad;
+        _presActual.presupuesto.imprevistos       = t.imprevistos;
+        _presActual.presupuesto.total_general     = t.total_general;
       }
     }
     inputEl.classList.remove('qty-error');
@@ -516,11 +484,11 @@ async function actualizarCantidad(presId, partId, inputEl) {
   }
 }
 
-async function eliminarPartida(presId, partId) {
-  if (!confirm('¿Eliminar esta partida?')) return;
+async function eliminarActividad(presId, partId) {
+  if (!confirm('¿Eliminar esta actividad?')) return;
   try {
-    await api.del(`/api/presupuestos/${presId}/partidas/${partId}`);
-    toast('Partida eliminada');
+    await api.del(`/api/presupuestos/${presId}/actividades/${partId}`);
+    toast('Actividad eliminada');
     await verPresupuestoDetalle(presId);
   } catch(e) { toast(e.error||'Error', 'error'); }
 }
@@ -545,7 +513,7 @@ function modalPorcentajes(presId) {
     </div>
     <div class="form-actions">
       <button class="btn btn-secondary" onclick="hideModal()">Cancelar</button>
-      <button class="btn btn-primary" onclick="guardarPorcentajes(${presId})">Actualizar</button>
+      <button class="btn btn-orange" onclick="guardarPorcentajes(${presId})">Actualizar</button>
     </div>`);
 }
 
@@ -563,12 +531,32 @@ async function guardarPorcentajes(presId) {
 }
 
 // ─── NUEVO PRESUPUESTO ───────────────────────────────────────
-function modalNuevoPresupuesto() {
+async function modalNuevoPresupuesto() {
   showModal('NUEVO PRESUPUESTO', `
     <div class="form-grid">
       <div class="form-group" style="grid-column:span 2">
         <label class="form-label">Nombre del Presupuesto *</label>
-        <input type="text" id="presNombre" placeholder="Ej: Presupuesto Oferta, Revisión 1...">
+        <input type="text" id="presNombre" placeholder="Ej: Construcción de vivienda, Tramo Km 5-10...">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Cliente</label>
+        <input type="text" id="presCliente" placeholder="Nombre del cliente">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Ubicación</label>
+        <input type="text" id="presUbicacion" placeholder="Ciudad / sitio de la obra">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Moneda</label>
+        <select id="presMoneda">
+          <option value="HNL" selected>Lempiras (HNL)</option>
+          <option value="USD">Dólares (USD)</option>
+          <option value="EUR">Euros (EUR)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Fecha de inicio</label>
+        <input type="date" id="presFechaInicio">
       </div>
       <div class="form-group">
         <label class="form-label">Indirectos (%)</label>
@@ -593,15 +581,17 @@ function modalNuevoPresupuesto() {
 async function guardarPresupuesto() {
   try {
     const res = await api.post('/api/presupuestos', {
-      id_proyecto: _presCtx.idProyecto,
       nombre: document.getElementById('presNombre').value.trim() || 'Presupuesto',
+      cliente: document.getElementById('presCliente')?.value.trim() || null,
+      ubicacion: document.getElementById('presUbicacion')?.value.trim() || null,
+      moneda: document.getElementById('presMoneda')?.value || 'HNL',
+      fecha_inicio: document.getElementById('presFechaInicio')?.value || null,
       porcentaje_indirectos: parseFloat(document.getElementById('presInd').value)||0,
       porcentaje_utilidad: parseFloat(document.getElementById('presUtil').value)||0,
       porcentaje_imprevistos: parseFloat(document.getElementById('presImp').value)||0
     });
     hideModal();
     toast('Presupuesto creado ✓');
-    await loadPresupuestos();
     verPresupuestoDetalle(res.id);
   } catch(e) { toast(e.error||'Error', 'error'); }
 }
@@ -612,22 +602,22 @@ async function cargarInsumosCero(presId) {
   if (!banner) return;
   try {
     const data = await api.get(`/api/presupuestos/${presId}/insumos-cero`);
-    const nPartidas = (data.partidas_cero || []).length;
+    const nActividades = (data.actividads_cero || []).length;
     const nInsumos  = (data.insumos_cero  || []).length;
-    const total     = nPartidas + nInsumos;
+    const total     = nActividades + nInsumos;
 
     if (total === 0) { banner.style.display = 'none'; return; }
 
     // Construir detalle de actividades en cero (máximo 5 visibles)
     let detalle = '';
-    if (nPartidas > 0) {
-      const muestras = (data.partidas_cero || []).slice(0, 4);
+    if (nActividades > 0) {
+      const muestras = (data.actividads_cero || []).slice(0, 4);
       detalle += `<div style="margin-top:6px;font-size:11px;color:#92400e">
-        <strong>Actividades sin precio (${nPartidas}):</strong>
+        <strong>Actividades sin precio (${nActividades}):</strong>
         ${muestras.map(p => `<span style="display:inline-block;background:#fef3c7;
           border-radius:3px;padding:1px 6px;margin:2px 3px 2px 0;font-size:11px">
           ${sanitize(p.codigo)} — ${sanitize(p.descripcion.substring(0,35))}${p.descripcion.length>35?'…':''}</span>`).join('')}
-        ${nPartidas > 4 ? `<span style="color:#b45309">... y ${nPartidas-4} más</span>` : ''}
+        ${nActividades > 4 ? `<span style="color:#b45309">... y ${nActividades-4} más</span>` : ''}
       </div>`;
     }
     if (nInsumos > 0) {
@@ -649,8 +639,8 @@ async function cargarInsumosCero(presId) {
           <div style="flex:1;min-width:220px">
             <div style="font-weight:700;color:#92400e;font-size:14px;margin-bottom:3px">
               Presupuesto incompleto —
-              ${nPartidas > 0 ? `${nPartidas} actividad${nPartidas>1?'es':''} sin precio` : ''}
-              ${nPartidas > 0 && nInsumos > 0 ? ' y ' : ''}
+              ${nActividades > 0 ? `${nActividades} actividad${nActividades>1?'es':''} sin precio` : ''}
+              ${nActividades > 0 && nInsumos > 0 ? ' y ' : ''}
               ${nInsumos > 0 ? `${nInsumos} insumo${nInsumos>1?'s':''} sin cotizar` : ''}
             </div>
             <div style="font-size:12px;color:#b45309">
@@ -695,6 +685,9 @@ async function recalcularPresupuesto(presId) {
 async function imprimirInsumosFaltantes(presId) {
   toast('Generando lista para cotizar...', 'info');
   try {
+    // Cargar configuración de empresa
+    let _empresa = 'Servicios y Construcciones RP';
+    try { const _cfg = await api.get('/api/configuracion'); if (_cfg.empresa_nombre?.valor) _empresa = _cfg.empresa_nombre.valor; } catch(e) {}
     const [cotData, presData] = await Promise.all([
       api.get(`/api/presupuestos/${presId}/cotizacion-insumos`),
       api.get(`/api/presupuestos/${presId}`)
@@ -834,11 +827,11 @@ async function imprimirInsumosFaltantes(presId) {
         <div class="tag">⚠ INSUMOS A COTIZAR</div>
         <h1>Lista de Cotización</h1>
       </div>
-      <div class="hdr-right">Servicios y Construcciones RP<br>${fecha}</div>
+      <div class="hdr-right">${_empresa}<br>${fecha}</div>
     </div>
     <div class="meta">
       <span><strong>Presupuesto:</strong> ${sanitize(pres.nombre||'—')}</span>
-      <span><strong>Proyecto:</strong> ${sanitize(pres.proyecto_nombre||'—')}</span>
+      <span><strong>Ubicación:</strong> ${sanitize(pres.ubicacion||'—')}</span>
       <span><strong>Cliente:</strong> ${sanitize(pres.cliente||'—')}</span>
       ${centroPart || '<span><strong>Centro de costos:</strong> Sin centro asignado</span>'}
     </div>
@@ -860,7 +853,7 @@ async function imprimirInsumosFaltantes(presId) {
       <tbody>${filas}</tbody>
     </table>
     <div class="footer">
-      <span>Sistema de Costos Unitarios — Servicios y Construcciones RP</span>
+      <span>Sistema de Costos Unitarios — ${_empresa}</span>
       <span>${fecha} — Para uso interno</span>
     </div>
     <script>window.onload=()=>window.print()<\/script>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COSTOS UNITARIOS — Sistema de Presupuestación</title>
-  <link rel="stylesheet" href="/css/app.css">
+  <title>COSTOS UNITARIOS</title>
+  <link rel="stylesheet" href="/css/app.css?v=223">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
@@ -17,7 +17,7 @@
     <div class="login-logo">
       <div class="logo-icon">⬡</div>
       <h1>COSTOS UNITARIOS</h1>
-      <p>Sistema de Presupuestación — Honduras</p>
+      <p></p>
     </div>
     <form id="loginForm" class="login-form">
       <div class="field-group">
@@ -48,63 +48,182 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a href="#" class="nav-item active" data-page="dashboard">
-        <span class="nav-icon">◈</span>
-        <span>Dashboard</span>
-      </a>
-      <a href="#" class="nav-item" data-page="proyectos">
-        <span class="nav-icon">◻</span>
-        <span>Proyectos</span>
-      </a>
-      <a href="#" class="nav-item" data-page="presupuestos">
-        <span class="nav-icon">▤</span>
-        <span>Presupuestos</span>
-      </a>
-      <a href="#" class="nav-item" data-page="centros">
-        <span class="nav-icon">📍</span>
-        <span>Centro de Costos</span>
-      </a>
-      <div class="nav-divider">CATÁLOGOS</div>
-      <a href="#" class="nav-item" data-page="actividades">
-        <span class="nav-icon">◎</span>
-        <span>Actividades / CU</span>
-      </a>
-      <a href="#" class="nav-item" data-page="insumos">
-        <span class="nav-icon">◇</span>
-        <span>Insumos</span>
-      </a>
-      <a href="#" class="nav-item" data-page="catalogos">
-        <span class="nav-icon">🗂</span>
-        <span>Catálogos Precios</span>
-      </a>
-      <a href="#" class="nav-item" data-page="especificaciones">
-        <span class="nav-icon">📋</span>
-        <span>Esp. Técnicas</span>
-      </a>
-      <div class="nav-divider">PRECIOS</div>
-      <a href="#" class="nav-item" data-page="actualizacion_precios">
-        <span class="nav-icon">💲</span>
-        <span>Actualizar Precios</span>
-      </a>
-      <div class="nav-divider">REPORTES</div>
-      <a href="#" class="nav-item" data-page="reportes">
-        <span class="nav-icon">📊</span>
-        <span>Reportes</span>
-      </a>
-      <a href="#" class="nav-item" data-page="plantillas">
-        <span class="nav-icon">🏦</span>
-        <span>Plantillas Financiador</span>
-      </a>
-      <div class="nav-divider">BODEGA</div>
-      <a href="#" class="nav-item" data-page="bodega">
-        <span class="nav-icon">📦</span>
-        <span>Requisiciones / Bodega</span>
-      </a>
-      <div class="nav-divider admin-only" style="display:none">ADMINISTRACIÓN</div>
-      <a href="#" class="nav-item admin-only" data-page="usuarios" style="display:none">
-        <span class="nav-icon">👥</span>
-        <span>Usuarios</span>
-      </a>
+
+      <!-- GRUPO: COSTOS Y PRESUPUESTOS -->
+      <div class="nav-group">
+        <button class="nav-group-header" data-group="costos_ppto">
+          <span class="nav-icon">🏗️</span>
+          <span class="nav-group-label">COSTOS Y PRESUPUESTOS</span>
+          <span class="nav-group-arrow">▾</span>
+        </button>
+        <div class="nav-group-body" id="group-costos_ppto">
+          <!-- Inicio -->
+          <a href="#" class="nav-item nav-sub active" data-page="dashboard">
+            <span class="nav-icon">◈</span>
+            <span>Dashboard</span>
+          </a>
+
+          <!-- SUB-GRUPO: Gestión -->
+          <div class="nav-subgroup">
+            <button class="nav-subgroup-header open" data-subgroup="gestion">
+              <span class="nav-subgroup-label">Gestión</span>
+              <span class="nav-subgroup-arrow">▾</span>
+            </button>
+            <div class="nav-subgroup-body open" id="subgroup-gestion">
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="presupuestos">
+                <span class="nav-icon">▤</span>
+                <span>Presupuestos</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="centros">
+                <span class="nav-icon">📍</span>
+                <span>Centro de Costos</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="licitacion">
+                <span class="nav-icon">📑</span>
+                <span>Importar Licitación</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- SUB-GRUPO: Catálogos y Precios -->
+          <div class="nav-subgroup">
+            <button class="nav-subgroup-header open" data-subgroup="catalogos_precios">
+              <span class="nav-subgroup-label">Catálogos y Precios</span>
+              <span class="nav-subgroup-arrow">▾</span>
+            </button>
+            <div class="nav-subgroup-body open" id="subgroup-catalogos_precios">
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="actividades">
+                <span class="nav-icon">◎</span>
+                <span>Actividades / CU</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="insumos">
+                <span class="nav-icon">◇</span>
+                <span>Insumos</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="catalogos">
+                <span class="nav-icon">📂</span>
+                <span>Catálogos Precios</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="especificaciones">
+                <span class="nav-icon">📋</span>
+                <span>Esp. Técnicas</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="actualizacion_precios">
+                <span class="nav-icon">🔄</span>
+                <span>Actualizar Precios</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- SUB-GRUPO: Ejecución -->
+          <div class="nav-subgroup">
+            <button class="nav-subgroup-header open" data-subgroup="ejecucion">
+              <span class="nav-subgroup-label">Ejecución</span>
+              <span class="nav-subgroup-arrow">▾</span>
+            </button>
+            <div class="nav-subgroup-body open" id="subgroup-ejecucion">
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="valuaciones">
+                <span class="nav-icon">📋</span>
+                <span>Valuaciones</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="seguimiento">
+                <span class="nav-icon">📅</span>
+                <span>Cronograma / Seguimiento</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="bitacora">
+                <span class="nav-icon">📋</span>
+                <span>Bitácora de Obra</span>
+              </a>
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="documentacion">
+                <span class="nav-icon">📂</span>
+                <span>Documentación</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- SUB-GRUPO: Reportes -->
+          <div class="nav-subgroup">
+            <button class="nav-subgroup-header open" data-subgroup="reportes_cp">
+              <span class="nav-subgroup-label">Reportes</span>
+              <span class="nav-subgroup-arrow">▾</span>
+            </button>
+            <div class="nav-subgroup-body open" id="subgroup-reportes_cp">
+              <a href="#" class="nav-item nav-sub nav-sub2" data-page="reportes">
+                <span class="nav-icon">📊</span>
+                <span>Reportes</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- GRUPO: ADMINISTRACIÓN / FINANCIERO -->
+      <div class="nav-group">
+        <button class="nav-group-header" data-group="adm_fin">
+          <span class="nav-icon">🏦</span>
+          <span class="nav-group-label">ADM. / FINANCIERO</span>
+          <span class="nav-group-arrow">▾</span>
+        </button>
+        <div class="nav-group-body" id="group-adm_fin">
+          <a href="#" class="nav-item nav-sub" data-page="adm_dashboard">
+            <span class="nav-icon">📊</span>
+            <span>Panel Financiero</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="proveedores">
+            <span class="nav-icon">🤝</span>
+            <span>Proveedores</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="ordenes_compra">
+            <span class="nav-icon">🛒</span>
+            <span>Órdenes de Compra</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="requisiciones">
+            <span class="nav-icon">📋</span>
+            <span>Requisiciones</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="bodega">
+            <span class="nav-icon">📦</span>
+            <span>Bodega (Stock)</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="movimientos">
+            <span class="nav-icon">↕️</span>
+            <span>Movimientos</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="cuentas_pagar">
+            <span class="nav-icon">💸</span>
+            <span>Cuentas por Pagar</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="tareo">
+            <span class="nav-icon">👷</span>
+            <span>Registro Diario y Nómina</span>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- GRUPO: ADMINISTRACIÓN (solo admin) -->
+      <div class="nav-group admin-only" style="display:none">
+        <button class="nav-group-header" data-group="admin">
+          <span class="nav-icon">⚙️</span>
+          <span class="nav-group-label">ADMINISTRACIÓN</span>
+          <span class="nav-group-arrow">▾</span>
+        </button>
+        <div class="nav-group-body" id="group-admin">
+          <a href="#" class="nav-item nav-sub admin-only" data-page="clientes">
+            <span class="nav-icon">🤝</span>
+            <span>Clientes</span>
+          </a>
+          <a href="#" class="nav-item nav-sub admin-only" data-page="usuarios">
+            <span class="nav-icon">👥</span>
+            <span>Usuarios</span>
+          </a>
+          <a href="#" class="nav-item nav-sub" data-page="configuracion">
+            <span class="nav-icon">⚙️</span>
+            <span>Configuración</span>
+          </a>
+        </div>
+      </div>
+
     </nav>
 
     <div class="sidebar-footer">
@@ -140,19 +259,34 @@
 <div id="toastContainer" class="toast-container"></div>
 
 <script src="/js/api.js"></script>
-<script src="/js/pages/dashboard.js"></script>
-<script src="/js/pages/proyectos.js"></script>
-<script src="/js/pages/insumos.js"></script>
-<script src="/js/pages/actividades.js"></script>
-<script src="/js/pages/presupuestos.js"></script>
-<script src="/js/pages/centros.js"></script>
-<script src="/js/pages/catalogos.js"></script>
-<script src="/js/pages/especificaciones.js"></script>
-<script src="/js/pages/actualizacion_precios.js"></script>
-<script src="/js/pages/reportes.js"></script>
-<script src="/js/pages/plantillas.js"></script>
-<script src="/js/pages/bodega.js"></script>
-<script src="/js/pages/usuarios.js"></script>
+<script src="/js/components/insumo-search.js?v=223"></script>
+<script src="/js/pages/dashboard.js?v=219"></script>
+<script src="/js/pages/insumos.js?v=219"></script>
+<script src="/js/pages/actividades.js?v=219"></script>
+<script src="/js/pages/presupuestos.js?v=219"></script>
+<script src="/js/pages/centros.js?v=219"></script>
+<script src="/js/pages/catalogos.js?v=219"></script>
+<script src="/js/pages/especificaciones.js?v=219"></script>
+<script src="/js/pages/actualizacion_precios.js?v=219"></script>
+<script src="/js/pages/reportes.js?v=219"></script>
+<script src="/js/pages/plantillas.js?v=219"></script>
+<script src="/js/pages/bodega.js?v=222"></script>
+<script src="/js/pages/requisiciones.js?v=222"></script>
+<script src="/js/pages/movimientos.js?v=221"></script>
+<script src="/js/pages/licitacion.js?v=219"></script>
+<script src="/js/pages/seguimiento.js?v=219"></script>
+<script src="/js/pages/usuarios.js?v=219"></script>
+<script src="/js/pages/clientes.js?v=219"></script>
+<script src="/js/pages/documentacion.js?v=219"></script>
+<script src="/js/pages/bitacora.js?v=219"></script>
+<script src="/js/pages/configuracion.js?v=219"></script>
+<script src="/js/pages/valuaciones.js?v=219"></script>
+<script src="/js/pages/planilla.js?v=219"></script>
+<script src="/js/pages/adm_dashboard.js?v=220"></script>
+<script src="/js/pages/proveedores.js?v=220"></script>
+<script src="/js/pages/ordenes_compra.js?v=222"></script>
+<script src="/js/pages/cuentas_pagar.js?v=220"></script>
+<script src="/js/pages/tareo.js?v=224"></script>
 <script src="/js/app.js"></script>
 </body>
 </html>

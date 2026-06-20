@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════
-// CATÁLOGOS DE PRECIOS — por proyecto / región
+// CATÁLOGOS DE PRECIOS — por presupuesto / región
 // ═══════════════════════════════════════════════════════════════
 let _catalogos = [];
 let _catActual = null;   // { catalogo, insumos }
@@ -12,7 +12,7 @@ async function renderCatalogos() {
     <div class="page-header">
       <div>
         <div class="page-title">CATÁLOGOS DE PRECIOS</div>
-        <div class="page-subtitle">Precios de insumos por proyecto, región o ubicación</div>
+        <div class="page-subtitle">Precios de insumos por presupuesto, región o ubicación</div>
       </div>
       <button class="btn btn-orange" onclick="modalNuevoCatalogo()">+ Nuevo Catálogo</button>
     </div>
@@ -39,9 +39,9 @@ function renderListaCatalogos() {
          border-radius:0 6px 6px 0; margin-bottom:20px; font-size:13px">
       <div style="font-weight:700; color:var(--blue); margin-bottom:6px">¿Para qué sirven los catálogos?</div>
       <div style="color:var(--text-muted); line-height:1.7">
-        Cada catálogo tiene sus propios precios de insumos según la zona del proyecto.
-        Por ejemplo: un proyecto en <strong>Choluteca</strong> puede tener precios de arena y grava
-        diferentes a <strong>Tegucigalpa</strong> por el flete. Al asignar un catálogo a un proyecto,
+        Cada catálogo tiene sus propios precios de insumos según la zona del presupuesto.
+        Por ejemplo: un presupuesto en <strong>Choluteca</strong> puede tener precios de arena y grava
+        diferentes a <strong>Tegucigalpa</strong> por el flete. Al asignar un catálogo a un presupuesto,
         todos los costos unitarios se calculan con esos precios locales.<br>
         Si un insumo no tiene precio local, se usa el <strong>precio base (CHICO Nacional)</strong>.
       </div>
@@ -94,8 +94,8 @@ function renderListaCatalogos() {
                 📥 Cotización
               </button>
               ${!c.es_base ? `
-              <button class="btn btn-secondary btn-sm" onclick="modalAsignarProyecto(${c.id_catalogo},'${sanitize(c.nombre)}')" title="Asignar a proyecto">
-                🏗 Proyectos
+              <button class="btn btn-secondary btn-sm" onclick="modalAsignarPresupuesto(${c.id_catalogo},'${sanitize(c.nombre)}')" title="Asignar a presupuesto">
+                🏗 Presupuestos
               </button>` : ''}
             </div>
           </div>
@@ -365,7 +365,7 @@ function modalNuevoCatalogo() {
           ${_catalogos.map(c => `<option value="${c.id_catalogo}">${c.nombre} (${c.num_precios} precios)</option>`).join('')}
         </select>
         <div style="font-size:11px; color:var(--text-muted); margin-top:4px">
-          Clonar copia todos los precios locales del catálogo seleccionado como punto de partida
+          Clonar copia todos los precios locales del catálogo seleccionado como punto de actividad
         </div>
       </div>
     </div>
@@ -437,22 +437,22 @@ async function eliminarCatalogo(id, nombre) {
   } catch(e) { toast(e.error||'Error al eliminar: '+e.error, 'error'); }
 }
 
-// ─── ASIGNAR CATÁLOGO A PROYECTO ─────────────────────────────
-async function modalAsignarProyecto(idCat, nombreCat) {
-  let proyectos;
-  try { proyectos = await api.get('/api/proyectos'); }
-  catch(e) { toast('Error cargando proyectos', 'error'); return; }
+// ─── ASIGNAR CATÁLOGO A PRESUPUESTO ───────────────────────────
+async function modalAsignarPresupuesto(idCat, nombreCat) {
+  let presupuestos;
+  try { presupuestos = await api.get('/api/presupuestos'); }
+  catch(e) { toast('Error cargando presupuestos', 'error'); return; }
 
-  showModal(`ASIGNAR "${nombreCat}" A PROYECTOS`, `
+  showModal(`ASIGNAR "${nombreCat}" A PRESUPUESTOS`, `
     <div style="margin-bottom:14px; font-size:13px; color:var(--text-muted)">
-      Selecciona el proyecto y asigna este catálogo de precios. Los costos unitarios
+      Selecciona el presupuesto y asigna este catálogo de precios. Los costos unitarios
       del presupuesto usarán los precios locales de <strong>${sanitize(nombreCat)}</strong>.
     </div>
     <div class="form-group">
-      <label class="form-label">Proyecto *</label>
-      <select id="proyectoAsignar" style="width:100%">
-        <option value="">-- Seleccionar proyecto --</option>
-        ${proyectos.map(p => `<option value="${p.id_proyecto}">${p.nombre} (${p.ubicacion||'—'})</option>`).join('')}
+      <label class="form-label">Presupuesto *</label>
+      <select id="presupuestoAsignar" style="width:100%">
+        <option value="">-- Seleccionar presupuesto --</option>
+        ${presupuestos.map(p => `<option value="${p.id_presupuesto}">${p.nombre} (${p.ubicacion||'—'})</option>`).join('')}
       </select>
     </div>
     <div class="form-actions">
@@ -462,12 +462,12 @@ async function modalAsignarProyecto(idCat, nombreCat) {
 }
 
 async function asignarCatalogo(idCat) {
-  const idProy = document.getElementById('proyectoAsignar').value;
-  if (!idProy) { toast('Selecciona un proyecto', 'error'); return; }
+  const idPres = document.getElementById('presupuestoAsignar').value;
+  if (!idPres) { toast('Selecciona un presupuesto', 'error'); return; }
   try {
-    await api.post('/api/catalogos/asignar-proyecto', { id_proyecto: idProy, id_catalogo: idCat });
+    await api.post('/api/catalogos/asignar-presupuesto', { id_presupuesto: idPres, id_catalogo: idCat });
     hideModal();
-    toast('Catálogo asignado al proyecto ✓');
+    toast('Catálogo asignado al presupuesto ✓');
   } catch(e) { toast(e.error||'Error', 'error'); }
 }
 

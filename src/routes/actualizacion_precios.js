@@ -31,6 +31,120 @@ async function ensureTables() {
 }
 ensureTables();
 
+// ── GET  insumos con precios de un centro específico ──────────
+router.get('/insumos-centro/:id_centro', requireAuth, async (req, res) => {
+  try {
+    const db = await getDb();
+    const id_centro = parseInt(req.params.id_centro);
+
+    // Verificar que el centro existe
+    const cc = db.exec('SELECT nombre, zona FROM centros_costo WHERE id_centro=?', [id_centro]);
+    if (!cc.length || !cc[0].values.length)
+      return res.status(404).json({ error: 'Centro de costos no encontrado' });
+    const [nombre_centro, zona] = cc[0].values[0];
+
+    // Todos los insumos activos con precio base Y precio del centro (si existe)
+    const r = db.exec(`
+      SELECT i.id_insumo, i.codigo, i.descripcion, i.unidad,
+             i.precio_unitario AS precio_base,
+             cp.precio_unitario AS precio_centro,
+             cp.fecha_actualizacion AS fecha_centro,
+             c.nombre AS categoria, c.id_categoria,
+             COUNT(DISTINCT ai.id_actividad) AS num_actividades
+      FROM insumos i
+      JOIN categorias_insumo c ON i.id_categoria = c.id_categoria
+      LEFT JOIN actividad_insumos ai ON ai.id_insumo = i.id_insumo
+      LEFT JOIN centro_costo_precios cp ON cp.id_insumo = i.id_insumo AND cp.id_centro = ?
+      WHERE i.activo = 1
+      GROUP BY i.id_insumo
+      ORDER BY c.id_categoria, i.descripcion
+    `, [id_centro]);
+
+    const rows = r.length ? r[0].values.map(v => ({
+      id_insumo: v[0], codigo: v[1], descripcion: v[2], unidad: v[3],
+      precio_base: v[4], precio_centro: v[5], fecha_centro: v[6],
+      categoria: v[7], id_categoria: v[8], num_actividades: v[9],
+      // precio_unitario = precio del centro si existe, sino precio base
+      precio_unitario: v[5] !== null ? v[5] : v[4]
+    })) : [];
+
+    res.json({ centro: { id_centro, nombre: nombre_centro, zona }, insumos: rows });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
+// ── POST  aplicar actualización a un centro de costos ─────────
+router.post('/aplicar-centro', requireAuth, async (req, res) => {
+  try {
+    const db = await getDb();
+    const { id_centro, nombre, nota, cambios = [] } = req.body;
+    if (!id_centro) return res.status(400).json({ error: 'id_centro requerido' });
+    if (!cambios.length) return res.status(400).json({ error: 'Sin cambios a aplicar' });
+
+    // Verificar centro
+    const cc = db.exec('SELECT nombre FROM centros_costo WHERE id_centro=?', [id_centro]);
+    if (!cc.length || !cc[0].values.length)
+      return res.status(404).json({ error: 'Centro de costos no encontrado' });
+    const nombre_centro = cc[0].values[0][0];
+
+    // Registrar sesión (con nota del centro)
+    const nombreSesion = nombre || `Actualización ${new Date().toLocaleDateString('es-HN')} — ${nombre_centro}`;
+    db.run(`INSERT INTO sesiones_actualizacion (nombre, usuario, nota, total_insumos)
+            VALUES (?, ?, ?, ?)`,
+      [nombreSesion, req.session?.usuario?.nombre || 'sistema',
+       nota ? `[Centro: ${nombre_centro}] ${nota}` : `Centro de costos: ${nombre_centro}`,
+       cambios.length]);
+    const sesR = db.exec('SELECT last_insert_rowid()');
+    const id_sesion = sesR[0].values[0][0];
+
+    let afectados = 0;
+    let sumPct = 0, countPct = 0;
+
+    for (const c of cambios) {
+      const precioNvo = parseFloat(c.precio_nuevo);
+      if (isNaN(precioNvo) || precioNvo < 0) continue;
+
+      // Precio anterior en el centro (o precio base si no existía)
+      const oldR = db.exec(`
+        SELECT COALESCE(cp.precio_unitario, i.precio_unitario) AS precio_ant
+        FROM insumos i
+        LEFT JOIN centro_costo_precios cp ON cp.id_insumo = i.id_insumo AND cp.id_centro = ?
+        WHERE i.id_insumo = ?`, [id_centro, c.id_insumo]);
+      if (!oldR.length || !oldR[0].values.length) continue;
+      const precioAnt = oldR[0].values[0][0] || 0;
+
+      // Upsert en centro_costo_precios
+      const existe = db.exec(
+        'SELECT id_precio FROM centro_costo_precios WHERE id_centro=? AND id_insumo=?',
+        [id_centro, c.id_insumo]);
+      if (existe.length && existe[0].values.length) {
+        db.run(`UPDATE centro_costo_precios
+                SET precio_unitario=?, fecha_actualizacion=datetime('now')
+                WHERE id_centro=? AND id_insumo=?`,
+          [precioNvo, id_centro, c.id_insumo]);
+      } else {
+        db.run(`INSERT INTO centro_costo_precios (id_centro, id_insumo, precio_unitario)
+                VALUES (?,?,?)`, [id_centro, c.id_insumo, precioNvo]);
+      }
+
+      // Historial (registrado como cambio de centro)
+      const pct = precioAnt > 0 ? (precioNvo - precioAnt) / precioAnt * 100 : null;
+      db.run(`INSERT INTO sesion_detalle (id_sesion, id_insumo, precio_anterior, precio_nuevo, variacion_pct)
+              VALUES (?,?,?,?,?)`, [id_sesion, c.id_insumo, precioAnt, precioNvo, pct]);
+
+      afectados++;
+      if (pct !== null) { sumPct += pct; countPct++; }
+    }
+
+    // Actualizar resumen de sesión
+    const variProm = countPct > 0 ? sumPct / countPct : 0;
+    db.run(`UPDATE sesiones_actualizacion SET total_afectados=?, variacion_prom=? WHERE id_sesion=?`,
+      [afectados, variProm, id_sesion]);
+
+    saveDb();
+    res.json({ ok: true, id_sesion, afectados, variacion_prom: variProm.toFixed(2), nombre_centro });
+  } catch(e) { res.status(500).json({ error: e.message }); }
+});
+
 // ── GET  resumen de insumos para la pantalla de actualización ──
 router.get('/insumos', requireAuth, async (req, res) => {
   try {
@@ -138,7 +252,7 @@ router.post('/aplicar', requireAuth, async (req, res) => {
 
       // Recalcular costo_parcial en actividad_insumos
       db.run(`UPDATE actividad_insumos
-              SET costo_parcial = cantidad * ? * (1 + desperdicio/100.0)
+              SET costo_parcial = (cantidad / COALESCE(NULLIF(rendimiento,0),1)) * (1 + desperdicio/100.0) * ?
               WHERE id_insumo = ?`, [precioNvo, c.id_insumo]);
 
       // Recalcular costo_total de cada actividad afectada
@@ -149,7 +263,7 @@ router.post('/aplicar', requireAuth, async (req, res) => {
                     SELECT COALESCE(SUM(costo_parcial),0) FROM actividad_insumos WHERE id_actividad=?
                   ) WHERE id_actividad=?`, [id_act, id_act]);
 
-          // Recalcular partidas de presupuesto que usan esta actividad
+          // Recalcular actividades de presupuesto que usan esta actividad
           db.run(`UPDATE presupuesto_partidas
                   SET precio_unitario = (SELECT costo_total FROM actividades WHERE id_actividad=?),
                       subtotal = cantidad * (SELECT costo_total FROM actividades WHERE id_actividad=?)

@@ -1,6 +1,6 @@
 /* ============================================================
    PLANTILLAS POR FINANCIADOR
-   Genera formatos Excel según el financiador del proyecto
+   Genera formatos Excel según el financiador del presupuesto
    ============================================================ */
 
 async function renderPlantillas() {
@@ -63,7 +63,7 @@ async function renderPlantillas() {
             </label>
           </div>
 
-          <button id="btnGenerarPlantilla" class="btn-primary btn-full" disabled>
+          <button id="btnGenerarPlantilla" class="btn btn-primary btn-full" disabled>
             <span>📥 Generar Plantilla Excel</span>
           </button>
           <p id="plEstado" class="form-hint" style="text-align:center;margin-top:8px;"></p>
@@ -106,7 +106,7 @@ async function plCargarDatos() {
     plPresupuestos.forEach(p => {
       const opt = document.createElement('option');
       opt.value = p.id_presupuesto;
-      opt.textContent = `${p.proyecto_nombre} › ${p.nombre || 'Sin nombre'} — L ${fmtNum(p.total_general)}`;
+      opt.textContent = `${p.nombre || 'Sin nombre'} — L ${fmtNum(p.total_general)}`;
       sel.appendChild(opt);
     });
 
@@ -229,7 +229,7 @@ function plBindEvents() {
     if (pres) {
       infoEl.innerHTML = `
         <div class="info-row">
-          <span>📁 Proyecto:</span><strong>${pres.proyecto_nombre}</strong>
+          <span>📁 Cliente:</span><strong>${pres.cliente || '—'}</strong>
         </div>
         <div class="info-row">
           <span>💰 Total:</span><strong>L ${fmtNum(pres.total_general)}</strong>
