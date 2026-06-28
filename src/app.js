@@ -41,7 +41,7 @@ app.use('/api/configuracion',         require('./routes/configuracion'));
 app.use('/api/valuaciones',           require('./routes/valuaciones'));
 app.use('/api/planilla',              require('./routes/planilla'));
 app.use('/api/admin-financiero',      require('./routes/admin_financiero'));
-app.use('/api/generar-eett',          require('./routes/generar_eett'));
+app.use('/api/estructural',           require('./routes/estructural'));
 
 // 404 explícito para /api/* no registradas
 app.use('/api', (req, res) => {
