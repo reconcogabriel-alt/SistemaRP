@@ -6,3 +6,4 @@ COPY . .
 RUN mkdir -p data
 EXPOSE 3000
 CMD ["node", "src/app.js"]
+# build: 2026-06-28
