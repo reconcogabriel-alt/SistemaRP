@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Estructural — SistemaRP</title>
+<style>
+  :root {
+    --azul: #025196;
+    --naranja: #FDB338;
+    --gris: #5F6B7A;
+    --fondo: #f4f6f9;
+    --blanco: #ffffff;
+    --borde: #d0d7de;
+    --verde: #1A7A3C;
+    --rojo: #8B0000;
+    --verde-bg: #C6EFCE;
+    --rojo-bg: #FFC7CE;
+    --warn-bg: #FFEB9C;
+    --warn-txt: #7D5A00;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Calibri, sans-serif; background: var(--fondo); color: #222; font-size: 15px; }
+  header { background: var(--azul); color: #fff; padding: 14px 24px; display: flex; align-items: center; gap: 12px; }
+  header h1 { font-size: 18px; font-weight: 600; }
+  header span { font-size: 13px; opacity: .7; }
+  .container { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+
+  .tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--azul); margin-bottom: 20px; }
+  .tab { padding: 9px 20px; cursor: pointer; border: 1px solid transparent; border-bottom: none;
+         border-radius: 6px 6px 0 0; font-size: 14px; font-weight: 600; color: var(--gris);
+         background: none; transition: .15s; }
+  .tab.active { background: var(--azul); color: #fff; border-color: var(--azul); }
+  .panel { display: none; } .panel.active { display: block; }
+
+  .card { background: var(--blanco); border: 1px solid var(--borde); border-radius: 8px; padding: 20px 22px; margin-bottom: 16px; }
+  .card h3 { font-size: 13px; font-weight: 700; color: var(--azul); text-transform: uppercase;
+             letter-spacing: .05em; margin-bottom: 12px; border-bottom: 1px solid var(--borde); padding-bottom: 6px; }
+  .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .field { display: flex; flex-direction: column; gap: 4px; }
+  label { font-size: 12px; color: var(--gris); font-weight: 600; }
+  input, select { padding: 7px 10px; border: 1px solid var(--borde); border-radius: 5px;
+                  font-size: 14px; font-family: Calibri, sans-serif; width: 100%;
+                  background: #f8fafc; }
+  input:focus, select:focus { outline: none; border-color: var(--azul); background: #fff; }
+
+  .btn-calc { display: block; width: 100%; padding: 11px; background: var(--azul); color: #fff;
+              font-size: 15px; font-weight: 700; border: none; border-radius: 6px; cursor: pointer;
+              margin-top: 6px; letter-spacing: .03em; transition: .15s; }
+  .btn-calc:hover { background: #013d72; }
+
+  /* Resultados */
+  .resultados { display: none; }
+  .res-header { background: var(--azul); color: #fff; padding: 10px 16px; border-radius: 7px 7px 0 0;
+                font-size: 14px; font-weight: 700; }
+  .res-body { border: 1px solid var(--azul); border-top: none; border-radius: 0 0 7px 7px;
+              background: var(--blanco); padding: 16px; }
+  .metricas { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 14px; }
+  .metrica { border: 1px solid var(--borde); border-radius: 6px; padding: 10px 12px; text-align: center; }
+  .metrica .val { font-size: 20px; font-weight: 700; color: var(--azul); }
+  .metrica .etq { font-size: 11px; color: var(--gris); margin-top: 2px; }
+  .detalle { font-size: 13px; line-height: 1.9; border-top: 1px solid var(--borde); padding-top: 10px; color: #333; }
+  .detalle b { color: #111; }
+  .alerta { background: var(--rojo-bg); border-left: 4px solid var(--rojo); padding: 8px 12px;
+             font-size: 13px; color: var(--rojo); border-radius: 0 4px 4px 0; margin-top: 10px; }
+  .ok-msg { background: var(--verde-bg); border-left: 4px solid var(--verde); padding: 8px 12px;
+             font-size: 13px; color: var(--verde); border-radius: 0 4px 4px 0; margin-top: 10px; }
+
+  /* Botón exportar presupuesto */
+  .btn-export { display: inline-block; margin-top: 12px; padding: 8px 18px; background: var(--naranja);
+                color: #333; font-weight: 700; font-size: 13px; border: none; border-radius: 5px; cursor: pointer; }
+  .btn-export:hover { background: #e6a020; }
+
+  @media (max-width: 600px) {
+    .row2, .row3 { grid-template-columns: 1fr; }
+    .metricas { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Calculadora Estructural</h1>
+    <span>SistemaRP · Cómputo de Materiales ACI 318</span>
+  </div>
+</header>
+
+<div class="container">
+  <div class="tabs">
+    <button class="tab active" onclick="tab('viga',this)">Viga</button>
+    <button class="tab" onclick="tab('columna',this)">Columna</button>
+    <button class="tab" onclick="tab('zapata',this)">Zapata</button>
+  </div>
+
+  <!-- ========== VIGA ========== -->
+  <div id="p-viga" class="panel active">
+    <div class="card">
+      <h3>Geometría</h3>
+      <div class="row3">
+        <div class="field"><label>Base b (cm)</label><input id="v-b" type="number" value="30"></div>
+        <div class="field"><label>Peralte h (cm)</label><input id="v-h" type="number" value="60"></div>
+        <div class="field"><label>Longitud L (m)</label><input id="v-L" type="number" value="5" step="0.1"></div>
+      </div>
+      <div class="row2" style="margin-top:10px">
+        <div class="field"><label>Recubrimiento r (cm)</label><input id="v-r" type="number" value="4"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Cargas en servicio</h3>
+      <div class="row2">
+        <div class="field"><label>Carga muerta WD (ton/m)</label><input id="v-WD" type="number" value="1.5" step="0.1"></div>
+        <div class="field"><label>Carga viva WL (ton/m)</label><input id="v-WL" type="number" value="1.0" step="0.1"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Materiales</h3>
+      <div class="row2">
+        <div class="field"><label>f'c (kg/cm²)</label>
+          <select id="v-fc"><option value="210">210</option><option value="245">245</option><option value="280">280</option><option value="350">350</option></select>
+        </div>
+        <div class="field"><label>fy (kg/cm²)</label>
+          <select id="v-fy"><option value="2810">2810 — Grado 40</option><option value="4200" selected>4200 — Grado 60</option></select>
+        </div>
+      </div>
+    </div>
+    <button class="btn-calc" onclick="calcular('viga')">CALCULAR VIGA</button>
+    <div id="res-viga" class="resultados" style="margin-top:18px"></div>
+  </div>
+
+  <!-- ========== COLUMNA ========== -->
+  <div id="p-columna" class="panel">
+    <div class="card">
+      <h3>Geometría</h3>
+      <div class="row3">
+        <div class="field"><label>Lado a (cm)</label><input id="c-a" type="number" value="40"></div>
+        <div class="field"><label>Lado b (cm)</label><input id="c-b" type="number" value="40"></div>
+        <div class="field"><label>Altura H (m)</label><input id="c-H" type="number" value="3" step="0.1"></div>
+      </div>
+      <div class="row2" style="margin-top:10px">
+        <div class="field"><label>Recubrimiento r (cm)</label><input id="c-r" type="number" value="4"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Carga axial</h3>
+      <div class="row2">
+        <div class="field"><label>Carga muerta PD (ton)</label><input id="c-PD" type="number" value="40"></div>
+        <div class="field"><label>Carga viva PL (ton)</label><input id="c-PL" type="number" value="25"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Materiales y acero</h3>
+      <div class="row2">
+        <div class="field"><label>f'c (kg/cm²)</label>
+          <select id="c-fc"><option value="210">210</option><option value="245">245</option><option value="280" selected>280</option><option value="350">350</option></select>
+        </div>
+        <div class="field"><label>fy (kg/cm²)</label>
+          <select id="c-fy"><option value="4200" selected>4200 — Grado 60</option><option value="2810">2810 — Grado 40</option></select>
+        </div>
+      </div>
+      <div class="row2" style="margin-top:10px">
+        <div class="field"><label>Cuantía ρ objetivo (%)</label><input id="c-rho" type="number" value="2" min="1" max="8" step="0.5"></div>
+        <div class="field"><label>Estribo Ø (mm)</label>
+          <select id="c-est"><option value="9.5">#3 — Ø9.5mm</option><option value="12.7" selected>#4 — Ø12.7mm</option></select>
+        </div>
+      </div>
+    </div>
+    <button class="btn-calc" onclick="calcular('columna')">CALCULAR COLUMNA</button>
+    <div id="res-columna" class="resultados" style="margin-top:18px"></div>
+  </div>
+
+  <!-- ========== ZAPATA ========== -->
+  <div id="p-zapata" class="panel">
+    <div class="card">
+      <h3>Carga sobre la zapata (servicio)</h3>
+      <div class="row2">
+        <div class="field"><label>Carga muerta PD (ton)</label><input id="z-PD" type="number" value="40"></div>
+        <div class="field"><label>Carga viva PL (ton)</label><input id="z-PL" type="number" value="25"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Suelo y profundidad</h3>
+      <div class="row2">
+        <div class="field"><label>Cap. portante qa (ton/m²)</label><input id="z-qa" type="number" value="10" step="0.5"></div>
+        <div class="field"><label>Profundidad Df (m)</label><input id="z-Df" type="number" value="1.2" step="0.1"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Columna que soporta</h3>
+      <div class="row2">
+        <div class="field"><label>Lado a columna (cm)</label><input id="z-ca" type="number" value="40"></div>
+        <div class="field"><label>Lado b columna (cm)</label><input id="z-cb" type="number" value="40"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Materiales</h3>
+      <div class="row2">
+        <div class="field"><label>f'c (kg/cm²)</label>
+          <select id="z-fc"><option value="210" selected>210</option><option value="245">245</option><option value="280">280</option></select>
+        </div>
+        <div class="field"><label>fy (kg/cm²)</label>
+          <select id="z-fy"><option value="4200" selected>4200 — Grado 60</option><option value="2810">2810 — Grado 40</option></select>
+        </div>
+      </div>
+    </div>
+    <button class="btn-calc" onclick="calcular('zapata')">CALCULAR ZAPATA</button>
+    <div id="res-zapata" class="resultados" style="margin-top:18px"></div>
+  </div>
+</div>
+
+<script>
+function tab(t, el) {
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('p-' + t).classList.add('active');
+}
+
+function g(id) { return document.getElementById(id).value; }
+function fmt(v, d = 2) { return Number(v).toFixed(d); }
+
+async function calcular(tipo) {
+  let body = {};
+  if (tipo === 'viga')    body = { b: g('v-b'), h: g('v-h'), L: g('v-L'), r: g('v-r'), WD: g('v-WD'), WL: g('v-WL'), fc: g('v-fc'), fy: g('v-fy') };
+  if (tipo === 'columna') body = { a: g('c-a'), b: g('c-b'), H: g('c-H'), r: g('c-r'), PD: g('c-PD'), PL: g('c-PL'), fc: g('c-fc'), fy: g('c-fy'), rho_pct: g('c-rho'), d_est: g('c-est') };
+  if (tipo === 'zapata')  body = { PD: g('z-PD'), PL: g('z-PL'), qa: g('z-qa'), Df: g('z-Df'), ca: g('z-ca'), cb: g('z-cb'), fc: g('z-fc'), fy: g('z-fy') };
+
+  try {
+    const r = await fetch('/api/estructural/' + tipo, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    const json = await r.json();
+    if (!json.ok) { alert('Error: ' + json.error); return; }
+    renderResultado(tipo, json.data);
+  } catch (e) {
+    alert('Error de conexión con el servidor: ' + e.message);
+  }
+}
+
+function renderResultado(tipo, d) {
+  const el = document.getElementById('res-' + tipo);
+  el.style.display = 'block';
+  let titulo = '', metricas = [], detalle = '', alertas = [];
+
+  if (tipo === 'viga') {
+    titulo = `Viga ${d.entrada.b}×${d.entrada.h} cm — L=${d.entrada.L} m`;
+    metricas = [
+      { val: fmt(d.cargas.Mu) + ' t·m', etq: 'Mu último' },
+      { val: fmt(d.geometria.rho * 100, 3) + '%', etq: 'Cuantía ρ' },
+      { val: `${d.acero_long.n} Ø${d.acero_long.diam}mm`, etq: 'Refuerzo long.' },
+      { val: fmt(d.acero_long.As_prov) + ' cm²', etq: 'As provisto' },
+      { val: fmt(d.concreto_m3, 3) + ' m³', etq: 'Concreto' },
+      { val: fmt(d.encofrado_m2) + ' m²', etq: 'Encofrado' },
+      { val: fmt(d.resumen_acero_kg, 1) + ' kg', etq: 'Acero total' },
+    ];
+    detalle = `<b>Wu</b> = 1.2(${d.entrada.WD})+1.6(${d.entrada.WL}) = ${fmt(d.cargas.Wu)} t/m &nbsp;|&nbsp;
+               <b>d efectivo</b> = ${fmt(d.geometria.d, 1)} cm<br>
+               <b>ρ_min</b> = ${(d.geometria.rho_min * 100).toFixed(3)}% &nbsp;|&nbsp; <b>ρ_max</b> = ${(d.geometria.rho_max * 100).toFixed(3)}%<br>
+               <b>Long. barras</b> = ${d.acero_long.n} × ${fmt(d.acero_long.long_barra, 2)} m = <b>${fmt(d.acero_long.kg, 1)} kg</b><br>
+               <b>Estribos</b> Ø9.5mm @ ${d.estribos.s_cm} cm × ${d.estribos.cantidad} un = <b>${fmt(d.estribos.kg, 1)} kg</b><br>
+               <b>Vu</b> = ${fmt(d.cargas.Vu)} t &nbsp;|&nbsp; <b>φVc</b> = ${fmt(d.cargas.Vu)} t`;
+    alertas = d.alertas;
+  }
+
+  if (tipo === 'columna') {
+    titulo = `Columna ${d.entrada.a}×${d.entrada.b} cm — H=${d.entrada.H} m`;
+    metricas = [
+      { val: fmt(d.cargas.Pu, 1) + ' t', etq: 'Pu último' },
+      { val: fmt(d.cargas.Pn_max, 1) + ' t', etq: 'φPn máx' },
+      { val: `${d.acero_long.n} Ø${d.acero_long.diam}mm`, etq: 'Refuerzo long.' },
+      { val: fmt(d.geometria.As) + ' cm²', etq: 'As requerido' },
+      { val: fmt(d.concreto_m3, 3) + ' m³', etq: 'Concreto' },
+      { val: fmt(d.encofrado_m2) + ' m²', etq: 'Encofrado' },
+      { val: fmt(d.resumen_acero_kg, 1) + ' kg', etq: 'Acero total' },
+    ];
+    detalle = `<b>Ag</b> = ${d.geometria.Ag} cm² &nbsp;|&nbsp; <b>ρ</b> = ${(d.geometria.rho_real * 100).toFixed(2)}%<br>
+               <b>Long. barras</b> ${d.acero_long.n} × ${fmt(d.acero_long.long_barra, 2)} m = <b>${fmt(d.acero_long.kg, 1)} kg</b><br>
+               <b>Estribos</b> Ø${d.estribos.diam}mm @ ${d.estribos.s_cm} cm × ${d.estribos.cantidad} un = <b>${fmt(d.estribos.kg, 1)} kg</b>`;
+    alertas = d.alertas;
+  }
+
+  if (tipo === 'zapata') {
+    titulo = `Zapata ${fmt(d.dimensiones.B, 2)} × ${fmt(d.dimensiones.L, 2)} m — h=${d.dimensiones.h_z} cm`;
+    metricas = [
+      { val: `${fmt(d.dimensiones.B, 2)} × ${fmt(d.dimensiones.L, 2)} m`, etq: 'Planta' },
+      { val: d.dimensiones.h_z + ' cm', etq: 'Peralte h' },
+      { val: `${d.acero.n} Ø${d.acero.diam}mm`, etq: 'Var. por dirección' },
+      { val: '@ ' + d.acero.sep_cm + ' cm', etq: 'Separación' },
+      { val: fmt(d.concreto_m3, 3) + ' m³', etq: 'Concreto' },
+      { val: fmt(d.encofrado_m2) + ' m²', etq: 'Plantilla' },
+      { val: fmt(d.acero.kg_total, 1) + ' kg', etq: 'Acero total (2 dir.)' },
+    ];
+    detalle = `<b>q_neta</b> = ${fmt(d.cargas.q_neta, 2)} t/m² &nbsp;|&nbsp; <b>qu_ult</b> = ${fmt(d.cargas.qu, 1)} kg/m²<br>
+               <b>Voladizo</b> = ${fmt(d.cargas.voladizo, 3)} m &nbsp;|&nbsp; <b>Mu</b> = ${fmt(d.cargas.Mu_z, 1)} kg·m/m<br>
+               <b>As req.</b> = ${fmt(d.acero.As_req)} cm² &nbsp;|&nbsp; <b>As prov.</b> = ${fmt(d.acero.As_prov)} cm²<br>
+               <b>Cortante viga</b>: Vu = ${d.cortante.Vv_act} t &nbsp;|&nbsp; φVc = ${d.cortante.phi_Vc} t`;
+    alertas = d.alertas;
+  }
+
+  const btnExport = `<button class="btn-export" onclick="exportarPresupuesto('${tipo}')">+ Agregar a presupuesto activo</button>`;
+
+  el.innerHTML = `
+    <div class="res-header">${titulo}</div>
+    <div class="res-body">
+      <div class="metricas">${metricas.map(m => `<div class="metrica"><div class="val">${m.val}</div><div class="etq">${m.etq}</div></div>`).join('')}</div>
+      <div class="detalle">${detalle}</div>
+      ${alertas.length ? alertas.map(a => `<div class="alerta">⚠ ${a}</div>`).join('') : '<div class="ok-msg">✔ Diseño dentro de límites ACI 318</div>'}
+      ${btnExport}
+    </div>`;
+}
+
+function exportarPresupuesto(tipo) {
+  // Hook para integración con SistemaRP
+  // Dispara evento custom que SistemaRP puede capturar
+  const el = document.getElementById('res-' + tipo);
+  const evento = new CustomEvent('estructural:agregar', {
+    detail: { tipo, html: el.innerHTML },
+    bubbles: true,
+  });
+  document.dispatchEvent(evento);
+  alert('Datos enviados al presupuesto activo.\n(Integrar con /api/presupuestos/:id/items en SistemaRP)');
+}
+</script>
+</body>
+</html>
